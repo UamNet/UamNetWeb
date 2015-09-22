@@ -1,6 +1,32 @@
 var sections = ["content", "members"];
+var liveTiles = {};
 
 var refreshSection = {
+	"content": function () {
+		var xmlhttp = new XMLHttpRequest();
+		var url = "API/users";
+
+		xmlhttp.onreadystatechange = function () {
+			if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+				var members = JSON.parse(xmlhttp.responseText);
+				liveTiles.members = members;
+				//This animates the pics in the members tile
+				var membersId = 0;
+				document.getElementById("facepic").src = liveTiles.members[membersId].picture;
+				window.setInterval(function () {
+					membersId++;
+					document.getElementById("facepic").style.transform = "scale(0.1,0.1)";
+					document.getElementById("facepic").style["left"] = (membersId % 3) * 200 + "px";
+					setTimeout(function () {
+						document.getElementById("facepic").src = liveTiles.members[membersId % liveTiles.members.length].picture;
+						document.getElementById("facepic").style.transform = "scale(1,1)";
+					}, 1000);
+				}, 2000);
+			}
+		}
+		xmlhttp.open("GET", url, true);
+		xmlhttp.send();
+	},
 	"members": function () {
 		var xmlhttp = new XMLHttpRequest();
 		var url = "API/users";
@@ -8,9 +34,9 @@ var refreshSection = {
 		xmlhttp.onreadystatechange = function () {
 			if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
 				var members = JSON.parse(xmlhttp.responseText);
-				document.getElementById("membersList").innerHTML="";
-				members.forEach(function(x){
-					document.getElementById("membersList").innerHTML+='<div class="member"><img src="'+x.picture+'"/><h3>'+x.firstName+'</h3><h4>'+x.lastName+'</h4></div>';
+				document.getElementById("membersList").innerHTML = "";
+				members.forEach(function (x) {
+					document.getElementById("membersList").innerHTML += '<div class="member"><img src="' + x.picture + '"/><h3>' + x.firstName + '</h3><h4>' + x.lastName + '</h4></div>';
 				});
 			}
 		}
@@ -20,7 +46,7 @@ var refreshSection = {
 };
 
 function goTo(section) {
-	if(refreshSection[section]){
+	if (refreshSection[section]) {
 		refreshSection[section]();
 	}
    	window.scrollTo(0, 0);
@@ -82,19 +108,5 @@ window.addEventListener("load", function () {
 			})(x));
 		}
 	}
-	
-	//This animates the pics in the members tile
-	var membersId = 0;
-	window.setInterval(function () {
-		membersId++;
-		if (membersId == 3) {
-			membersId = 0;
-		}
-		document.getElementById("facepic").style.transform = "scale(0.1,0.1)";
-		document.getElementById("facepic").style["left"] = membersId * 200 + "px";
-		setTimeout(function () {
-			document.getElementById("facepic").src = 'img/user' + membersId + '.jpg';
-			document.getElementById("facepic").style.transform = "scale(1,1)";
-		}, 1000);
-	}, 2000);
+
 });
