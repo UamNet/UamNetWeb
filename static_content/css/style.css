@@ -172,3 +172,31 @@ h2{
 	 transition:left 2s, transform 0.2s;
  }
  
+ 
+ .member{
+	 display:inline-block;
+	 width:200px;
+	 height:200px;
+	 color:white;
+	 margin:20px;
+	 background-color: #555;
+	 text-align: center;
+ }
+ 
+ .member img{
+	 width:100px;
+	 height:100px;
+	 border-radius: 50px;
+	 background-size: cover;
+	 margin:15px;
+ }
+ 
+ .member h3{
+	 font-weight: 500;
+	 margin:5px;
+ }
+ 
+ .member h4{
+	 font-weight: 100;
+	 margin:0px;
+ }

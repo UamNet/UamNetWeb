@@ -1,14 +1,37 @@
 var sections = ["content", "members"];
+
+var refreshSection = {
+	"members": function () {
+		var xmlhttp = new XMLHttpRequest();
+		var url = "API/users";
+
+		xmlhttp.onreadystatechange = function () {
+			if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+				var members = JSON.parse(xmlhttp.responseText);
+				document.getElementById("membersList").innerHTML="";
+				members.forEach(function(x){
+					document.getElementById("membersList").innerHTML+='<div class="member"><img src="'+x.picture+'"/><h3>'+x.firstName+'</h3><h4>'+x.lastName+'</h4></div>';
+				});
+			}
+		}
+		xmlhttp.open("GET", url, true);
+		xmlhttp.send();
+	}
+};
+
 function goTo(section) {
-   	window.scrollTo( 0, 0);
+	if(refreshSection[section]){
+		refreshSection[section]();
+	}
+   	window.scrollTo(0, 0);
 	sections.filter(function (x) { return x != section }).forEach(function (x) {
-		document.getElementById(x).style.opacity="0";
-		document.getElementById(x).style.visibility="hidden";
-		document.getElementById(x).style["z-index"]="-999";
+		document.getElementById(x).style.opacity = "0";
+		document.getElementById(x).style.visibility = "hidden";
+		document.getElementById(x).style["z-index"] = "-999";
 	});
 	document.getElementById(section).style.opacity = "1";
-	document.getElementById(section).style.visibility="visible";
-	document.getElementById(section).style["z-index"]="0";
+	document.getElementById(section).style.visibility = "visible";
+	document.getElementById(section).style["z-index"] = "0";
 }
 
 window.addEventListener("load", function () {
