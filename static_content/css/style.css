@@ -1,0 +1,143 @@
+body{
+	background:black;
+	font-family: 'Segoe UI', sans-serif;
+	overflow-x: hidden;
+}
+
+#header{
+	position:fixed;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:70px;
+	background-color:#C00;
+	color:white;
+	display:block;
+	padding:20px;
+	z-index: 100;
+}
+
+h1{
+	font-size: 50px;
+	display: inline;
+	font-weight: 100;
+	animation-name:slideleft;
+	animation-duration: 2s;
+	animation-timing-function: ease-out;
+	z-index:0;
+}
+
+@keyframes slideleft {
+    from {margin-left:-400px;}
+    to {margin-left:0px;}
+ }
+
+
+#content{
+	position: absolute;
+	top:110px;
+	left:10%;
+	width:80%;
+	text-align: center;
+	perspective: 1000px;
+}
+
+.box{
+	margin-top:10px;
+	animation-name:fadein;
+	animation-duration: 0.7s;
+	perspective: 1000px;
+	display: inline-block;
+	position:absolute;
+}
+
+.card{
+	width: 100%;
+  	height: 100%;
+  	transform-style: preserve-3d;
+  	transition: all 0.5s;
+}
+
+
+.box:hover .card{
+	transform:rotateX(180deg);
+}
+
+.box:active .card{
+	transform:scale(0.8,0.8);
+}
+
+.card .front{
+	backface-visibility: hidden;
+	width:100%;
+	height:100%;
+	transform-style: preserve-3d;
+	display: block;
+	position: absolute;
+	overflow: hidden;
+}
+
+.card .back{
+	backface-visibility: hidden;
+	transform:rotateX(180deg);
+	width:100%;
+	height:100%;
+	transform-style: preserve-3d;
+	display: block;
+	position: absolute;
+}
+
+.white{
+	background-color: white;
+}
+
+.bigwhitetext{
+	backface-visibility: hidden;
+	color:white;
+	width:100%;
+	transform-style: preserve-3d;
+	display: block;
+	position: absolute;
+	opacity: 0.6;
+	font-size: 150px;
+	font-weight: bold;
+	letter-spacing: -5px;
+	text-align: left;
+	left:0px;
+	bottom:0px;
+	overflow: hidden;
+	z-index:30;
+}
+
+@keyframes fadein {
+    from {opacity: 0;margin-top:40px;}
+    to {opacity: 1;}
+ }
+ 
+ .cardcontent{
+	 margin:20px;
+ }
+ 
+ #fadeout{
+	 transition: opacity 0.8s;
+	 background-color: #000;
+	 position: fixed;
+	 top:0px;
+	 left:0px;
+	 width:100%;
+	 height:100%;
+	 display: block;
+	 opacity: 0;
+	 z-index: -1000;
+ }
+ 
+ .facepic{
+	 height:150px;
+	 width:150px;
+	 border-radius: 75px;
+	 margin:25px;
+	 position:absolute;
+	 left:0px;
+	 transition:left 2s, transform 0.2s;
+ }
+ 
