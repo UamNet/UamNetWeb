@@ -18,7 +18,7 @@ var refreshSection = {
 					document.getElementById("newsCard").style["background-image"] = "url("+news[i].entities.media[0].media_url_https+")";
 					document.getElementById("newsCard").style["background-size"] = "cover";
 					}
-					document.getElementById("newsBox").style["top"] = 50+Math.floor(Math.random()*100) + "px";
+					document.getElementById("newsBox").style["top"] = 10+Math.floor(Math.random()*100) + "px";
 					document.getElementById("newsBox").innerHTML=news[i].text;
 				}, 3000);
 			}
