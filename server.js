@@ -23,7 +23,7 @@ app.get('/API/users', function (req, res, next) {
 });
 
 
-var OAuth= require('oauth').OAuth;
+var OAuth = require('oauth').OAuth;
 var oa = new OAuth(
 	"https://api.twitter.com/oauth/request_token",
 	"https://api.twitter.com/oauth/access_token",
@@ -32,16 +32,21 @@ var oa = new OAuth(
 	"1.0",
 	"http://yourdomain/auth/twitter/callback",
 	"HMAC-SHA1"
-);
+	);
 //Devuelve los ultimos tweets de @uamnet
 app.get('/API/news', function (req, res, next) {
-oa.get(
-      'https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=uamnet&count=5&exclude_replies=true',
-      '2913654539-xTLs5QpXz1H8bkK6J1Cx5nSY1QVlbiRuWt0lSsH', //test user token
-      process.env.twittersecret, //test user secret            
-      function (e, data, response){
-        res.json(data);  
-      });
+	oa.get(
+		'https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=uamnet&count=5&exclude_replies=true',
+		'2913654539-xTLs5QpXz1H8bkK6J1Cx5nSY1QVlbiRuWt0lSsH', //test user token
+		process.env.twittersecret, //test user secret            
+		function (e, data, response) {	
+			//Do not cache the users, at least during developement!
+			res.header('Cache-Control', 'private, no-cache, no-store, must-revalidate');
+			res.header('Expires', '-1');
+			res.header('Pragma', 'no-cache');
+			
+			res.json(data);
+		});
 });
 
 //Iniciamos el servidor en el puerto que provee Azure, u 8080 si estamos probando en local

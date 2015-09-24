@@ -202,7 +202,7 @@ h2{
  }
 
  #newsBox{
-	 height:40px;
+	 padding:10px;
 	 width:80%;
 	 background-color: rgba(0,0,0,0.6);
 	 color:white;
