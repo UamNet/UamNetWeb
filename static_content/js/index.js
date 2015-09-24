@@ -17,12 +17,12 @@ var refreshSection = {
 		xmlhttp.open("GET", url, true);
 		xmlhttp.send();
 		
-		xmlhttp = new XMLHttpRequest();
+		var xmlhttp2 = new XMLHttpRequest();
 		url = "API/users";
 
-		xmlhttp.onreadystatechange = function () {
-			if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-				var members = JSON.parse(xmlhttp.responseText);
+		xmlhttp2.onreadystatechange = function () {
+			if (xmlhttp2.readyState == 4 && xmlhttp2.status == 200) {
+				var members = JSON.parse(xmlhttp2.responseText);
 				liveTiles.members = members;
 				//This animates the pics in the members tile
 				var membersId = 0;
@@ -38,8 +38,8 @@ var refreshSection = {
 				}, 2000);
 			}
 		}
-		xmlhttp.open("GET", url, true);
-		xmlhttp.send();
+		xmlhttp2.open("GET", url, true);
+		xmlhttp2.send();
 	},
 	"members": function () {
 		var xmlhttp = new XMLHttpRequest();
