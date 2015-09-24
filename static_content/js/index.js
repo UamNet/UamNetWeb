@@ -13,12 +13,13 @@ var refreshSection = {
 				document.getElementById("newsBox").innerHTML=news[0].text;
 				var newsId=0;
 				window.setInterval(function () {
-					if(news.entities.media[0]&&news.entities.media[0].type=="photo"){
-					document.getElementById("newsBox").style["background-image"] = "url("+news.entities.media[0]&&news.entities.media[0].media_url_https+") center";
+					var i=(newsId++)%news.length;
+					if(news[i].entities.media[0]&&news[i].entities.media[0].type=="photo"){
+					document.getElementById("newsBox").style["background-image"] = "url("+news[i].entities.media[0]&&news.entities.media[0].media_url_https+") center";
 					document.getElementById("newsBox").style["background-size"] = "cover";
 					}
 					document.getElementById("newsBox").style["top"] = 50+Math.floor(Math.random()*100) + "px";
-					document.getElementById("newsBox").innerHTML=news[(newsId++)%news.length].text;
+					document.getElementById("newsBox").innerHTML=news[i].text;
 				}, 3000);
 			}
 		}
