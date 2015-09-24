@@ -8,7 +8,7 @@ var refreshSection = {
 
 		xmlhttp.onreadystatechange = function () {
 			if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-				var news = JSON.parse(xmlhttp.responseText);
+				var news = JSON.parse(JSON.parse(xmlhttp.responseText));
 				for(var i=0;i<=1;i++){
 					document.getElementById("news"+i).innerText=news[i].text;
 				}
@@ -17,8 +17,8 @@ var refreshSection = {
 		xmlhttp.open("GET", url, true);
 		xmlhttp.send();
 		
-		var xmlhttp = new XMLHttpRequest();
-		var url = "API/news";
+		xmlhttp = new XMLHttpRequest();
+		url = "API/users";
 
 		xmlhttp.onreadystatechange = function () {
 			if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
@@ -101,7 +101,7 @@ window.addEventListener("load", function () {
 	}
 	
 	//This piece of code makes the sections "link"" work and animate with just setting the data-opensection property
-	var tiles = document.getElementsByClassName("action");
+	tiles = document.getElementsByClassName("action");
 	for (var i = 0; i < tiles.length; i++) {
 		var x = tiles[i];
 		if (x.dataset.opensection) {
