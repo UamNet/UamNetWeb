@@ -4,7 +4,21 @@ var liveTiles = {};
 var refreshSection = {
 	"content": function () {
 		var xmlhttp = new XMLHttpRequest();
-		var url = "API/users";
+		var url = "http://uamnetdev.azurewebsites.net/API/news";
+
+		xmlhttp.onreadystatechange = function () {
+			if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+				var news = JSON.parse(xmlhttp.responseText);
+				for(var i=0;i<=1;i++){
+					document.getElementById("news"+i).innerText=news[i].text;
+				}
+			}
+		}
+		xmlhttp.open("GET", url, true);
+		xmlhttp.send();
+		
+		var xmlhttp = new XMLHttpRequest();
+		var url = "API/news";
 
 		xmlhttp.onreadystatechange = function () {
 			if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
