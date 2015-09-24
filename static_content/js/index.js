@@ -9,9 +9,13 @@ var refreshSection = {
 		xmlhttp.onreadystatechange = function () {
 			if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
 				var news = JSON.parse(JSON.parse(xmlhttp.responseText));
-				for(var i=0;i<=1;i++){
-					document.getElementById("news"+i).innerHTML=news[i].text;
-				}
+				liveTiles.news=news;
+				document.getElementById("newsBox").innerHTML=news[0].text;
+				var newsId=0;
+				window.setInterval(function () {
+					document.getElementById("newsBox").style["top"] = 50+Math.floor(Math.random()*100) + "px";
+					document.getElementById("newsBox").innerHTML=news[(newsId++)%news.length].text;
+				}, 3000);
 			}
 		}
 		xmlhttp.open("GET", url, true);

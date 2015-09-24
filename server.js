@@ -36,7 +36,7 @@ var oa = new OAuth(
 //Devuelve los ultimos tweets de @uamnet
 app.get('/API/news', function (req, res, next) {
 oa.get(
-      'https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=uamnet&count=2',
+      'https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=uamnet&count=5&exclude_replies=true',
       '2913654539-xTLs5QpXz1H8bkK6J1Cx5nSY1QVlbiRuWt0lSsH', //test user token
       process.env.twittersecret, //test user secret            
       function (e, data, response){
