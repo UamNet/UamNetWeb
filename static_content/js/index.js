@@ -10,7 +10,7 @@ var refreshSection = {
 			if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
 				var news = JSON.parse(JSON.parse(xmlhttp.responseText));
 				for(var i=0;i<=1;i++){
-					document.getElementById("news"+i).innerText=news[i].text;
+					document.getElementById("news"+i).innerHTML=news[i].text;
 				}
 			}
 		}
