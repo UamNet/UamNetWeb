@@ -23,6 +23,10 @@
 	background-size:cover;
 }
 
+.green{
+	background-color: #189900;
+}
+
 #dreamspark{
 	right:0px;
 	top:210px;
@@ -50,6 +54,11 @@
 .codePic{
 	background:url(../img/code.png) center;
 	background-size:cover;
+}
+
+.brown{
+	background-color: #311600;
+	color:#FFF;
 }
 
 #twitter{
