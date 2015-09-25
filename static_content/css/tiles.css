@@ -1,3 +1,104 @@
 #aboutus{
 	width:calc( 60% - 10px );height:200px;top:0px;left:0px;
 }
+
+.EPSpic{
+	background:url(img/eps.jpg) center;
+	background-size:cover;
+}
+
+.skyblue{
+	background:rgb(51,118,189);
+}
+
+#events{
+	width:70%;
+	height:200px;
+	left:0px;
+	top:210px;
+}
+
+.talkPic{
+	background:url(img/charla.jpg) center;
+	background-size:cover;
+}
+
+#dreamspark{
+	right:0px;
+	top:210px;
+	width:calc(30% - 10px);
+	height:200px;
+}
+
+.gray{
+	background:#515151;
+}
+
+.dreamsparkPic{
+	background:url(img/dreamspark.png) center;
+	background-size:contain;
+	background-repeat:no-repeat;
+}
+
+#members{
+	right:0px;
+	top:420px;
+	width:calc(100% - 220px);
+	height:200px
+}
+
+.codePic{
+	background:url(img/code.png) center;
+	background-size:cover;
+}
+
+#twitter{
+	left:0px;
+	top:420px;
+	width:100px;
+	height:100px;
+}
+
+.twitterPic{
+	background:url(img/twitter.png) #FFF center;
+	background-size:cover;
+}
+
+#mail{
+	left:110px;
+	top:420px;
+	width:100px;
+	height:100px;
+}
+
+.mailblue{
+	background-color:#0078d7;
+}
+
+.mailPic{
+	background:url(img/mail.png) center;
+	background-size:cover;
+}
+
+#github{
+	left:0px;
+	top:530px;
+	width:100px;
+	height:100px;
+}
+
+.githubpurple{
+	background-color:#6f2c85;
+}
+
+.githubPic{
+	background:url(img/github.png) #6f2c85 center;
+	background-size:cover;
+}
+
+#news{
+right:0px;
+top:0px;
+width:40%;
+height:200px;
+}
