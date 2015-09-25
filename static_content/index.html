@@ -18,12 +18,12 @@
 	<div id="content">
 		<div class="box action" id="aboutus">
 			<div class="card white">
-				<div class="front" style="background:url(img/eps.jpg) center;background-size:cover;">
+				<div class="front EPSpic">
 					<div class="bigwhitetext">
 						UAM.Net
 					</div>
 				</div>
-				<div class="back" style="background:rgb(51,118,189);">
+				<div class="back skyblue" >
 					<div class="cardcontent">
 						Probando bla bla Probando bla bla Probando bla bla Probando bla bla Probando bla bla Probando bla bla Probando bla bla Probando
 						bla bla Probando bla bla Probando bla bla Probando bla bla Probando bla bla Probando bla bla Probando bla bla Probando
@@ -43,9 +43,9 @@
 				</div>
 			</div>
 		</div>
-		<div class="box action" style="width:70%;height:200px;left:0px;top:210px;">
+		<div class="box action" id="events">
 			<div class="card white">
-				<div class="front" style="background:url(img/charla.jpg) center;background-size:cover;">
+				<div class="front talkPic">
 					<div class="bigwhitetext">
 						Eventos
 					</div>
@@ -53,15 +53,15 @@
 				<div class="back">Texto</div>
 			</div>
 		</div>
-		<div class="box action" style="right:0px;top:210px;width:calc(30% - 10px);height:200px">
-			<div class="card " style="background:#515151">
-				<div class="front" style="background:url(img/dreamspark.png) center;background-size:contain;background-repeat:no-repeat;"></div>
+		<div class="box action" id="dreamspark">
+			<div class="card gray">
+				<div class="front dreamsparkPic"></div>
 				<div class="back">Texto</div>
 			</div>
 		</div>
-		<div class="box action" style="right:0px;top:420px;width:calc(100% - 220px);height:200px" data-opensection="members">
+		<div class="box action" id="members" data-opensection="members">
 			<div class="card white">
-				<div class="front" style="background:url(img/code.png) center;background-size:cover;">
+				<div class="front codePic">
 					<div class="bigwhitetext">
 						Miembros
 					</div>
@@ -70,15 +70,15 @@
 				<div class="back">Texto</div>
 			</div>
 		</div>
-		<div class="box action" style="left:0px;top:420px;width:100px;height:100px;" data-openlink="https://twitter.com/intent/follow?original_referer=https%3A%2F%2Fabout.twitter.com%2Fes%2Fresources%2Fbuttons&ref_src=twsrc%5Etfw&region=follow_link&screen_name=uamnet&tw_p=followbutton">
+		<div class="box action" id="twitter" data-openlink="https://twitter.com/intent/follow?original_referer=https%3A%2F%2Fabout.twitter.com%2Fes%2Fresources%2Fbuttons&ref_src=twsrc%5Etfw&region=follow_link&screen_name=uamnet&tw_p=followbutton">
 			<div class="card white">
-				<div class="front" style="background:url(img/twitter.png) #FFF center;background-size:cover;"></div>
+				<div class="front twitterPic"></div>
 				<div class="back">@uamnet</div>
 			</div>
 		</div>
-		<div class="box action" style="left:110px;top:420px;width:100px;height:100px;" data-openlink="mailto:uamnet@live.com">
-			<div class="card" style="background-color:#0078d7;">
-				<div class="front" style="background:url(img/mail.png) center;background-size:cover;"></div>
+		<div class="box action" id="mail" data-openlink="mailto:uamnet@live.com">
+			<div class="card mailblue">
+				<div class="front mailPic"></div>
 				<div class="back">
 					uamnet
 					<br/>@
@@ -86,15 +86,15 @@
 				</div>
 			</div>
 		</div>
-		<div class="box action" style="left:0px;top:530px;width:100px;height:100px;" data-openlink="http://www.github.com/uamnet">
-			<div class="card" style="background-color:#6f2c85">
-				<div class="front" style="background:url(img/github.png) #6f2c85 center;background-size:cover;"></div>
+		<div class="box action" id="github" data-openlink="http://www.github.com/uamnet">
+			<div class="card githubpurple">
+				<div class="front githubPic"></div>
 				<div class="back" style="color:black;">UamNet</div>
 			</div>
 		</div>
-		<div class="box action" style="right:0px;top:0px;width:40%;height:200px">
+		<div class="box action" id="news">
 			<div class="card white">
-				<div id="newsCard" class="front" style="background:url(img/code.png) center;background-size:cover;">
+				<div id="newsCard" class="front codePic">
 				<div id="newsBox"></div>
 				</div>
 				<div class="back" ></div>
@@ -102,7 +102,6 @@
 		</div>
 	</div>
 	<div id="members">
-		<!-- Back icon by Icons8 -->
 		<img class="action" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGFSURBVHhe7Zo5TgNBEEUtIgIfwAcgIPRuH4GQWxIQYOMtJCBwSMgRuIXNm6myGgeNhJCQqfpPKvUs38H7PZOM3BFCCCGEuCSOx2P3cDjc+GkuXP6V+eD41i/noBFG/IG1heM9c+e3Y4Nvu/OmXuDai0figufZzp/g2o6ZeywmeNbkt8zMYzHBU/KmXHD5qcdigmdNfiP5yOBZk18zE4/FBE/Jm3LB5cceiwmeNfmV5CODZ03+mWXksZggKPnW+AuNPDP0WEzwrMkvJR8ZPL+TH3gsJnjW5BcZ5Gufsd5Zeh6LCYK1nX9i6Xvs4rny9ccg2fz22s6SQgk9f9zP8Nei67HYIDtndqZe+G+vwq9AdsZsTb2gEiBbCVOVYCVsTL2gEiBbCROVYCWsTb2gEiBbCWOVYCWsTL2gEiBVCYiOEG6+Dp+hEiBVCcgOVYKVsDT1gkqAbCUM0peAaO3z2qNH4oNvH+GFqbfybyz3fjsHCLdPApPvz9InmhLSygshhBDij+h0PgG5Mw5zvBOrLwAAAABJRU5ErkJggg=="
 		width="64" height="64" style="vertical-align:bottom;" data-opensection="content">
 		<h2>Miembros</h2>
