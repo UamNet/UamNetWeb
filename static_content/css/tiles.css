@@ -3,7 +3,7 @@
 }
 
 .EPSpic{
-	background:url(img/eps.jpg) center;
+	background:url(../img/eps.jpg) center;
 	background-size:cover;
 }
 
@@ -19,7 +19,7 @@
 }
 
 .talkPic{
-	background:url(img/charla.jpg) center;
+	background:url(../img/charla.jpg) center;
 	background-size:cover;
 }
 
@@ -35,20 +35,20 @@
 }
 
 .dreamsparkPic{
-	background:url(img/dreamspark.png) center;
+	background:url(../img/dreamspark.png) center;
 	background-size:contain;
 	background-repeat:no-repeat;
 }
 
-#members{
+#membersTile{
 	right:0px;
 	top:420px;
 	width:calc(100% - 220px);
-	height:200px
+	height:200px;
 }
 
 .codePic{
-	background:url(img/code.png) center;
+	background:url(../img/code.png) center;
 	background-size:cover;
 }
 
@@ -60,7 +60,7 @@
 }
 
 .twitterPic{
-	background:url(img/twitter.png) #FFF center;
+	background:url(../img/twitter.png) #FFF center;
 	background-size:cover;
 }
 
@@ -76,7 +76,7 @@
 }
 
 .mailPic{
-	background:url(img/mail.png) center;
+	background:url(../img/mail.png) center;
 	background-size:cover;
 }
 
@@ -92,7 +92,7 @@
 }
 
 .githubPic{
-	background:url(img/github.png) #6f2c85 center;
+	background:url(../img/github.png) #6f2c85 center;
 	background-size:cover;
 }
 
