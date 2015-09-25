@@ -19,6 +19,8 @@
   "homepage": "https://github.com/UamNet/UamNetWeb",
   "dependencies": {
     "express": "~4.13.3",
-    "oauth": "~0.9.14"
+    "oauth": "~0.9.14",
+    "nodemailer": "~1.5.0",
+    "body-parser": "~1.14.0"
   }
 }
