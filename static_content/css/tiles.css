@@ -11,7 +11,7 @@
 	background:rgb(51,118,189);
 }
 
-#events{
+#eventsTile{
 	width:70%;
 	height:200px;
 	left:0px;
@@ -27,7 +27,7 @@
 	background-color: #189900;
 }
 
-#dreamspark{
+#dreamsparkTile{
 	right:0px;
 	top:210px;
 	width:calc(30% - 10px);
