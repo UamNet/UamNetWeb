@@ -145,8 +145,8 @@ h2{
 	 width:100%;
 	 height:100%;
 	 display: block;
-	 opacity: 0;
-	 z-index: -1000;
+	 opacity: 1;
+	 z-index: 1000;
  }
  
   #fadeout_section{
@@ -225,6 +225,28 @@ h2{
  
  
  #join{
+	position: absolute;
+	top:110px;
+	left:10%;
+	width:80%;
+	text-align: center;
+	perspective: 1000px;
+	display: hidden;
+	color:white;
+}
+
+ #events{
+	position: absolute;
+	top:110px;
+	left:10%;
+	width:80%;
+	text-align: center;
+	perspective: 1000px;
+	display: hidden;
+	color:white;
+}
+
+ #dreamspark{
 	position: absolute;
 	top:110px;
 	left:10%;

@@ -1,4 +1,4 @@
-var sections = ["content", "members","join"];
+var sections = ["content", "members","join","events","dreamspark"];
 var liveTiles = {};
 
 var refreshSection = {
@@ -86,6 +86,8 @@ function goTo(section) {
 }
 
 window.addEventListener("load", function () {
+	document.getElementById("fadeout").style["z-index"] = "-10000";
+	document.getElementById("fadeout").style.opacity = "0";
 	goTo("content");
 	
 	
