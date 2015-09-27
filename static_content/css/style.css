@@ -222,3 +222,15 @@ h2{
    text-align: center;
    
  }
+ 
+ 
+ #join{
+	position: absolute;
+	top:110px;
+	left:10%;
+	width:80%;
+	text-align: center;
+	perspective: 1000px;
+	display: hidden;
+	color:white;
+}
