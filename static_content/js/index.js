@@ -135,5 +135,61 @@ window.addEventListener("load", function () {
 			})(x));
 		}
 	}
+document.getElementById("send_join").addEventListener("click",sendJoin);
+document.getElementById("send_dreamspark").addEventListener("click",sendDreamspark);
 
 });
+
+
+
+//Send forms data
+
+
+function sendJoin(){	
+	var xmlhttp = new XMLHttpRequest();
+	var url = "/API/request/member";
+
+		xmlhttp.onreadystatechange = function () {
+			if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+				switch(JSON.parse(xmlhttp.responseText).status){
+					case 0:
+						document.getElementById("status_join").innerHTML="Enviado con éxito";
+						break;
+						case 1:
+						document.getElementById("status_join").innerHTML="Se ha producido un error. Intentalo de nuevo en unos momentos, por favor.";
+						break;
+						case 2:
+						document.getElementById("status_join").innerHTML="Necesitamos que uses tu correo @estudiante.uam.es para saber que eres un estudiante.";
+						break;
+				}
+			}
+		}
+		xmlhttp.open("POST", url, true);
+		xmlhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+		xmlhttp.send(JSON.stringify({email:document.getElementById("name_join").value,name:document.getElementById("email_join").value}));
+}
+
+
+function sendDreamspark(){	
+	var xmlhttp = new XMLHttpRequest();
+	var url = "/API/request/dreamspark";
+
+		xmlhttp.onreadystatechange = function () {
+			if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+				switch(JSON.parse(xmlhttp.responseText).status){
+					case 0:
+						document.getElementById("status_dreamspark").innerHTML="Enviado con éxito";
+						break;
+						case 1:
+						document.getElementById("status_dreamspark").innerHTML="Se ha producido un error. Intentalo de nuevo en unos momentos, por favor.";
+						break;
+						case 2:
+						document.getElementById("status_dreamspark").innerHTML="Necesitamos que uses tu correo @estudiante.uam.es para saber que eres un estudiante.";
+						break;
+				}
+			}
+		}
+		xmlhttp.open("POST", url, true);
+		xmlhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+		xmlhttp.send(JSON.stringify({email:document.getElementById("name_dreamspark").value,name:document.getElementById("email_dreamspark").value}));
+}
