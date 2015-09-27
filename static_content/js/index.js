@@ -14,7 +14,7 @@ var refreshSection = {
 				var newsId=0;
 				window.setInterval(function () {
 					var i=(newsId++)%news.length;
-					if(news[i].entities.media&&(news[i].entities.media[0]&&news[i].entities.media[0].type=="photo"){
+					if(news[i].entities.media&&news[i].entities.media[0]&&news[i].entities.media[0].type=="photo"){
 					document.getElementById("newsCard").style["background-image"] = "url("+news[i].entities.media[0].media_url_https+")";
 					document.getElementById("newsCard").style["background-size"] = "cover";
 					}else{
