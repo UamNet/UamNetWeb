@@ -1,4 +1,4 @@
-var sections = ["content", "members"];
+var sections = ["content", "members","unete"];
 var liveTiles = {};
 
 var refreshSection = {
