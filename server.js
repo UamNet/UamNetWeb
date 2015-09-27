@@ -75,9 +75,9 @@ app.post('/API/request/member', function (req, res, next) {
 		mailOptions.text = mailOptions.html = "Email:" + req.body.email + "\Name:" + req.body.name;
 		transporter.sendMail(mailOptions, function (error, info) {
 			if (error) {
-				res.json({"Status":1});
+				res.json({"status":1});
 			} else {
-				res.json({"Status":0});
+				res.json({"status":0});
 			}
 		});
 	} else {
@@ -86,9 +86,9 @@ app.post('/API/request/member', function (req, res, next) {
 		mailOptions.text = mailOptions.html = "Hola,\n Has solicitado ser miembro del club .Net, pero para poder añadirte necesitamos que uses tu cuenta @estudiante.uam.es para poder comprobar que efectivamente eres un alumno. Por favor, realiza la petición de nuevo con ese correo, disculpa las molestias. \n Un saludo,\n UamDotNet \n @uamnet";
 		transporter.sendMail(mailOptions, function (error, info) {
 			if (error) {
-				res.json({"Status":1});
+				res.json({"status":1});
 			} else {
-				res.json({"Status":2});
+				res.json({"status":2});
 			}
 		});
 	}
