@@ -59,7 +59,7 @@ var refreshSection = {
 		xmlhttp.onreadystatechange = function () {
 			if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
 				var members = JSON.parse(xmlhttp.responseText);
-				document.getElementById("membersList").innerHTML = "";
+				document.getElementById("membersList").innerHTML = '<div class="member"><img src="plus.gif"/><h3>TU</h3><h4>Únete al club</h4></div>';
 				members.forEach(function (x) {
 					document.getElementById("membersList").innerHTML += '<div class="member"><img src="' + x.picture + '"/><h3>' + x.firstName + '</h3><h4>' + x.lastName + '</h4></div>';
 				});
