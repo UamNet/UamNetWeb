@@ -53,13 +53,15 @@ app.get('/API/news', function (req, res, next) {
 
 //Recibe las peticiones que desencadenan un mail
 var nodemailer = require('nodemailer');
-var transporter = nodemailer.createTransport({
-    service: 'Gmail',
+var transporter = nodemailer.createTransport(	
+	smtpTransport({
+    host: 'smtpinterno.uam.es',
+    port: 25,
     auth: {
-        user: 'uamnetbot@gmail.com',
-        pass: process.env.mailbotpassword
+        user: 'uamnet@uam.es',
+        pass: process.env.mailpassword
     }
-});
+}));
 
 app.post('/API/request/member', function (req, res, next) {
 	console.log(req.body);
