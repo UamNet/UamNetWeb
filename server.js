@@ -61,6 +61,9 @@ var transporter = nodemailer.createTransport(
 		auth: {
 			user: 'uamnet@uam.es',
 			pass: process.env.mailpassword
+		},
+		tls: {
+			ciphers: 'SSLv3'
 		}
 	}));
 
