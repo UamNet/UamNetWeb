@@ -53,22 +53,23 @@ app.get('/API/news', function (req, res, next) {
 
 //Recibe las peticiones que desencadenan un mail
 var nodemailer = require('nodemailer');
-var transporter = nodemailer.createTransport(	
+var smtpTransport = require('nodemailer-smtp-transport');
+var transporter = nodemailer.createTransport(
 	smtpTransport({
-    host: 'smtpinterno.uam.es',
-    port: 25,
-    auth: {
-        user: 'uamnet@uam.es',
-        pass: process.env.mailpassword
-    }
-}));
+		host: 'smtpinterno.uam.es',
+		port: 25,
+		auth: {
+			user: 'uamnet@uam.es',
+			pass: process.env.mailpassword
+		}
+	}));
 
 app.post('/API/request/member', function (req, res, next) {
 	console.log(req.body);
 	var mailOptions = {
 		from: 'Bot UamNet <uamnetbot@gmail.com>', // sender address
 		to: 'uamnet@live.com', // list of receivers
-		subject: '[Member request]'+new Date(), // Subject line
+		subject: '[Member request]' + new Date(), // Subject line
 		text: 'Hey', // plaintext body
 		html: 'Hey' // html body
 	};
@@ -77,20 +78,20 @@ app.post('/API/request/member', function (req, res, next) {
 		mailOptions.text = mailOptions.html = "Email:" + req.body.email + "\Name:" + req.body.name;
 		transporter.sendMail(mailOptions, function (error, info) {
 			if (error) {
-				res.json({"status":1});
+				res.json({ "status": 1 });
 			} else {
-				res.json({"status":0});
+				res.json({ "status": 0 });
 			}
 		});
 	} else {
-		mailOptions.subject="UamNet - Do Not Reply"+new Date();
-		mailOptions.to=req.body.email;
-		mailOptions.text = mailOptions.html = "Hola"+req.body.name+",\n Has solicitado ser miembro del club .Net, pero para poder añadirte necesitamos que uses tu cuenta @estudiante.uam.es para poder comprobar que efectivamente eres un alumno. Por favor, realiza la petición de nuevo con ese correo, disculpa las molestias. \n Un saludo,\n UamDotNet \n @uamnet";
+		mailOptions.subject = "UamNet - Do Not Reply" + new Date();
+		mailOptions.to = req.body.email;
+		mailOptions.text = mailOptions.html = "Hola" + req.body.name + ",\n Has solicitado ser miembro del club .Net, pero para poder añadirte necesitamos que uses tu cuenta @estudiante.uam.es para poder comprobar que efectivamente eres un alumno. Por favor, realiza la petición de nuevo con ese correo, disculpa las molestias. \n Un saludo,\n UamDotNet \n @uamnet";
 		transporter.sendMail(mailOptions, function (error, info) {
 			if (error) {
-				res.json({"status":1});
+				res.json({ "status": 1 });
 			} else {
-				res.json({"status":2});
+				res.json({ "status": 2 });
 			}
 		});
 	}
@@ -101,7 +102,7 @@ app.post('/API/request/dreamspark', function (req, res, next) {
 	var mailOptions = {
 		from: 'Bot UamNet <uamnetbot@gmail.com>', // sender address
 		to: 'uamnet@live.com', // list of receivers
-		subject: '[Dreamspark request]'+new Date(), // Subject line
+		subject: '[Dreamspark request]' + new Date(), // Subject line
 		text: 'Hey', // plaintext body
 		html: 'Hey' // html body
 	};
@@ -110,20 +111,20 @@ app.post('/API/request/dreamspark', function (req, res, next) {
 		mailOptions.text = mailOptions.html = "Email:" + req.body.email + "\Name:" + req.body.name;
 		transporter.sendMail(mailOptions, function (error, info) {
 			if (error) {
-				res.json({"status":1,"error":error});
+				res.json({ "status": 1, "error": error });
 			} else {
-				res.json({"status":0});
+				res.json({ "status": 0 });
 			}
 		});
 	} else {
-		mailOptions.subject="UamNet - Do Not Reply"+new Date();
-		mailOptions.to=req.body.email;
-		mailOptions.text = mailOptions.html = "Hola "+req.body.name+",\n Has solicitado acceso al Dreamspark academico, pero para poder añadirte necesitamos que uses tu cuenta @estudiante.uam.es para poder comprobar que efectivamente eres un alumno. Por favor, realiza la petición de nuevo con ese correo, disculpa las molestias. \n Un saludo,\n UamDotNet \n @uamnet";
+		mailOptions.subject = "UamNet - Do Not Reply" + new Date();
+		mailOptions.to = req.body.email;
+		mailOptions.text = mailOptions.html = "Hola " + req.body.name + ",\n Has solicitado acceso al Dreamspark academico, pero para poder añadirte necesitamos que uses tu cuenta @estudiante.uam.es para poder comprobar que efectivamente eres un alumno. Por favor, realiza la petición de nuevo con ese correo, disculpa las molestias. \n Un saludo,\n UamDotNet \n @uamnet";
 		transporter.sendMail(mailOptions, function (error, info) {
 			if (error) {
-				res.json({"status":1,"error":error});
+				res.json({ "status": 1, "error": error });
 			} else {
-				res.json({"status":2});
+				res.json({ "status": 2 });
 			}
 		});
 	}
