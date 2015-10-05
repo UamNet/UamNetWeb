@@ -55,7 +55,7 @@ app.get('/API/news', function (req, res, next) {
 var nodemailer = require('nodemailer');
 var smtpTransport = require('nodemailer-smtp-transport');
 var transporter = nodemailer.createTransport(
-	smtpTransport({
+	smtpTransport("SMTP",{
 		service: "hotmail",
 		auth: {
 			user: "uamnet@live.com",
@@ -66,7 +66,7 @@ var transporter = nodemailer.createTransport(
 app.post('/API/request/member', function (req, res, next) {
 	console.log(req.body);
 	var mailOptions = {
-		from: 'Bot UamNet <uamnetbot@gmail.com>', // sender address
+		from: 'uamnet@live.com', // sender address
 		to: 'uamnet@live.com', // list of receivers
 		subject: '[Member request]' + new Date(), // Subject line
 		text: 'Hey', // plaintext body
@@ -99,7 +99,7 @@ app.post('/API/request/member', function (req, res, next) {
 app.post('/API/request/dreamspark', function (req, res, next) {
 	console.log(req.body);
 	var mailOptions = {
-		from: 'Bot UamNet <uamnetbot@gmail.com>', // sender address
+		from: 'uamnet@live.com', // sender address
 		to: 'uamnet@live.com', // list of receivers
 		subject: '[Dreamspark request]' + new Date(), // Subject line
 		text: 'Hey', // plaintext body
