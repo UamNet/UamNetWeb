@@ -57,6 +57,7 @@ var smtpTransport = require('nodemailer-smtp-transport');
 var transporter = nodemailer.createTransport(
 	smtpTransport({
 		host: 'smtpinterno.uam.es',
+		secureConnection: false,
 		port: 587,
 		auth: {
 			user: 'uamnet@uam.es',
