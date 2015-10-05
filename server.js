@@ -56,15 +56,10 @@ var nodemailer = require('nodemailer');
 var smtpTransport = require('nodemailer-smtp-transport');
 var transporter = nodemailer.createTransport(
 	smtpTransport({
-		host: 'smtpinterno.uam.es',
-		secureConnection: false,
-		port: 587,
+		service: "hotmail",
 		auth: {
-			user: 'uamnet@uam.es',
+			user: "uamnet@live.com",
 			pass: process.env.mailpassword
-		},
-		tls: {
-			ciphers: 'SSLv3'
 		}
 	}));
 
