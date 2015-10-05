@@ -1,3 +1,8 @@
+html{
+	overflow-y: auto;
+}
+
+
 body{
 	background:black;
 	font-family: 'Segoe UI', sans-serif;
