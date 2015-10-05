@@ -55,7 +55,7 @@ app.get('/API/news', function (req, res, next) {
 var nodemailer = require('nodemailer');
 var smtpTransport = require('nodemailer-smtp-transport');
 var transporter = nodemailer.createTransport(
-	smtpTransport("SMTP",{
+	smtpTransport({
 		service: "hotmail",
 		auth: {
 			user: "uamnet@live.com",
