@@ -54,9 +54,9 @@ app.get('/API/news', function (req, res, next) {
 //Recibe las peticiones que desencadenan un mail
 var nodemailer = require('nodemailer');
 var transporter = nodemailer.createTransport({
-    service: 'Gmail',
+    service: 'hotmail',
     auth: {
-        user: 'uamnetbot@gmail.com',
+        user: 'uamnet@live.com',
         pass: process.env.mailbotpassword
     }
 });
