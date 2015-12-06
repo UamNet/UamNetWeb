@@ -2,6 +2,12 @@ var sections = ["content", "members","join","events","dreamspark"];
 var liveTiles = {};
 
 var refreshSection = {
+	"dreamspark":function(){
+		document.getElementById("dreamspark_iframe").src="https://onedrive.live.com/redir?page=survey&resid=C54C5685052E8FDD!236&authkey=!ABZw3EPirQI2iaw&ithint=file%2cxlsx";
+	},
+	"join":function(){
+		document.getElementById("join_iframe").src="https://onedrive.live.com/redir?page=survey&resid=C54C5685052E8FDD!234&authkey=!ACoCcPb0M17eQTQ&ithint=file%2cxlsx";
+	},
 	"content": function () {
 		var xmlhttp = new XMLHttpRequest();
 		var url = "http://uamnetdev.azurewebsites.net/API/news";
@@ -161,8 +167,8 @@ window.addEventListener("load", function () {
 			})(x));
 		}
 	}
-document.getElementById("send_join").addEventListener("click",sendJoin);
-document.getElementById("send_dreamspark").addEventListener("click",sendDreamspark);
+// document.getElementById("send_join").addEventListener("click",sendJoin);
+// document.getElementById("send_dreamspark").addEventListener("click",sendDreamspark);
 
 });
 
