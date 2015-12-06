@@ -1,0 +1,58 @@
+[
+	{
+		"title": "Apps JavaScript para Windows 10",
+		"by": "Arcadio García Salvadores",
+		"place": "Sala de Grados",
+		"day": "23",
+		"month": "Octubre",
+		"time": "13:00"
+	},
+	{
+		"title": "Azure: Pásate al Cloud Computing",
+		"by": "Arcadio García Salvadores",
+		"place": "Laboratorio 15",
+		"day": "16",
+		"month": "Octubre",
+		"time": "13:00"
+	},
+	{
+		"title": "Videojuegos con Clockwork.js",
+		"by": "Arcadio García Salvadores",
+		"place": "Sala de Grados",
+		"day": "9",
+		"month": "Octubre",
+		"time": "13:00"
+	},
+	{
+		"title": "JavaScript funcional & ES6",
+		"by": "Arcadio García Salvadores",
+		"place": "Sala de Grados",
+		"day": "2",
+		"month": "Octubre",
+		"time": "13:00"
+	},
+	{
+		"title": "JavaScript 101",
+		"by": "Arcadio García Salvadores",
+		"place": "Sala de Grados",
+		"day": "25",
+		"month": "Septiembre",
+		"time": "13:00"
+	},
+	{
+		"title": "Introducción a Active Directory",
+		"by": "David Muñoz Miranda",
+		"place": "Sala de Grados",
+		"day": "18",
+		"month": "Septiembre",
+		"time": "13:00"
+	},
+	{
+		"title": "Dual Boot y VMs",
+		"by": "Ana Peraita Alonso",
+		"place": "Sala de Grados",
+		"day": "11",
+		"month": "Septiembre",
+		"time": "13:00"
+	}
+]

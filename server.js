@@ -23,6 +23,22 @@ app.get('/API/users', function (req, res, next) {
     res.json(users);
 });
 
+//Es posible solicitar los datos de los eventos en formato JSON
+app.get('/API/events', function (req, res, next) {
+	var file = fs.readFileSync("data/events.json", "utf8");
+    var events = JSON.parse(file);
+	for (var i = 0; i < events.length; i++) {
+		events[i].id = i;
+	}
+	
+	//Do not cache the users, at least during developement!
+	res.header('Cache-Control', 'private, no-cache, no-store, must-revalidate');
+	res.header('Expires', '-1');
+	res.header('Pragma', 'no-cache');
+
+    res.json(events);
+});
+
 
 var OAuth = require('oauth').OAuth;
 var oa = new OAuth(

@@ -67,6 +67,30 @@ var refreshSection = {
 		}
 		xmlhttp.open("GET", url, true);
 		xmlhttp.send();
+	},
+	"events": function () {
+		var xmlhttp = new XMLHttpRequest();
+		var url = "API/events";
+
+		xmlhttp.onreadystatechange = function () {
+			if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+				var events = JSON.parse(xmlhttp.responseText);
+				document.getElementById("events-content").innerHTML = '';
+				events.forEach(function (x) {
+					var div='<div class="event">';
+					div+='<div class="title">'+x.title+"</div>";
+					div+='<div class="by">'+x.by+"</div>";
+					div+='<div class="place">'+x.place+"</div>";
+					div+='<div class="day">'+x.day+"</div>"
+					div+='<div class="month">'+x.month+"</div>";
+					div+='<div class="time">'+x.time+"</div>";
+					div+='</div>';
+					document.getElementById("events-content").innerHTML += div;
+				});
+			}
+		}
+		xmlhttp.open("GET", url, true);
+		xmlhttp.send();
 	}
 };
 
