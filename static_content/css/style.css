@@ -115,6 +115,15 @@ h2{
 	background-color: white;
 }
 
+.purple{
+	background-color: rebeccapurple;
+}
+
+
+.twitterblue{
+	background-color: #4099FF;
+}
+
 .bigwhitetext{
 	backface-visibility: hidden;
 	color:white;
