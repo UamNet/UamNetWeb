@@ -77,14 +77,16 @@ var refreshSection = {
 				var events = JSON.parse(xmlhttp.responseText);
 				document.getElementById("events-content").innerHTML = '';
 				events.forEach(function (x) {
-					var div='<div class="event">';
+					var div='<div class="event" style="background-color:'+x.color+';">';
+					div+='<div class="left">';
 					div+='<div class="title">'+x.title+"</div>";
 					div+='<div class="by">'+x.by+"</div>";
 					div+='<div class="place">'+x.place+"</div>";
+					div+='</div><div class="right">'
 					div+='<div class="day">'+x.day+"</div>"
 					div+='<div class="month">'+x.month+"</div>";
 					div+='<div class="time">'+x.time+"</div>";
-					div+='</div>';
+					div+='</div></div>';
 					document.getElementById("events-content").innerHTML += div;
 				});
 			}

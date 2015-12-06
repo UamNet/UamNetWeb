@@ -262,3 +262,42 @@ h2{
 	display: hidden;
 	color:white;
 }
+
+.event{
+	display:block;
+	width:100%;
+	margin-bottom:10px;
+	overflow:hidden;
+	padding:10px;
+}
+
+.event .title{
+	font-size: 30px;
+}
+.event .by{
+ font-size: 20px;
+}
+.event .place{
+	font-size: 20px;
+}
+
+.event .day{
+	font-size: 30px;
+}
+
+.event .month{
+font-size: 20px;
+}
+.event .time{
+font-size: 20px;
+}
+
+.left{
+	text-align: left;
+	float:left;
+}
+
+.right{
+	text-align: right;
+	float:right;
+}
