@@ -48,7 +48,7 @@
 	right:0px;
 	top:420px;
 	width:calc(100% - 220px);
-	height:200px;
+	height:210px;
 }
 
 .codePic{
@@ -80,6 +80,7 @@
 	height:100px;
 }
 
+
 .mailblue{
 	background-color:#0078d7;
 }
@@ -103,6 +104,22 @@
 .githubPic{
 	background:url(../img/github.png) #6f2c85 center;
 	background-size:cover;
+}
+
+#youtube{
+	left:110px;
+	top:530px;
+	width:100px;
+	height:100px;
+}
+
+.youtubePic{
+	background:url(../img/youtube.png) center;
+	background-size:cover;
+}
+
+.youtubered{
+	background-color:#e62117;
 }
 
 #news{
