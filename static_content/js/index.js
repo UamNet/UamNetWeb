@@ -10,7 +10,7 @@ var refreshSection = {
 	},
 	"content": function () {
 		var xmlhttp = new XMLHttpRequest();
-		var url = "http://uamnetdev.azurewebsites.net/API/news";
+		var url = "API/news";
 
 		xmlhttp.onreadystatechange = function () {
 			if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
@@ -179,7 +179,7 @@ window.addEventListener("load", function () {
 
 function sendJoin(){	
 	var xmlhttp = new XMLHttpRequest();
-	var url = "/API/request/member";
+	var url = "API/request/member";
 
 		xmlhttp.onreadystatechange = function () {
 			if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
