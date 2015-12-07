@@ -3,7 +3,7 @@
 }
 
 .EPSpic{
-	background:url(img/eps.jpg) center;
+	background:url(../img/eps.jpg) center;
 	background-size:cover;
 }
 
@@ -11,7 +11,7 @@
 	background:rgb(51,118,189);
 }
 
-#events{
+#eventsTile{
 	width:70%;
 	height:200px;
 	left:0px;
@@ -19,11 +19,15 @@
 }
 
 .talkPic{
-	background:url(img/charla.jpg) center;
+	background:url(../img/charla.jpg) center;
 	background-size:cover;
 }
 
-#dreamspark{
+.green{
+	background-color: #189900;
+}
+
+#dreamsparkTile{
 	right:0px;
 	top:210px;
 	width:calc(30% - 10px);
@@ -35,21 +39,26 @@
 }
 
 .dreamsparkPic{
-	background:url(img/dreamspark.png) center;
+	background:url(../img/dreamspark.png) center;
 	background-size:contain;
 	background-repeat:no-repeat;
 }
 
-#members{
+#membersTile{
 	right:0px;
 	top:420px;
 	width:calc(100% - 220px);
-	height:200px
+	height:210px;
 }
 
 .codePic{
-	background:url(img/code.png) center;
+	background:url(../img/code.png) center;
 	background-size:cover;
+}
+
+.brown{
+	background-color: #311600;
+	color:#FFF;
 }
 
 #twitter{
@@ -60,7 +69,7 @@
 }
 
 .twitterPic{
-	background:url(img/twitter.png) #FFF center;
+	background:url(../img/twitter.png) #FFF center;
 	background-size:cover;
 }
 
@@ -71,12 +80,13 @@
 	height:100px;
 }
 
+
 .mailblue{
 	background-color:#0078d7;
 }
 
 .mailPic{
-	background:url(img/mail.png) center;
+	background:url(../img/mail.png) center;
 	background-size:cover;
 }
 
@@ -92,8 +102,24 @@
 }
 
 .githubPic{
-	background:url(img/github.png) #6f2c85 center;
+	background:url(../img/github.png) #6f2c85 center;
 	background-size:cover;
+}
+
+#youtube{
+	left:110px;
+	top:530px;
+	width:100px;
+	height:100px;
+}
+
+.youtubePic{
+	background:url(../img/youtube.png) center;
+	background-size:cover;
+}
+
+.youtubered{
+	background-color:#e62117;
 }
 
 #news{

@@ -1,7 +1,13 @@
-var sections = ["content", "members"];
+var sections = ["content", "members","join","events","dreamspark"];
 var liveTiles = {};
 
 var refreshSection = {
+	"dreamspark":function(){
+		document.getElementById("dreamspark_iframe").src="https://onedrive.live.com/redir?page=survey&resid=C54C5685052E8FDD!236&authkey=!ABZw3EPirQI2iaw&ithint=file%2cxlsx";
+	},
+	"join":function(){
+		document.getElementById("join_iframe").src="https://onedrive.live.com/redir?page=survey&resid=C54C5685052E8FDD!234&authkey=!ACoCcPb0M17eQTQ&ithint=file%2cxlsx";
+	},
 	"content": function () {
 		var xmlhttp = new XMLHttpRequest();
 		var url = "http://uamnetdev.azurewebsites.net/API/news";
@@ -14,9 +20,11 @@ var refreshSection = {
 				var newsId=0;
 				window.setInterval(function () {
 					var i=(newsId++)%news.length;
-					if(news[i].entities.media[0]&&news[i].entities.media[0].type=="photo"){
+					if(news[i].entities.media&&news[i].entities.media[0]&&news[i].entities.media[0].type=="photo"){
 					document.getElementById("newsCard").style["background-image"] = "url("+news[i].entities.media[0].media_url_https+")";
 					document.getElementById("newsCard").style["background-size"] = "cover";
+					}else{
+						document.getElementById("newsCard").style["background-image"]="url(img/code.png)";
 					}
 					document.getElementById("newsBox").style["top"] = 10+Math.floor(Math.random()*100) + "px";
 					document.getElementById("newsBox").innerHTML=news[i].text;
@@ -57,9 +65,35 @@ var refreshSection = {
 		xmlhttp.onreadystatechange = function () {
 			if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
 				var members = JSON.parse(xmlhttp.responseText);
-				document.getElementById("membersList").innerHTML = "";
+				document.getElementById("membersList").innerHTML = '<div class="member action" data-opensection="join"><img src="img/plus.gif" /><h3>TU</h3><h4>Únete al club</h4></div>';
 				members.forEach(function (x) {
 					document.getElementById("membersList").innerHTML += '<div class="member"><img src="' + x.picture + '"/><h3>' + x.firstName + '</h3><h4>' + x.lastName + '</h4></div>';
+				});
+			}
+		}
+		xmlhttp.open("GET", url, true);
+		xmlhttp.send();
+	},
+	"events": function () {
+		var xmlhttp = new XMLHttpRequest();
+		var url = "API/events";
+
+		xmlhttp.onreadystatechange = function () {
+			if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+				var events = JSON.parse(xmlhttp.responseText);
+				document.getElementById("events-content").innerHTML = '';
+				events.forEach(function (x) {
+					var div='<div class="event" style="background-color:'+x.color+';">';
+					div+='<div class="left">';
+					div+='<div class="title">'+x.title+"</div>";
+					div+='<div class="by">'+x.by+"</div>";
+					div+='<div class="place">'+x.place+"</div>";
+					div+='</div><div class="right">'
+					div+='<div class="day">'+x.day+"</div>"
+					div+='<div class="month">'+x.month+"</div>";
+					div+='<div class="time">'+x.time+"</div>";
+					div+='</div></div>';
+					document.getElementById("events-content").innerHTML += div;
 				});
 			}
 		}
@@ -84,6 +118,8 @@ function goTo(section) {
 }
 
 window.addEventListener("load", function () {
+	document.getElementById("fadeout").style["z-index"] = "-10000";
+	document.getElementById("fadeout").style.opacity = "0";
 	goTo("content");
 	
 	
@@ -131,5 +167,61 @@ window.addEventListener("load", function () {
 			})(x));
 		}
 	}
+// document.getElementById("send_join").addEventListener("click",sendJoin);
+// document.getElementById("send_dreamspark").addEventListener("click",sendDreamspark);
 
 });
+
+
+
+//Send forms data
+
+
+function sendJoin(){	
+	var xmlhttp = new XMLHttpRequest();
+	var url = "/API/request/member";
+
+		xmlhttp.onreadystatechange = function () {
+			if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+				switch(JSON.parse(xmlhttp.responseText).status){
+					case 0:
+						document.getElementById("status_join").innerHTML="Enviado con éxito";
+						break;
+						case 1:
+						document.getElementById("status_join").innerHTML="Se ha producido un error. Intentalo de nuevo en unos momentos, por favor.";
+						break;
+						case 2:
+						document.getElementById("status_join").innerHTML="Necesitamos que uses tu correo @estudiante.uam.es para saber que eres un estudiante.";
+						break;
+				}
+			}
+		}
+		xmlhttp.open("POST", url, true);
+		xmlhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+		xmlhttp.send(JSON.stringify({email:document.getElementById("name_join").value,name:document.getElementById("email_join").value}));
+}
+
+
+function sendDreamspark(){	
+	var xmlhttp = new XMLHttpRequest();
+	var url = "/API/request/dreamspark";
+
+		xmlhttp.onreadystatechange = function () {
+			if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+				switch(JSON.parse(xmlhttp.responseText).status){
+					case 0:
+						document.getElementById("status_dreamspark").innerHTML="Enviado con éxito";
+						break;
+						case 1:
+						document.getElementById("status_dreamspark").innerHTML="Se ha producido un error. Intentalo de nuevo en unos momentos, por favor.";
+						break;
+						case 2:
+						document.getElementById("status_dreamspark").innerHTML="Necesitamos que uses tu correo @estudiante.uam.es para saber que eres un estudiante.";
+						break;
+				}
+			}
+		}
+		xmlhttp.open("POST", url, true);
+		xmlhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+		xmlhttp.send(JSON.stringify({email:document.getElementById("name_dreamspark").value,name:document.getElementById("email_dreamspark").value}));
+}

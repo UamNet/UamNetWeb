@@ -3,6 +3,7 @@
 
 <head>
 	<title>UamNet</title>
+	<link rel="stylesheet" href="css/ui-dark.min.css" />
 	<link rel="stylesheet" href="css/style.css" />
 	<link rel="stylesheet" href="css/tiles.css" />
 	<script src="js/index.js"></script>
@@ -16,15 +17,160 @@
 		<h1 style="position:absolute;left:calc(10% + 80px);top:25px;margin-top:0px;">UamDotNet</h1>
 	</div>
 	<div id="content">
-		<h2 style="color:white;">¡En desarrollo! Dentro de nada podras ver nuestra web :)</h2>
+		<div class="box action" id="aboutus" data-opensection="join">
+			<div class="card white">
+				<div class="front EPSpic">
+					<div class="bigwhitetext">
+						UAM.Net
+					</div>
+				</div>
+				<div class="back skyblue">
+					<div class="cardcontent">
+						<p>El club DotNet de la Universidad Autónoma de Madrid esta formado por estudiantes de la Universidad Autónoma de Madrid
+							que aspiran a aprender y divulgar sobre tecnogías que complementen nuestros estudios. Nos patrocina Microsoft, pero
+							nuestras actividades estan creadas por y para estudiantes, ¿te apuntas?</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="box action" id="eventsTile" data-opensection="events">
+			<div class="card white">
+				<div class="front talkPic">
+					<div class="bigwhitetext">
+						Eventos
+					</div>
+				</div>
+				<div class="back green">
+					<p>¿Quieres aprender sobre algo nuevo? ¿Tienes ganas de descubir nuevas tecnologías que usar en tus proyectos? ¿O quizás
+						adquirir esa habilidad clave que te abrirá puertas en el futuro? Sea, lo que sea, con nuestros eventos te tenemos cubierto.</p>
+				</div>
+			</div>
+		</div>
+		<div class="box action" id="dreamsparkTile" data-opensection="dreamspark">
+			<div class="card gray">
+				<div class="front dreamsparkPic"></div>
+				<div class="back">
+					<p>Software GRATIS. Windows. Visual Studio. Windows Server. Exchange. Lync. SDKs. ¿Hemos mencionado que es gratis?</p>
+				</div>
+			</div>
+		</div>
+		<div class="box action" id="membersTile" data-opensection="members">
+			<div class="card white">
+				<div class="front codePic">
+					<div class="bigwhitetext">
+						Miembros
+					</div>
+					<img class="facepic" id="facepic" src="img/user0.jpg" />
+				</div>
+				<div class="back brown">
+					<p>Estos son los miembros del club, ¿te gustaria ver tu cara aqui? ¡Apúntate!</p>
+				</div>
+			</div>
+		</div>
+		<div class="box action" id="twitter" data-openlink="https://twitter.com/intent/follow?original_referer=https%3A%2F%2Fabout.twitter.com%2Fes%2Fresources%2Fbuttons&ref_src=twsrc%5Etfw&region=follow_link&screen_name=uamnet&tw_p=followbutton">
+			<div class="card white">
+				<div class="front twitterPic"></div>
+				<div class="back twitterblue" style="line-height:100px;">@uamnet</div>
+			</div>
+		</div>
+		<div class="box action" id="mail" data-openlink="mailto:uamnet@live.com">
+			<div class="card mailblue">
+				<div class="front mailPic"></div>
+				<div class="back" style="line-height:33px;">
+					uamnet
+					<br/>@
+					<br/>live.com
+				</div>
+			</div>
+		</div>
+		<div class="box action" id="github" data-openlink="http://www.github.com/uamnet">
+			<div class="card githubpurple">
+				<div class="front githubPic"></div>
+				<div class="back" style="color:white;line-height:100px;">UamNet</div>
+			</div>
+		</div>
+		<div class="box action" id="youtube" data-openlink="https://www.youtube.com/channel/UCnFiXpFhUyoEDhDsJJfhyOQ">
+			<div class="card youtubered">
+				<div class="front youtubePic"></div>
+				<div class="back" style="color:white;line-height:100px;">UamDotNet</div>
+			</div>
+		</div>
+		<div class="box action" id="news" data-openlink="http://www.twitter.com/uamnet">
+			<div class="card white">
+				<div id="newsCard" class="front codePic">
+					<div id="newsBox"></div>
+				</div>
+				<div class="back purple">
+					<p>Estas son las ultimas noticias y novedades del club. Son mas interesantes que el texto de detrás, este que estas leyendo.
+						Si quieres estar al tanto, siguenos en Twitter: @uamnet</p>
+				</div>
+			</div>
+		</div>
 	</div>
 	<div id="members">
 		<img class="action" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGFSURBVHhe7Zo5TgNBEEUtIgIfwAcgIPRuH4GQWxIQYOMtJCBwSMgRuIXNm6myGgeNhJCQqfpPKvUs38H7PZOM3BFCCCGEuCSOx2P3cDjc+GkuXP6V+eD41i/noBFG/IG1heM9c+e3Y4Nvu/OmXuDai0figufZzp/g2o6ZeywmeNbkt8zMYzHBU/KmXHD5qcdigmdNfiP5yOBZk18zE4/FBE/Jm3LB5cceiwmeNfmV5CODZ03+mWXksZggKPnW+AuNPDP0WEzwrMkvJR8ZPL+TH3gsJnjW5BcZ5Gufsd5Zeh6LCYK1nX9i6Xvs4rny9ccg2fz22s6SQgk9f9zP8Nei67HYIDtndqZe+G+vwq9AdsZsTb2gEiBbCVOVYCVsTL2gEiBbCROVYCWsTb2gEiBbCWOVYCWsTL2gEiBVCYiOEG6+Dp+hEiBVCcgOVYKVsDT1gkqAbCUM0peAaO3z2qNH4oNvH+GFqbfybyz3fjsHCLdPApPvz9InmhLSygshhBDij+h0PgG5Mw5zvBOrLwAAAABJRU5ErkJggg=="
 		width="64" height="64" style="vertical-align:bottom;" data-opensection="content">
 		<h2>Miembros</h2>
 		<div id="membersList">
-			
+
 		</div>
+	</div>
+	<div id="join">
+		<img class="action" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGFSURBVHhe7Zo5TgNBEEUtIgIfwAcgIPRuH4GQWxIQYOMtJCBwSMgRuIXNm6myGgeNhJCQqfpPKvUs38H7PZOM3BFCCCGEuCSOx2P3cDjc+GkuXP6V+eD41i/noBFG/IG1heM9c+e3Y4Nvu/OmXuDai0figufZzp/g2o6ZeywmeNbkt8zMYzHBU/KmXHD5qcdigmdNfiP5yOBZk18zE4/FBE/Jm3LB5cceiwmeNfmV5CODZ03+mWXksZggKPnW+AuNPDP0WEzwrMkvJR8ZPL+TH3gsJnjW5BcZ5Gufsd5Zeh6LCYK1nX9i6Xvs4rny9ccg2fz22s6SQgk9f9zP8Nei67HYIDtndqZe+G+vwq9AdsZsTb2gEiBbCVOVYCVsTL2gEiBbCROVYCWsTb2gEiBbCWOVYCWsTL2gEiBVCYiOEG6+Dp+hEiBVCcgOVYKVsDT1gkqAbCUM0peAaO3z2qNH4oNvH+GFqbfybyz3fjsHCLdPApPvz9InmhLSygshhBDij+h0PgG5Mw5zvBOrLwAAAABJRU5ErkJggg=="
+		width="64" height="64" style="vertical-align:bottom;" data-opensection="content">
+		<h2>Únete</h2>
+		<br/>
+		<br/>
+		<p>
+			¿Quieres unirte al club? No conlleva ninguna obligación y te mantendremos al tanto de todas las novedades. Es muy sencillo, solo tienes que rellenar este formulario. 
+		</p>
+		<br/>
+		<iframe style="width:80%;height:700px;" id="join_iframe">
+  			<p>Tu navegador no soporta iframe. UamDotNet recomienda Microsoft Edge.</p>
+		</iframe>
+		<!--Nombre:
+		<br/>
+		<input type="text" id="name_join" class='win-textbox'></input>
+		<br/>
+		Email:
+		<br/>
+		<input type="text" id="email_join" class='win-textbox'></input>
+		<br/>
+		<button id="send_join" class="win-button">Enviar</button>
+		<br/>
+		<div id="status_join"></div>-->
+	</div>
+	<div id="events">
+		<img class="action" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGFSURBVHhe7Zo5TgNBEEUtIgIfwAcgIPRuH4GQWxIQYOMtJCBwSMgRuIXNm6myGgeNhJCQqfpPKvUs38H7PZOM3BFCCCGEuCSOx2P3cDjc+GkuXP6V+eD41i/noBFG/IG1heM9c+e3Y4Nvu/OmXuDai0figufZzp/g2o6ZeywmeNbkt8zMYzHBU/KmXHD5qcdigmdNfiP5yOBZk18zE4/FBE/Jm3LB5cceiwmeNfmV5CODZ03+mWXksZggKPnW+AuNPDP0WEzwrMkvJR8ZPL+TH3gsJnjW5BcZ5Gufsd5Zeh6LCYK1nX9i6Xvs4rny9ccg2fz22s6SQgk9f9zP8Nei67HYIDtndqZe+G+vwq9AdsZsTb2gEiBbCVOVYCVsTL2gEiBbCROVYCWsTb2gEiBbCWOVYCWsTL2gEiBVCYiOEG6+Dp+hEiBVCcgOVYKVsDT1gkqAbCUM0peAaO3z2qNH4oNvH+GFqbfybyz3fjsHCLdPApPvz9InmhLSygshhBDij+h0PgG5Mw5zvBOrLwAAAABJRU5ErkJggg=="
+		width="64" height="64" style="vertical-align:bottom;" data-opensection="content">
+		<h2>Eventos</h2>
+		<br/>
+		<div id="events-content"></div>
+	</div>
+	<div id="dreamspark">
+		<img class="action" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGFSURBVHhe7Zo5TgNBEEUtIgIfwAcgIPRuH4GQWxIQYOMtJCBwSMgRuIXNm6myGgeNhJCQqfpPKvUs38H7PZOM3BFCCCGEuCSOx2P3cDjc+GkuXP6V+eD41i/noBFG/IG1heM9c+e3Y4Nvu/OmXuDai0figufZzp/g2o6ZeywmeNbkt8zMYzHBU/KmXHD5qcdigmdNfiP5yOBZk18zE4/FBE/Jm3LB5cceiwmeNfmV5CODZ03+mWXksZggKPnW+AuNPDP0WEzwrMkvJR8ZPL+TH3gsJnjW5BcZ5Gufsd5Zeh6LCYK1nX9i6Xvs4rny9ccg2fz22s6SQgk9f9zP8Nei67HYIDtndqZe+G+vwq9AdsZsTb2gEiBbCVOVYCVsTL2gEiBbCROVYCWsTb2gEiBbCWOVYCWsTL2gEiBVCYiOEG6+Dp+hEiBVCcgOVYKVsDT1gkqAbCUM0peAaO3z2qNH4oNvH+GFqbfybyz3fjsHCLdPApPvz9InmhLSygshhBDij+h0PgG5Mw5zvBOrLwAAAABJRU5ErkJggg=="
+		width="64" height="64" style="vertical-align:bottom;" data-opensection="content">
+		<h2>Dreamspark</h2>
+		<br/>
+		<br/>
+		<p>
+			El Dreamspark académico te permite acceder a software de Microsoft de manera gratuita. Para registrarte, tienes que rellenar este formulario. Si ya tienes tus credenciales, dirigete a <a href="http://dreamspark.uam.es" class="win-link ">dreamspark.uam.es</a>
+		</p>
+		<iframe style="width:80%;height:700px;" id="dreamspark_iframe">
+  			<p>Tu navegador no soporta iframe. UamDotNet recomienda Microsoft Edge.</p>
+		</iframe>
+		<!--<br/>
+		Nombre:
+		<br/>
+		<input type="text" id="name_dreamspark" class='win-textbox'></input>
+		<br/>
+		Email:
+		<br/>
+		<input type="text" id="email_dreamspark" class='win-textbox'></input>
+		<br/>
+		<button id="send_dreamspark" class="win-button">Enviar</button>
+		<br/>
+		<div id="status_dreamspark"></div>-->
 	</div>
 	<div id="fadeout"></div>
 	<div id="fadeout_section"></div>

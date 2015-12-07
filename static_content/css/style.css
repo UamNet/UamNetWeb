@@ -1,3 +1,8 @@
+html{
+	overflow-y: auto;
+}
+
+
 body{
 	background:black;
 	font-family: 'Segoe UI', sans-serif;
@@ -103,10 +108,20 @@ h2{
 	transform-style: preserve-3d;
 	display: block;
 	position: absolute;
+	z-index: -1;
 }
 
 .white{
 	background-color: white;
+}
+
+.purple{
+	background-color: rebeccapurple;
+}
+
+
+.twitterblue{
+	background-color: #4099FF;
 }
 
 .bigwhitetext{
@@ -145,8 +160,8 @@ h2{
 	 width:100%;
 	 height:100%;
 	 display: block;
-	 opacity: 0;
-	 z-index: -1000;
+	 opacity: 1;
+	 z-index: 1000;
  }
  
   #fadeout_section{
@@ -211,3 +226,87 @@ h2{
 	 top:50px;
 	 transition:top 1s;
  }
+ 
+ .card p{
+	 margin: 0;
+	 margin-left:15px;
+	 margin-right:15px;
+   position: absolute;             
+   top: 50%;                       
+   transform: translate(0, -50%);
+   text-align: center;
+   
+ }
+ 
+ 
+ #join{
+	position: absolute;
+	top:110px;
+	left:10%;
+	width:80%;
+	text-align: center;
+	perspective: 1000px;
+	display: hidden;
+	color:white;
+}
+
+ #events{
+	position: absolute;
+	top:110px;
+	left:10%;
+	width:80%;
+	text-align: center;
+	perspective: 1000px;
+	display: hidden;
+	color:white;
+}
+
+ #dreamspark{
+	position: absolute;
+	top:110px;
+	left:10%;
+	width:80%;
+	text-align: center;
+	perspective: 1000px;
+	display: hidden;
+	color:white;
+}
+
+.event{
+	display:block;
+	width:100%;
+	margin-bottom:10px;
+	overflow:hidden;
+	padding:10px;
+}
+
+.event .title{
+	font-size: 30px;
+}
+.event .by{
+ font-size: 20px;
+}
+.event .place{
+	font-size: 20px;
+}
+
+.event .day{
+	font-size: 30px;
+}
+
+.event .month{
+font-size: 20px;
+}
+.event .time{
+font-size: 20px;
+}
+
+.left{
+	text-align: left;
+	float:left;
+}
+
+.right{
+	text-align: right;
+	float:right;
+}

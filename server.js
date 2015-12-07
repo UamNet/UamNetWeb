@@ -23,6 +23,22 @@ app.get('/API/users', function (req, res, next) {
     res.json(users);
 });
 
+//Es posible solicitar los datos de los eventos en formato JSON
+app.get('/API/events', function (req, res, next) {
+	var file = fs.readFileSync("data/events.json", "utf8");
+    var events = JSON.parse(file);
+	for (var i = 0; i < events.length; i++) {
+		events[i].id = i;
+	}
+	
+	//Do not cache the users, at least during developement!
+	res.header('Cache-Control', 'private, no-cache, no-store, must-revalidate');
+	res.header('Expires', '-1');
+	res.header('Pragma', 'no-cache');
+
+    res.json(events);
+});
+
 
 var OAuth = require('oauth').OAuth;
 var oa = new OAuth(
@@ -54,19 +70,19 @@ app.get('/API/news', function (req, res, next) {
 //Recibe las peticiones que desencadenan un mail
 var nodemailer = require('nodemailer');
 var transporter = nodemailer.createTransport({
-    service: 'Gmail',
+    service: 'hotmail',
     auth: {
-        user: 'uamnetbot@gmail.com',
-        pass: process.env.mailbotpassword
+        user: 'uamnet@live.com',
+        pass: process.env.mailpassword
     }
 });
 
 app.post('/API/request/member', function (req, res, next) {
 	console.log(req.body);
 	var mailOptions = {
-		from: 'Bot UamNet <uamnetbot@gmail.com>', // sender address
+		from: 'uamnet@live.com', // sender address
 		to: 'uamnet@live.com', // list of receivers
-		subject: '[Member request]', // Subject line
+		subject: '[Member request]' + new Date(), // Subject line
 		text: 'Hey', // plaintext body
 		html: 'Hey' // html body
 	};
@@ -75,20 +91,20 @@ app.post('/API/request/member', function (req, res, next) {
 		mailOptions.text = mailOptions.html = "Email:" + req.body.email + "\Name:" + req.body.name;
 		transporter.sendMail(mailOptions, function (error, info) {
 			if (error) {
-				res.json({"Status":1});
+				res.json({ "status": 1, "error": error,"info":info });
 			} else {
-				res.json({"Status":0});
+				res.json({ "status": 0 });
 			}
 		});
 	} else {
-		mailOptions.subject="UamNet - Do Not Reply"
-		mailOptions.to=req.body.email;
-		mailOptions.text = mailOptions.html = "Hola,\n Has solicitado ser miembro del club .Net, pero para poder añadirte necesitamos que uses tu cuenta @estudiante.uam.es para poder comprobar que efectivamente eres un alumno. Por favor, realiza la petición de nuevo con ese correo, disculpa las molestias. \n Un saludo,\n UamDotNet \n @uamnet";
+		mailOptions.subject = "UamNet - Do Not Reply" + new Date();
+		mailOptions.to = req.body.email;
+		mailOptions.text = mailOptions.html = "Hola" + req.body.name + ",\n Has solicitado ser miembro del club .Net, pero para poder añadirte necesitamos que uses tu cuenta @estudiante.uam.es para poder comprobar que efectivamente eres un alumno. Por favor, realiza la petición de nuevo con ese correo, disculpa las molestias. \n Un saludo,\n UamDotNet \n @uamnet";
 		transporter.sendMail(mailOptions, function (error, info) {
 			if (error) {
-				res.json({"Status":1});
+				res.json({ "status": 1, "error": error, "info":info });
 			} else {
-				res.json({"Status":2});
+				res.json({ "status": 2 });
 			}
 		});
 	}
@@ -97,9 +113,9 @@ app.post('/API/request/member', function (req, res, next) {
 app.post('/API/request/dreamspark', function (req, res, next) {
 	console.log(req.body);
 	var mailOptions = {
-		from: 'Bot UamNet <uamnetbot@gmail.com>', // sender address
+		from: 'uamnet@live.com', // sender address
 		to: 'uamnet@live.com', // list of receivers
-		subject: '[Dreamspark request]', // Subject line
+		subject: '[Dreamspark request]' + new Date(), // Subject line
 		text: 'Hey', // plaintext body
 		html: 'Hey' // html body
 	};
@@ -108,20 +124,20 @@ app.post('/API/request/dreamspark', function (req, res, next) {
 		mailOptions.text = mailOptions.html = "Email:" + req.body.email + "\Name:" + req.body.name;
 		transporter.sendMail(mailOptions, function (error, info) {
 			if (error) {
-				res.json({"Status":1});
+				res.json({ "status": 1, "error": error });
 			} else {
-				res.json({"Status":0});
+				res.json({ "status": 0 });
 			}
 		});
 	} else {
-		mailOptions.subject="UamNet - Do Not Reply"
-		mailOptions.to=req.body.email;
-		mailOptions.text = mailOptions.html = "Hola,\n Has solicitado acceso al Dreamspark academico, pero para poder añadirte necesitamos que uses tu cuenta @estudiante.uam.es para poder comprobar que efectivamente eres un alumno. Por favor, realiza la petición de nuevo con ese correo, disculpa las molestias. \n Un saludo,\n UamDotNet \n @uamnet";
+		mailOptions.subject = "UamNet - Do Not Reply" + new Date();
+		mailOptions.to = req.body.email;
+		mailOptions.text = mailOptions.html = "Hola " + req.body.name + ",\n Has solicitado acceso al Dreamspark academico, pero para poder añadirte necesitamos que uses tu cuenta @estudiante.uam.es para poder comprobar que efectivamente eres un alumno. Por favor, realiza la petición de nuevo con ese correo, disculpa las molestias. \n Un saludo,\n UamDotNet \n @uamnet";
 		transporter.sendMail(mailOptions, function (error, info) {
 			if (error) {
-				res.json({"Status":1});
+				res.json({ "status": 1, "error": error });
 			} else {
-				res.json({"Status":2});
+				res.json({ "status": 2 });
 			}
 		});
 	}
