@@ -63,9 +63,11 @@ var refreshSection = {
 					document.getElementById("facepic").style.transform = "scale(0.1,0.1)";
 					document.getElementById("facepic").style["left"] = (membersId % 3) * 200 + "px";
 					setTimeout(function () {
-						document.getElementById("facepic").src = liveTiles.members[membersId % liveTiles.members.length].picture;
 						document.getElementById("facepic").style.transform = "scale(1,1)";
 					}, 1000);
+					setTimeout(function () {
+						document.getElementById("facepic").src = liveTiles.members[membersId % liveTiles.members.length].picture;
+					}, 500);
 				}, 2000);
 			}
 		}
@@ -81,7 +83,19 @@ var refreshSection = {
 				var members = JSON.parse(xmlhttp.responseText);
 				document.getElementById("membersList").innerHTML = '<div class="member action" onclick="switchSections(\'join\')"><img src="img/plus.gif" /><h3>TU</h3><h4>Únete al club</h4></div>';
 				members.forEach(function (x) {
-					document.getElementById("membersList").innerHTML += '<div class="member"><img src="' + x.picture + '"/><h3>' + x.firstName + '</h3><h4>' + x.lastName + '</h4></div>';
+					var badges = "";
+					var colores = { "Presidente": "#0082A7", "Imagine Cup": "#552d7d", "Speaker": "#00bdf2" };
+					if (x.badges) {
+						x.badges.forEach(function (x) { if (colores[x]) { badges += '<div class="badge" style="background:' + colores[x] + ';">' + x + '</div>' } else { badges += '<div class="badge">' + x + '</div>' } });
+					}
+					var links = "";
+					if (x.links) {
+						x.links.forEach(function (x) { links += '<a href="' + x.url + '" onclick="event.stopPropagation();" target="_blank">' + x.text + '</a><br>' });
+					}
+					if(!x.bio){
+						x.bio="";
+					}
+					document.getElementById("membersList").innerHTML += '<div class="member" onclick="if(this.style.width!=\'600px\'){this.style.width=\'600px\'}else{this.style.width=\'200px\'}"><div class="leftbox"><img src="' + x.picture + '"/><h3>' + x.firstName + '</h3><h4>' + x.lastName + '</h4></div><div class="rightbox"><div class="bio">' + x.bio + '</div><div class="badges">' + badges + '</div><div class="links">' + links + '</div></div></div>';
 				});
 			}
 		}
