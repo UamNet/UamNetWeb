@@ -33,6 +33,17 @@
 	{
 		"firstName": "Juan Carlos",
 		"lastName": "Pereira Kohatsu",
-		"picture": "https://avatars1.githubusercontent.com/u/16213780"
+		"picture": "https://avatars1.githubusercontent.com/u/16213780",
+		"bio": "Futuro ingeniero informático y Youtuber. Me encantan las bases de datos y bailar.",
+		"links": [
+			{
+				"text": "Mi canal de Youtube",
+				"url": "https://www.youtube.com/JCPK94"
+			},
+			{
+				"text": "Twitter (@yoshimoncho)",
+				"url": "https://twitter.com/Yoshimoncho"
+			}
+		]
 	}
 ]
