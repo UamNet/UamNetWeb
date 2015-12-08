@@ -28,7 +28,21 @@
 	{
 		"firstName": "Silvia",
 		"lastName": "Barbero Rodríguez",
-		"picture": "https://www.imaginecup.com/image/userprofile/15626"
+		"picture": "https://www.imaginecup.com/image/userprofile/15626",
+		"bio": "Artist in her way to make videogames. Shy and unsure but I'll do my best to help! =D",
+		"badges": [
+			"Imagine Cup"
+		],
+		"links": [
+			{
+				"text": "Deviantart",
+				"url": "http://silvishinystar.deviantart.com/"
+			},
+			{
+				"text": "Twitter (@SilviShinyStar)",
+				"url": "https://twitter.com/SilviShinyStar"
+			}
+		]
 	},
 	{
 		"firstName": "Juan Carlos",
