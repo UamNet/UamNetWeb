@@ -196,8 +196,32 @@ h2{
 	 margin:20px;
 	 background-color: #555;
 	 text-align: center;
+	 transition: all 0.2s ease-out;
+	 overflow:hidden;
  }
  
+ .member:hover{
+	 background-color: #777;
+ }
+ 
+ .member:active{
+	 transform: scale(1.1,1.1);
+ }
+ 
+ .member .leftbox{
+	 width:200px;
+	 height:200px;
+	 float:left;
+ }
+ 
+  .member .rightbox{
+	 width:350px;
+	 height:180px;
+	 margin:10px;
+	 float:right;
+	 text-align:left;
+ }
+
  .member img{
 	 width:100px;
 	 height:100px;
@@ -215,6 +239,30 @@ h2{
 	 font-weight: 100;
 	 margin:0px;
  }
+
+ .member .bio{
+
+ }
+  .member .badges{
+
+ }
+ 
+   .member .badge{
+	 padding:8px;
+	 background-color:#0F0;
+	 border-radius: 8px;
+	 display:inline-block;
+	 margin:10px;
+ }
+ 
+  .member a{
+	  color:white;
+ }
+ 
+   .member a:visited{
+	  color:white;
+ }
+
 
  #newsBox{
 	 padding:10px;
