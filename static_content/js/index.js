@@ -49,9 +49,11 @@ var refreshSection = {
 					document.getElementById("facepic").style.transform = "scale(0.1,0.1)";
 					document.getElementById("facepic").style["left"] = (membersId % 3) * 200 + "px";
 					setTimeout(function () {
-						document.getElementById("facepic").src = liveTiles.members[membersId % liveTiles.members.length].picture;
 						document.getElementById("facepic").style.transform = "scale(1,1)";
 					}, 1000);
+					setTimeout(function () {
+						document.getElementById("facepic").src = liveTiles.members[membersId % liveTiles.members.length].picture;
+					}, 500);
 				}, 2000);
 			}
 		}
