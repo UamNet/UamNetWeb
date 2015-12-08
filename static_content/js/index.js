@@ -1,12 +1,12 @@
-var sections = ["content", "members","join","events","dreamspark"];
+var sections = ["content", "members", "join", "events", "dreamspark"];
 var liveTiles = {};
 
 var refreshSection = {
-	"dreamspark":function(){
-		document.getElementById("dreamspark_iframe").src="https://onedrive.live.com/redir?page=survey&resid=C54C5685052E8FDD!236&authkey=!ABZw3EPirQI2iaw&ithint=file%2cxlsx";
+	"dreamspark": function () {
+		document.getElementById("dreamspark_iframe").src = "https://onedrive.live.com/redir?page=survey&resid=C54C5685052E8FDD!236&authkey=!ABZw3EPirQI2iaw&ithint=file%2cxlsx";
 	},
-	"join":function(){
-		document.getElementById("join_iframe").src="https://onedrive.live.com/redir?page=survey&resid=C54C5685052E8FDD!234&authkey=!ACoCcPb0M17eQTQ&ithint=file%2cxlsx";
+	"join": function () {
+		document.getElementById("join_iframe").src = "https://onedrive.live.com/redir?page=survey&resid=C54C5685052E8FDD!234&authkey=!ACoCcPb0M17eQTQ&ithint=file%2cxlsx";
 	},
 	"content": function () {
 		var xmlhttp = new XMLHttpRequest();
@@ -15,25 +15,25 @@ var refreshSection = {
 		xmlhttp.onreadystatechange = function () {
 			if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
 				var news = JSON.parse(JSON.parse(xmlhttp.responseText));
-				liveTiles.news=news;
-				document.getElementById("newsBox").innerHTML=news[0].text;
-				var newsId=0;
+				liveTiles.news = news;
+				document.getElementById("newsBox").innerHTML = news[0].text;
+				var newsId = 0;
 				window.setInterval(function () {
-					var i=(newsId++)%news.length;
-					if(news[i].entities.media&&news[i].entities.media[0]&&news[i].entities.media[0].type=="photo"){
-					document.getElementById("newsCard").style["background-image"] = "url("+news[i].entities.media[0].media_url_https+")";
-					document.getElementById("newsCard").style["background-size"] = "cover";
-					}else{
-						document.getElementById("newsCard").style["background-image"]="url(img/code.png)";
+					var i = (newsId++) % news.length;
+					if (news[i].entities.media && news[i].entities.media[0] && news[i].entities.media[0].type == "photo") {
+						document.getElementById("newsCard").style["background-image"] = "url(" + news[i].entities.media[0].media_url_https + ")";
+						document.getElementById("newsCard").style["background-size"] = "cover";
+					} else {
+						document.getElementById("newsCard").style["background-image"] = "url(img/code.png)";
 					}
-					document.getElementById("newsBox").style["top"] = 10+Math.floor(Math.random()*100) + "px";
-					document.getElementById("newsBox").innerHTML=news[i].text;
+					document.getElementById("newsBox").style["top"] = 10 + Math.floor(Math.random() * 100) + "px";
+					document.getElementById("newsBox").innerHTML = news[i].text;
 				}, 3000);
 			}
 		}
 		xmlhttp.open("GET", url, true);
 		xmlhttp.send();
-		
+
 		var xmlhttp2 = new XMLHttpRequest();
 		url = "API/users";
 
@@ -69,7 +69,19 @@ var refreshSection = {
 				var members = JSON.parse(xmlhttp.responseText);
 				document.getElementById("membersList").innerHTML = '<div class="member action" data-opensection="join"><img src="img/plus.gif" /><h3>TU</h3><h4>Únete al club</h4></div>';
 				members.forEach(function (x) {
-					document.getElementById("membersList").innerHTML += '<div class="member"><img src="' + x.picture + '"/><h3>' + x.firstName + '</h3><h4>' + x.lastName + '</h4></div>';
+					var badges = "";
+					var colores = { "Presidente": "#0082A7", "Imagine Cup": "#552d7d", "Speaker": "#00bdf2" };
+					if (x.badges) {
+						x.badges.forEach(function (x) { if (colores[x]) { badges += '<div class="badge" style="background:' + colores[x] + ';">' + x + '</div>' } else { badges += '<div class="badge">' + x + '</div>' } });
+					}
+					var links = "";
+					if (x.links) {
+						x.links.forEach(function (x) { links += '<a href="' + x.url + '" onclick="event.stopPropagation();" target="_blank">' + x.text + '</a><br>' });
+					}
+					if(!x.bio){
+						x.bio="";
+					}
+					document.getElementById("membersList").innerHTML += '<div class="member" onclick="if(this.style.width!=\'600px\'){this.style.width=\'600px\'}else{this.style.width=\'200px\'}"><div class="leftbox"><img src="' + x.picture + '"/><h3>' + x.firstName + '</h3><h4>' + x.lastName + '</h4></div><div class="rightbox"><div class="bio">' + x.bio + '</div><div class="badges">' + badges + '</div><div class="links">' + links + '</div></div></div>';
 				});
 			}
 		}
@@ -85,16 +97,16 @@ var refreshSection = {
 				var events = JSON.parse(xmlhttp.responseText);
 				document.getElementById("events-content").innerHTML = '';
 				events.forEach(function (x) {
-					var div='<div class="event" style="background-color:'+x.color+';">';
-					div+='<div class="left">';
-					div+='<div class="title">'+x.title+"</div>";
-					div+='<div class="by">'+x.by+"</div>";
-					div+='<div class="place">'+x.place+"</div>";
-					div+='</div><div class="right">'
-					div+='<div class="day">'+x.day+"</div>"
-					div+='<div class="month">'+x.month+"</div>";
-					div+='<div class="time">'+x.time+"</div>";
-					div+='</div></div>';
+					var div = '<div class="event" style="background-color:' + x.color + ';">';
+					div += '<div class="left">';
+					div += '<div class="title">' + x.title + "</div>";
+					div += '<div class="by">' + x.by + "</div>";
+					div += '<div class="place">' + x.place + "</div>";
+					div += '</div><div class="right">'
+					div += '<div class="day">' + x.day + "</div>"
+					div += '<div class="month">' + x.month + "</div>";
+					div += '<div class="time">' + x.time + "</div>";
+					div += '</div></div>';
 					document.getElementById("events-content").innerHTML += div;
 				});
 			}
@@ -169,8 +181,8 @@ window.addEventListener("load", function () {
 			})(x));
 		}
 	}
-// document.getElementById("send_join").addEventListener("click",sendJoin);
-// document.getElementById("send_dreamspark").addEventListener("click",sendDreamspark);
+	// document.getElementById("send_join").addEventListener("click",sendJoin);
+	// document.getElementById("send_dreamspark").addEventListener("click",sendDreamspark);
 
 });
 
@@ -179,51 +191,51 @@ window.addEventListener("load", function () {
 //Send forms data
 
 
-function sendJoin(){	
+function sendJoin() {
 	var xmlhttp = new XMLHttpRequest();
 	var url = "/API/request/member";
 
-		xmlhttp.onreadystatechange = function () {
-			if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-				switch(JSON.parse(xmlhttp.responseText).status){
-					case 0:
-						document.getElementById("status_join").innerHTML="Enviado con éxito";
-						break;
-						case 1:
-						document.getElementById("status_join").innerHTML="Se ha producido un error. Intentalo de nuevo en unos momentos, por favor.";
-						break;
-						case 2:
-						document.getElementById("status_join").innerHTML="Necesitamos que uses tu correo @estudiante.uam.es para saber que eres un estudiante.";
-						break;
-				}
+	xmlhttp.onreadystatechange = function () {
+		if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+			switch (JSON.parse(xmlhttp.responseText).status) {
+				case 0:
+					document.getElementById("status_join").innerHTML = "Enviado con éxito";
+					break;
+				case 1:
+					document.getElementById("status_join").innerHTML = "Se ha producido un error. Intentalo de nuevo en unos momentos, por favor.";
+					break;
+				case 2:
+					document.getElementById("status_join").innerHTML = "Necesitamos que uses tu correo @estudiante.uam.es para saber que eres un estudiante.";
+					break;
 			}
 		}
-		xmlhttp.open("POST", url, true);
-		xmlhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
-		xmlhttp.send(JSON.stringify({email:document.getElementById("name_join").value,name:document.getElementById("email_join").value}));
+	}
+	xmlhttp.open("POST", url, true);
+	xmlhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+	xmlhttp.send(JSON.stringify({ email: document.getElementById("name_join").value, name: document.getElementById("email_join").value }));
 }
 
 
-function sendDreamspark(){	
+function sendDreamspark() {
 	var xmlhttp = new XMLHttpRequest();
 	var url = "/API/request/dreamspark";
 
-		xmlhttp.onreadystatechange = function () {
-			if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-				switch(JSON.parse(xmlhttp.responseText).status){
-					case 0:
-						document.getElementById("status_dreamspark").innerHTML="Enviado con éxito";
-						break;
-						case 1:
-						document.getElementById("status_dreamspark").innerHTML="Se ha producido un error. Intentalo de nuevo en unos momentos, por favor.";
-						break;
-						case 2:
-						document.getElementById("status_dreamspark").innerHTML="Necesitamos que uses tu correo @estudiante.uam.es para saber que eres un estudiante.";
-						break;
-				}
+	xmlhttp.onreadystatechange = function () {
+		if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+			switch (JSON.parse(xmlhttp.responseText).status) {
+				case 0:
+					document.getElementById("status_dreamspark").innerHTML = "Enviado con éxito";
+					break;
+				case 1:
+					document.getElementById("status_dreamspark").innerHTML = "Se ha producido un error. Intentalo de nuevo en unos momentos, por favor.";
+					break;
+				case 2:
+					document.getElementById("status_dreamspark").innerHTML = "Necesitamos que uses tu correo @estudiante.uam.es para saber que eres un estudiante.";
+					break;
 			}
 		}
-		xmlhttp.open("POST", url, true);
-		xmlhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
-		xmlhttp.send(JSON.stringify({email:document.getElementById("name_dreamspark").value,name:document.getElementById("email_dreamspark").value}));
+	}
+	xmlhttp.open("POST", url, true);
+	xmlhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+	xmlhttp.send(JSON.stringify({ email: document.getElementById("name_dreamspark").value, name: document.getElementById("email_dreamspark").value }));
 }
