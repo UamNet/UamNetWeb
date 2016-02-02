@@ -1,5 +1,14 @@
 [
 	{
+		"title": "Turing",
+		"by": "Germán Gomez Porras",
+		"place": "Sala de Grados",
+		"day": "5",
+		"month": "Enero",
+		"time": "13:00",
+		"color":"#b11d01"
+	},
+	{
 		"title": "Apps JavaScript para Windows 10",
 		"by": "Arcadio García Salvadores",
 		"place": "Sala de Grados",
