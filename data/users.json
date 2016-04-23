@@ -60,4 +60,19 @@
 			}
 		]
 	}
+	{
+		"firstName": "David",
+		"lastName": "Muñoz Miranda",
+		"picture": "https://avatars2.githubusercontent.com/u/15156723",
+		"bio": "Técnico de sistemas, aspirante a ingeniero informático. ",
+		"badges": [
+			"Speaker"
+		],
+		"links": [
+			{
+				"text": "Twitter (@DMunnozM)",
+				"url": "https://twitter.com/DMunnozM"
+			}
+		]
+	}
 ]
