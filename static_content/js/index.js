@@ -1,6 +1,11 @@
 var sections = ["content", "members", "join", "events", "dreamspark"];
 var liveTiles = {};
 
+var urlSection=(/http:\/\/uamnet\.azurewebsites\.net\/#(.*)/.exec(location.href)||[])[1];
+if(sections.filter(function(x){return x==urlSection}).length>0){
+	goTo(urlSection);
+}
+
 function switchSections(target) {
 	document.getElementById("fadeout_section").style["z-index"] = "90";
 	document.getElementById("fadeout_section").style.opacity = "1";

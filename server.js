@@ -143,5 +143,24 @@ app.post('/API/request/dreamspark', function (req, res, next) {
 	}
 });
 
+app.get('/API/users', function (req, res, next) {
+	var file = fs.readFileSync("data/users.json", "utf8");
+    var users = JSON.parse(file);
+	for (var i = 0; i < users.length; i++) {
+		users[i].id = i;
+	}
+	
+	//Do not cache the users, at least during developement!
+	res.header('Cache-Control', 'private, no-cache, no-store, must-revalidate');
+	res.header('Expires', '-1');
+	res.header('Pragma', 'no-cache');
+
+    res.json(users);
+});
+
+app.get("/#*",function (req, res, next) {
+	res.sendFile('static_content/index.html');
+});
+
 //Iniciamos el servidor en el puerto que provee Azure, u 8080 si estamos probando en local
 app.listen(process.env.PORT || 8080);
