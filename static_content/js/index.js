@@ -150,7 +150,14 @@ function goTo(section) {
 window.addEventListener("load", function () {
 	document.getElementById("fadeout").style["z-index"] = "-10000";
 	document.getElementById("fadeout").style.opacity = "0";
-	goTo("content");
+
+
+	var urlSection=(/http:\/\/uamnet\.azurewebsites\.net\/#(.*)/.exec(location.href)||[])[1];
+	if(sections.filter(function(x){return x==urlSection}).length>0){
+		goTo(urlSection);
+	}else{
+		goTo("content");
+	}
 	
 	
 	//This piece of code makes the external link work and animate with just setting the data-openlink property
@@ -256,7 +263,3 @@ function sendDreamspark() {
 	xmlhttp.send(JSON.stringify({ email: document.getElementById("name_dreamspark").value, name: document.getElementById("email_dreamspark").value }));
 }
 
-var urlSection=(/http:\/\/uamnet\.azurewebsites\.net\/#(.*)/.exec(location.href)||[])[1];
-if(sections.filter(function(x){return x==urlSection}).length>0){
-	goTo(urlSection);
-}
