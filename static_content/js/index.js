@@ -1,10 +1,7 @@
 var sections = ["content", "members", "join", "events", "dreamspark"];
 var liveTiles = {};
 
-var urlSection=(/http:\/\/uamnet\.azurewebsites\.net\/#(.*)/.exec(location.href)||[])[1];
-if(sections.filter(function(x){return x==urlSection}).length>0){
-	goTo(urlSection);
-}
+
 
 function switchSections(target) {
 	document.getElementById("fadeout_section").style["z-index"] = "90";
@@ -257,4 +254,9 @@ function sendDreamspark() {
 	xmlhttp.open("POST", url, true);
 	xmlhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
 	xmlhttp.send(JSON.stringify({ email: document.getElementById("name_dreamspark").value, name: document.getElementById("email_dreamspark").value }));
+}
+
+var urlSection=(/http:\/\/uamnet\.azurewebsites\.net\/#(.*)/.exec(location.href)||[])[1];
+if(sections.filter(function(x){return x==urlSection}).length>0){
+	goTo(urlSection);
 }
