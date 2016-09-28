@@ -23,7 +23,18 @@
 	{
 		"firstName": "Pablo",
 		"lastName": "Gómez",
-		"picture": "https://avatars.githubusercontent.com/gomezabajo"
+		"picture": "https://avatars.githubusercontent.com/gomezabajo",
+		"bio": "Computer scientist, in love with Fleetwood Mac music. Researcher at @miso_uam",
+		"links": [
+			{
+				"text": "Mi página web",
+				"url": "http://gomezabajo.blogspot.com.es/"
+			},
+			{
+				"text": "Twitter (@GomezAbajo)",
+				"url": "https://twitter.com/gomezabajo"
+			}
+		]
 	},
 	{
 		"firstName": "Silvia",
