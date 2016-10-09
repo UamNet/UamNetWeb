@@ -128,3 +128,19 @@ top:0px;
 width:40%;
 height:200px;
 }
+
+#interestPollTile{
+	right:0px;
+	top:630px;
+	width:10%;
+	height:200px;
+}
+
+.blue {
+	background:blue;
+}
+
+.tech {
+	background:url(../img/tech.jpg) center;
+	background-size:cover;
+}
