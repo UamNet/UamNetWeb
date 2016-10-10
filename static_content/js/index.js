@@ -137,18 +137,8 @@ var refreshSection = {
 		xmlhttp.onreadystatechange = function () {
 			if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
 				var polls = JSON.parse(xmlhttp.responseText);
-				document.getElementById("events-content").innerHTML = '';
+				document.getElementById("polls-content").innerHTML = '';
 				polls.forEach(function (x) {
-					// var div = '<div class="event" style="background-color:' + x.color + ';">';
-					// div += '<div class="left">';
-					// div += '<div class="title">' + x.title + "</div>";
-					// div += '<div class="by">' + x.by + "</div>";
-					// div += '<div class="place">' + x.place + "</div>";
-					// div += '</div><div class="right">'
-					// div += '<div class="day">' + x.day + "</div>"
-					// div += '<div class="month">' + x.month + "</div>";
-					// div += '<div class="time">' + x.time + "</div>";
-					// div += '</div></div>';
 					document.getElementById("polls-content").innerHTML += x.content;
 				});
 			}
