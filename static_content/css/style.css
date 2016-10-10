@@ -320,6 +320,18 @@ h2{
 	color:white;
 }
 
+
+ #polls{
+	position: absolute;
+	top:110px;
+	left:10%;
+	width:80%;
+	text-align: center;
+	perspective: 1000px;
+	display: hidden;
+	color:white;
+}
+
 .event{
 	display:block;
 	width:100%;

@@ -39,6 +39,21 @@ app.get('/API/events', function (req, res, next) {
     res.json(events);
 });
 
+app.get('/API/polls', function (req, res, next) {
+	var file = fs.readFileSync("data/polls.json", "utf8");
+    var polls = JSON.parse(file);
+	for (var i = 0; i < polls.length; i++) {
+		polls[i].id = i;
+	}
+	
+	//Do not cache the users, at least during developement!
+	res.header('Cache-Control', 'private, no-cache, no-store, must-revalidate');
+	res.header('Expires', '-1');
+	res.header('Pragma', 'no-cache');
+
+    res.json(polls);
+});
+
 
 var OAuth = require('oauth').OAuth;
 var oa = new OAuth(
