@@ -3,7 +3,7 @@
 }
 
 .EPSpic{
-	background:url(../img/eps.jpg) center;
+	background:url(../img/eps.png) center;
 	background-size:cover;
 }
 
@@ -19,7 +19,7 @@
 }
 
 .talkPic{
-	background:url(../img/charla.jpg) center;
+	background:url(../img/charla.png) center;
 	background-size:cover;
 }
 
@@ -131,8 +131,8 @@ height:200px;
 
 #interestPollTile{
 	right:0px;
-	top:630px;
-	width:10%;
+	top:640px;
+	width:100%;
 	height:200px;
 }
 
@@ -141,6 +141,6 @@ height:200px;
 }
 
 .tech {
-	background:url(../img/tech.jpg) center;
+	background:url(../img/tech.png) center;
 	background-size:cover;
 }
