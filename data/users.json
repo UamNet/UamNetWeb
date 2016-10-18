@@ -25,10 +25,13 @@
 		"lastName": "Gómez",
 		"picture": "https://avatars.githubusercontent.com/gomezabajo",
 		"bio": "Computer scientist, in love with Fleetwood Mac music. Researcher at @miso_uam",
+		"badges": [
+			"Speaker"
+		],
 		"links": [
 			{
 				"text": "Mi página web",
-				"url": "http://gomezabajo.blogspot.com.es/"
+				"url": "http://www.gomezabajo.es/"
 			},
 			{
 				"text": "Twitter (@GomezAbajo)",
