@@ -9,6 +9,15 @@
         "color": "#666666"
     },
     {
+        "title": "Apúntate a la Imagine Cup",
+        "by": "Club .NET",
+        "place": "Local .NET",
+        "day": "11",
+        "month": "Noviembre",
+        "time": "14:00",
+        "color": "#8907aa"
+    },
+    {
         "title": "No es una navaja suiza, es C#",
         "by": "David Muñoz Miranda",
         "place": "Sala de Grados",
