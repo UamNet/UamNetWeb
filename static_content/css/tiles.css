@@ -122,6 +122,22 @@
 	background-color:#e62117;
 }
 
+#telegram{
+	left:110px;
+	top:530px;
+	width:100px;
+	height:100px;
+}
+
+.telegramPic{
+	background:url(../img/telegram.png) center;
+	background-size:cover;
+}
+
+.telegramblue{
+	background-color:#2aa1da;
+}
+
 #news{
 right:0px;
 top:0px;
