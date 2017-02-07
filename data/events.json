@@ -1,5 +1,77 @@
 [
     {
+        "title": "2017",
+        "by": "",
+        "place": "",
+        "day": "",
+        "month": "",
+        "time": "",
+        "color": "#666666"
+    },
+                 {
+        "title": "Hosted Web Apps",
+        "by": "Arcadio García Salvadores",
+        "place": "Sala de Grados",
+        "day": "28",
+        "month": "Abril",
+        "time": "13:00",
+        "color": "#006ac0"
+    },
+                     {
+        "title": "Becas de Microsoft en EEUU",
+        "by": "Arcadio García Salvadores",
+        "place": "Sala de Grados",
+        "day": "21",
+        "month": "Abril",
+        "time": "13:00",
+        "color": "#006ac0"
+    },
+                {
+        "title": "Taller Git",
+        "by": "Club .NET + CRM",
+        "place": "TBD",
+        "day": "24",
+        "month": "Marzo",
+        "time": "13:00",
+        "color": "#b11d01"
+    },
+            {
+        "title": "Desarrollo Full Stack",
+        "by": "Roberto Luis Bisbe",
+        "place": "Sala de Grados",
+        "day": "17",
+        "month": "Marzo",
+        "time": "13:00",
+        "color": "#b11d01"
+    },
+                    {
+        "title": "Taller Bots",
+        "by": "Club .NET",
+        "place": "TBD",
+        "day": "17",
+        "month": "Febrero",
+        "time": "16:00",
+        "color": "#b11d01"
+    },
+                {
+        "title": "HoloLens: Desarrollando para Mixed Reality",
+        "by": "Arcadio García Salvadores",
+        "place": "Sala de Grados",
+        "day": "10",
+        "month": "Febrero",
+        "time": "13:00",
+        "color": "#006ac0"
+    },
+        {
+        "title": "Hackathon Xamarin",
+        "by": "Club .NET",
+        "place": "Laboratorio 13",
+        "day": "25",
+        "month": "Enero",
+        "time": "17:30",
+        "color": "#00c140"
+    },
+    {
         "title": "2016",
         "by": "",
         "place": "",
@@ -37,7 +109,7 @@
     },
     {
         "title": "Hackathon Windows 10",
-        "by": "UAM.NET Club",
+        "by": "Club .NET",
         "place": "Laboratorio 13",
         "day": "24",
         "month": "Mayo",
