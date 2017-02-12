@@ -400,13 +400,13 @@ font-size: 20px;
 }
 
 .contentSplit{
-	left:0px !important;
+	left:2.5% !important;
 	width:60% !important;
 }
 
 #botContainer{
 	position:fixed;
-	width:40%;
+	width:35%;
 	right:-40%;
 	height: calc( 100% - 120px );
 	top:120px;
