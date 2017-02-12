@@ -14,6 +14,7 @@
         "place": "Sala de Grados",
         "day": "28",
         "month": "Abril",
+        "year":2017,
         "time": "13:00",
         "color": "#006ac0"
     },
@@ -23,6 +24,7 @@
         "place": "Sala de Grados",
         "day": "21",
         "month": "Abril",
+        "year":2017,
         "time": "13:00",
         "color": "#006ac0"
     },
@@ -32,6 +34,7 @@
         "place": "TBD",
         "day": "24",
         "month": "Marzo",
+        "year":2017,
         "time": "13:00",
         "color": "#8907aa"
     },
@@ -41,6 +44,7 @@
         "place": "Sala de Grados",
         "day": "17",
         "month": "Marzo",
+        "year":2017,
         "time": "13:00",
         "color": "#b11d01"
     },
@@ -50,6 +54,7 @@
         "place": "TBD",
         "day": "17",
         "month": "Febrero",
+        "year":2017,
         "time": "16:00",
         "color": "#b11d01"
     },
@@ -59,6 +64,7 @@
         "place": "Sala de Grados",
         "day": "10",
         "month": "Febrero",
+         "year":2017,
         "time": "13:00",
         "color": "#006ac0"
     },
@@ -68,6 +74,7 @@
         "place": "Laboratorio 13",
         "day": "25",
         "month": "Enero",
+        "year":2017,
         "time": "17:30",
         "color": "#00c140"
     },
@@ -86,6 +93,7 @@
         "place": "Local .NET",
         "day": "11",
         "month": "Noviembre",
+        "year":2016,
         "time": "14:00",
         "color": "#8907aa"
     },
@@ -95,6 +103,7 @@
         "place": "Sala de Grados",
         "day": "21",
         "month": "Octubre",
+        "year":2016,
         "time": "13:00",
         "color": "#006ac0"
     },
@@ -104,6 +113,7 @@
         "place": "Laboratorio 14",
         "day": "14",
         "month": "Octubre",
+        "year":2016,
         "time": "13:00",
         "color": "#00c140"
     },
@@ -113,6 +123,7 @@
         "place": "Laboratorio 13",
         "day": "24",
         "month": "Mayo",
+        "year":2016,
         "time": "13:00",
         "color": "#006ac0"
     },
@@ -122,6 +133,7 @@
         "place": "Sala de Grados",
         "day": "5",
         "month": "Enero",
+        "year":2016,
         "time": "13:00",
         "color": "#b11d01"
     },
@@ -140,6 +152,7 @@
         "place": "Sala de Grados",
         "day": "23",
         "month": "Octubre",
+        "year":2015,
         "time": "13:00",
         "color": "#006ac0"
     },
@@ -149,6 +162,7 @@
         "place": "Laboratorio 15",
         "day": "16",
         "month": "Octubre",
+        "year":2015,
         "time": "13:00",
         "color": "#b11d01"
     },
@@ -158,6 +172,7 @@
         "place": "Sala de Grados",
         "day": "9",
         "month": "Octubre",
+        "year":2015,
         "time": "13:00",
         "color": "#00c140"
     },
@@ -167,6 +182,7 @@
         "place": "Sala de Grados",
         "day": "2",
         "month": "Octubre",
+        "year":2015,
         "time": "13:00",
         "color": "#8907aa"
     },
@@ -176,6 +192,7 @@
         "place": "Sala de Grados",
         "day": "25",
         "month": "Septiembre",
+        "year":2015,
         "time": "13:00",
         "color": "#8907aa"
     },
@@ -185,6 +202,7 @@
         "place": "Sala de Grados",
         "day": "18",
         "month": "Septiembre",
+        "year":2015,
         "time": "13:00",
         "color": "#006ac0"
     },
@@ -194,6 +212,7 @@
         "place": "Sala de Grados",
         "day": "11",
         "month": "Septiembre",
+        "year":2015,
         "time": "13:00",
         "color": "#006ac0"
     }
