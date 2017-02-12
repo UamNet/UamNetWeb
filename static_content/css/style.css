@@ -63,6 +63,7 @@ h2{
 	left:10%;
 	width:80%;
 	text-align: center;
+	transition: all 1s;
 }
 
 .box{
@@ -369,4 +370,46 @@ font-size: 20px;
 .right{
 	text-align: right;
 	float:right;
+}
+
+#botButton{
+	position:absolute;
+	right:15%;
+	top:0px;
+	height:110px;
+	line-height: 110px;
+	padding-left: 20px;
+	padding-right: 20px;
+	background-color: #C00;
+	font-size: 50px;
+	transition: all 0.1s;
+	z-index: 200;
+}
+
+#botButton:hover{
+	background-color: #B00;
+}
+
+#botButton:active{
+	background-color: #A00;
+}
+
+.contentSplit{
+	left:0px !important;
+	width:60% !important;
+}
+
+#botContainer{
+	position:fixed;
+	width:40%;
+	right:-40%;
+	height: calc( 100% - 120px );
+	top:120px;
+	display: block;
+	background-color: white;
+	transition: all 1s;
+}
+
+.botContainerActive{
+	right:0% !important;
 }

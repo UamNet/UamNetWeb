@@ -220,9 +220,24 @@ window.addEventListener("load", function () {
 			})(x));
 		}
 	}
-	// document.getElementById("send_join").addEventListener("click",sendJoin);
-	// document.getElementById("send_dreamspark").addEventListener("click",sendDreamspark);
-
+	// Bot stuff
+	document.getElementById("botButton").addEventListener("click",function(){
+		if(document.getElementById("content").classList.contains("contentSplit")){
+			document.getElementById("content").classList.remove("contentSplit");
+			document.getElementById("fadeout_section").classList.remove("contentSplit");
+			document.getElementById("botContainer").classList.remove("botContainerActive");
+			sections.forEach(function(x){
+				document.getElementById(x).classList.remove("contentSplit");
+			});
+		}else{
+			document.getElementById("content").classList.add("contentSplit");
+			document.getElementById("botContainer").classList.add("botContainerActive");
+			document.getElementById("fadeout_section").classList.add("contentSplit");
+			sections.forEach(function(x){
+				document.getElementById(x).classList.add("contentSplit");
+			});
+		}
+	});
 });
 
 
