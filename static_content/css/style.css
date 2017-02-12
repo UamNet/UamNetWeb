@@ -31,6 +31,7 @@ body{
 	perspective: 1000px;
 	display: hidden;
 	color:white;
+	transition: all 1s;
 }
 
 
@@ -297,6 +298,7 @@ h2{
 	perspective: 1000px;
 	display: hidden;
 	color:white;
+	transition: all 1s;
 }
 
  #events{
@@ -308,6 +310,7 @@ h2{
 	perspective: 1000px;
 	display: hidden;
 	color:white;
+	transition: all 1s;
 }
 
  #dreamspark{
@@ -319,6 +322,7 @@ h2{
 	perspective: 1000px;
 	display: hidden;
 	color:white;
+	transition: all 1s;
 }
 
 
@@ -331,11 +335,12 @@ h2{
 	perspective: 1000px;
 	display: hidden;
 	color:white;
+	transition: all 1s;
 }
 
 .event{
 	display:block;
-	width:100%;
+	width:90%;
 	margin-bottom:10px;
 	overflow:hidden;
 	padding:10px;
