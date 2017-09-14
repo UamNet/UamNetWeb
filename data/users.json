@@ -1,5 +1,5 @@
-{
-
+[
+	{
 		"firstName": "David",
 
 		"lastName": "Ramírez Mesón",
@@ -16,7 +16,7 @@
 
 		
 
-	},[
+	},
 	{
 		"firstName": "Arcadio",
 		"lastName": "García Salvadores",
