@@ -2,7 +2,7 @@
 	{
 		"firstName": "David",
 		"lastName": "Ramírez Mesón",
-		"picture": "https://avatars1.githubusercontent.com/u/29896778?v=4&u=ec61dc3d7b7e4020cfbc8564e6325f21d2317622&s=400",
+		"picture": "https://avatars2.githubusercontent.com/u/29896778?v=4&s=460",
 		"bio": "Futuro ingeniero de telecomunicación y de informática. Pienso en frecuencias pero hablo en decibelios",
 		"badges": [
 			"Presidente",
@@ -13,7 +13,21 @@
 			{
 				"text": "Twitter (@davidramirezrm)",
 				"url": "https://twitter.com/davidramirezrm"
-			}
+			},
+			{
+				"text": "Instagram (@davidramirezrm)",
+				"url": "https://instagram.com/davidramirezdrm"
+			}			
+		]
+	},
+	{
+		"firstName": "William",
+		"lastName": "Guerrero",
+		"picture": "https://avatars2.githubusercontent.com/u/17010418?v=4&s=460",
+		"bio": "Futuro ingeniero de informática.",
+		"badges": [
+			"Vicepresidente",
+			"Speaker"
 		]
 	},
 	{
