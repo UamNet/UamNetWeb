@@ -26,7 +26,7 @@
         "month": "Abril",
         "year":2017,
         "time": "13:00",
-        "color": "#8907aa"
+        "color": "#006ac0"
     },
                      {
         "title": "Becas de Microsoft en EEUU",
@@ -36,7 +36,7 @@
         "month": "Abril",
         "year":2017,
         "time": "13:00",
-        "color": "#006ac0"
+        "color": "#8907aa"
     },
                 {
         "title": "Taller Git",
