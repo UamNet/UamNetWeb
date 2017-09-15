@@ -7,8 +7,18 @@
         "month": "",
         "time": "",
         "color": "#666666"
+    },      
+    {
+        "title": "Hosted Web Apps",
+        "by": "Arcadio García Salvadores",
+        "place": "Aula 4",
+        "day": "22",
+        "month": "Septiembre",
+        "year":2017,
+        "time": "13:00",
+        "color": "#006ac0"
     },
-                 {
+    {
         "title": "Hosted Web Apps",
         "by": "Arcadio García Salvadores",
         "place": "Sala de Grados",
@@ -16,7 +26,7 @@
         "month": "Abril",
         "year":2017,
         "time": "13:00",
-        "color": "#006ac0"
+        "color": "#8907aa"
     },
                      {
         "title": "Becas de Microsoft en EEUU",
@@ -38,7 +48,7 @@
         "time": "13:00",
         "color": "#8907aa"
     },
-            {
+    {
         "title": "Desarrollo Full Stack",
         "by": "Roberto Luis Bisbe",
         "place": "Sala de Grados",
@@ -58,7 +68,7 @@
         "time": "16:00",
         "color": "#b11d01"
     },
-                {
+    {
         "title": "HoloLens: Desarrollando para Mixed Reality",
         "by": "Arcadio García Salvadores",
         "place": "Sala de Grados",
