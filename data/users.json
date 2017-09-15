@@ -24,11 +24,22 @@
 		"firstName": "William",
 		"lastName": "Guerrero",
 		"picture": "https://avatars2.githubusercontent.com/u/17010418?v=4&s=460",
-		"bio": "Futuro ingeniero de informática.",
+		"bio": "Futuro ingeniero de informática. Hay 10 tipos de personas, los que saben binario y los que no.",
 		"badges": [
 			"Vicepresidente",
 			"Speaker"
+		],
+		"links": [
+			{
+				"text": "Twitter (@agustin_daze)",
+				"url": "https://twitter.com/agustin_daze"
+			},
+			{
+				"text": "Instagram (@agustin_daze)",
+				"url": "https://instagram.com/agustin_daze"
+			}			
 		]
+		
 	},
 	{
 		"firstName": "Arcadio",
