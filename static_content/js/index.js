@@ -86,7 +86,7 @@ var refreshSection = {
 				document.getElementById("membersList").innerHTML = '<div class="member action" onclick="switchSections(\'join\')"><img src="img/plus.gif" /><h3>TU</h3><h4>Únete al club</h4></div>';
 				members.forEach(function (x) {
 					var badges = "";
-					var colores = { "Presidente": "#0082A7","Vicepresidente": "#0082A7","Expresidente": "#0082A7", "Imagine Cup": "#552d7d", "Speaker": "#00bdf2" };
+					var colores = { "Presidente": "#0082A7","Vicepresidente": "#0082A7","Expresidente": "#0082A7", "Imagine Cup": "#552d7d","Hackathon": "#00A65C", "Speaker": "#00bdf2" };
 					if (x.badges) {
 						x.badges.forEach(function (x) { if (colores[x]) { badges += '<div class="badge" style="background:' + colores[x] + ';">' + x + '</div>' } else { badges += '<div class="badge">' + x + '</div>' } });
 					}
