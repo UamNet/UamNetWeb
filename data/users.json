@@ -1,11 +1,54 @@
 [
 	{
+		"firstName": "David",
+		"lastName": "Ramírez Mesón",
+		"picture": "https://instagram.fvit1-1.fna.fbcdn.net/t51.2885-15/s640x640/sh0.08/e35/c0.135.1080.1080/21436081_772719016263931_2217966483688914944_n.jpg",
+		"bio": "Futuro ingeniero de telecomunicación y de informática. Pienso en frecuencias pero hablo en decibelios",
+		"badges": [
+			"Presidente",
+			"Hackathon",
+			"Speaker"
+		],
+		"links": [
+			{
+				"text": "Twitter (@davidramirezrm)",
+				"url": "https://twitter.com/davidramirezrm"
+			},
+			{
+				"text": "Instagram (@davidramirezrm)",
+				"url": "https://instagram.com/davidramirezdrm"
+			}			
+		]
+	},
+	{
+		"firstName": "William",
+		"lastName": "Guerrero",
+		"picture": "https://avatars2.githubusercontent.com/u/17010418?v=4&s=460",
+		"bio": "Futuro ingeniero de informática. Hay 10 tipos de personas, los que saben binario y los que no.",
+		"badges": [
+			"Vicepresidente",
+			"Speaker"
+		],
+		"links": [
+			{
+				"src": "https://github.com/UamNet/UamNetWeb/blob/master/static_content/img/twitter.png",
+				"text": "Twitter (@agustin_daze)",
+				"url": "https://twitter.com/agustin_daze"
+			},
+			{
+				"text": "Instagram (@agustin_daze)",
+				"url": "https://instagram.com/agustin_daze"
+			}			
+		]
+		
+	},
+	{
 		"firstName": "Arcadio",
 		"lastName": "García Salvadores",
 		"picture": "https://avatars0.githubusercontent.com/u/9416356?v=3&s=460",
 		"bio": "Empowering people to achieve more through technology. Love everything related to Windows, JS and chocolate.",
 		"badges": [
-			"Presidente",
+			"Expresidente",
 			"Imagine Cup",
 			"Speaker"
 		],
@@ -17,25 +60,6 @@
 			{
 				"text": "Twitter (@arcadio_g_s)",
 				"url": "https://twitter.com/arcadio_g_s"
-			}
-		]
-	},
-	{
-		"firstName": "Pablo",
-		"lastName": "Gómez",
-		"picture": "https://avatars.githubusercontent.com/gomezabajo",
-		"bio": "Computer scientist, in love with Fleetwood Mac music. Researcher at @miso_uam",
-		"badges": [
-			"Speaker"
-		],
-		"links": [
-			{
-				"text": "Mi página web",
-				"url": "http://www.gomezabajo.es/"
-			},
-			{
-				"text": "Twitter (@GomezAbajo)",
-				"url": "https://twitter.com/gomezabajo"
 			}
 		]
 	},
@@ -59,10 +83,29 @@
 		]
 	},
 	{
+		"firstName": "Pablo",
+		"lastName": "Gómez",
+		"picture": "https://avatars.githubusercontent.com/gomezabajo",
+		"bio": "Computer scientist, in love with Fleetwood Mac music. Researcher at @miso_uam",
+		"badges": [
+			"Speaker"
+		],
+		"links": [
+			{
+				"text": "Mi página web",
+				"url": "http://www.gomezabajo.es/"
+			},
+			{
+				"text": "Twitter (@GomezAbajo)",
+				"url": "https://twitter.com/gomezabajo"
+			}
+		]
+	},
+	{
 		"firstName": "Juan Carlos",
 		"lastName": "Pereira Kohatsu",
 		"picture": "https://avatars1.githubusercontent.com/u/16213780",
-		"bio": "Futuro ingeniero informático y Youtuber. Me encantan las bases de datos y bailar.",
+		"bio": "Ingeniero informático y Youtuber. Me encantan las bases de datos y bailar.",
 		"links": [
 			{
 				"text": "Mi canal de Youtube",
@@ -78,7 +121,7 @@
 		"firstName": "David",
 		"lastName": "Muñoz Miranda",
 		"picture": "https://avatars2.githubusercontent.com/u/15156723",
-		"bio": "Técnico de sistemas, aspirante a ingeniero informático. ",
+		"bio": "Técnico de sistemas e ingeniero informático. ",
 		"badges": [
 			"Speaker"
 		],
