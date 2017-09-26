@@ -22,7 +22,7 @@ var refreshSection = {
 		document.getElementById("dreamspark_iframe").src = "https://onedrive.live.com/redir?page=survey&resid=C54C5685052E8FDD!236&authkey=!ABZw3EPirQI2iaw&ithint=file%2cxlsx";
 	},
 	"join": function () {
-		document.getElementById("join_iframe").src = "https://onedrive.live.com/survey?resid=C54C5685052E8FDD!411&authkey=!AMtEmUhM_qtCxVk";		
+		document.getElementById("join_iframe").src = "https://onedrive.live.com/redir?page=survey&resid=C54C5685052E8FDD!234&authkey=!ACoCcPb0M17eQTQ&ithint=file%2cxlsx";
 	},
 	"content": function () {
 		var xmlhttp = new XMLHttpRequest();
