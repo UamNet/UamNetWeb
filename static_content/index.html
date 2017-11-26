@@ -8,29 +8,32 @@
 	<link rel="stylesheet" href="css/style.css" />
 	<link rel="stylesheet" href="css/tiles.css" />
 	<script src="js/index.js"></script>
+	<link rel="shortcut icon" href="/img/LogoN.ico" />
 </head>
 
 <body>
 	<div id="header">
 		<!--Red rectangle to hide text sliding during animation-->
-		<div style="position:absolute;left:0px;top:0px;width:10%;height:100px;display:block;background-color:#C00;z-index:99;"></div>
-		<a href=""><img src="img/logo.png" alt="logo" style="position:absolute;left:10%;top:0px;vertical-align: bottom;height:110px;z-index:100;" /></a>
+		<div style="position:absolute;left:0px;top:0px;width:10%;height:100px;display:block;background-color:#006cd8;z-index:99;"></div>
+		<a href=""><img src="img/LogoAzulCuadrado.png" alt="logo" style="position:absolute;left:10%;top:0px;vertical-align: bottom;height:110px;z-index:100;" /></a>
 		<h1 style="position:absolute;left:calc(10% + 120px);top:25px;margin-top:0px;">UamDotNet</h1>
 		<div id="botButton">💬</div>
 	</div>
 	<div id="content">
 		<div class="box action" id="aboutus" data-opensection="join">
 			<div class="card white">
+				<!--<div class="front EPSpic">-->
 				<div class="front EPSpic">
-					<div class="bigwhitetext">
-						UAM.Net
+					<div class="whitetext">
+						Pincha aquí 
 					</div>
 				</div>
 				<div class="back skyblue">
 					<div class="cardcontent">
-						<p>El club DotNet de la Universidad Autónoma de Madrid esta formado por estudiantes de la Universidad Autónoma de Madrid
-							que aspiran a aprender y divulgar sobre tecnogías que complementen nuestros estudios. Nos patrocina Microsoft, pero
-							nuestras actividades estan creadas por y para estudiantes, ¿te apuntas?</p>
+						<p> Si quieres saber todo lo que ofrecemos pincha aquí y podrás ver que no solo podemos ofrecerte software gratuíto,
+							también tenemos un repositorio de apuntes y exámenes para los estudiantes de informática y teleco. Si todavía no
+							te parece suficiente tenemos en la asociación una Xbox 360 con la que puedes pasar tus ratos libres.
+						</p>
 					</div>
 				</div>
 			</div>
@@ -38,11 +41,11 @@
 		<div class="box action" id="eventsTile" data-opensection="events">
 			<div class="card white">
 				<div class="front talkPic">
-					<div class="bigwhitetext">
+					<div class="bigtext">
 						Eventos
 					</div>
 				</div>
-				<div class="back green">
+				<div class="back brown">
 					<p>¿Quieres aprender sobre algo nuevo? ¿Tienes ganas de descubir nuevas tecnologías que usar en tus proyectos? ¿O quizás
 						adquirir esa habilidad clave que te abrirá puertas en el futuro? Sea, lo que sea, con nuestros eventos te tenemos cubierto.</p>
 				</div>
@@ -60,12 +63,16 @@
 			<div class="card white">
 				<div class="front codePic">
 					<div class="bigwhitetext">
-						Miembros
+						Únete
 					</div>
 					<img class="facepic" id="facepic" src="img/user0.jpg" />
 				</div>
-				<div class="back brown">
-					<p>Estos son los miembros del club, ¿te gustaria ver tu cara aqui? ¡Apúntate!</p>
+				<div class="back green">
+					<p> 
+						El club DotNet de la Universidad Autónoma de Madrid esta formado por estudiantes de la Universidad Autónoma de Madrid
+						que aspiran a aprender y divulgar sobre tecnogías que complementen nuestros estudios. Nos patrocina Microsoft dándonos,
+						acceso software como Windows 10, Microsoft Azure, entre otros completamente GRATIS ¿te apuntas?
+					</p>
 				</div>
 			</div>
 		</div>
@@ -75,7 +82,7 @@
 				<div class="back twitterblue" style="line-height:100px;">@uamnet</div>
 			</div>
 		</div>
-		<div class="box action" id="mail" data-openlink="mailto:uamnet@live.com">
+		<!--<div class="box action" id="mail" data-openlink="mailto:uamnet@live.com">
 			<div class="card mailblue">
 				<div class="front mailPic"></div>
 				<div class="back" style="line-height:33px;">
@@ -84,7 +91,15 @@
 					<br/>live.com
 				</div>
 			</div>
-		</div>
+		</div>-->
+		<div class="box action" id="onedrive" data-openlink="https://dauam-my.sharepoint.com/personal/david_ramirezm_estudiante_uam_es/_layouts/15/guestaccess.aspx?guestaccesstoken=wZjZuQ72bd6cywnvBZcJr3%2FPccxn9QM%2FI8Xy0HAkR%2Fo%3D&folderid=2_17d45a5aa458140df951483334e64a139&rev=1&e=b03e4fa857164e809408ca7101ed34f5">
+				<div class="card onedriveblue">
+					<div class="front onedrivePic"></div>
+					<div class="back" style="line-height:33px;">
+						Repositorio de exámenes y apuntes
+					</div>
+				</div>
+			</div>
 		<div class="box action" id="github" data-openlink="http://www.github.com/uamnet">
 			<div class="card githubpurple">
 				<div class="front githubPic"></div>
@@ -112,7 +127,7 @@
 			<div class="card white">
 				<div class="front tech">
 					<div class="bigwhitetext">
-					¡Cuéntanos!
+					¡Contáctanos!
 					</div>
 				</div>
 				<div class="back blue">
@@ -135,6 +150,9 @@
 
 		</div>
 	</div>
+
+	
+
 	<div id="join">
 		<img class="action" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGFSURBVHhe7Zo5TgNBEEUtIgIfwAcgIPRuH4GQWxIQYOMtJCBwSMgRuIXNm6myGgeNhJCQqfpPKvUs38H7PZOM3BFCCCGEuCSOx2P3cDjc+GkuXP6V+eD41i/noBFG/IG1heM9c+e3Y4Nvu/OmXuDai0figufZzp/g2o6ZeywmeNbkt8zMYzHBU/KmXHD5qcdigmdNfiP5yOBZk18zE4/FBE/Jm3LB5cceiwmeNfmV5CODZ03+mWXksZggKPnW+AuNPDP0WEzwrMkvJR8ZPL+TH3gsJnjW5BcZ5Gufsd5Zeh6LCYK1nX9i6Xvs4rny9ccg2fz22s6SQgk9f9zP8Nei67HYIDtndqZe+G+vwq9AdsZsTb2gEiBbCVOVYCVsTL2gEiBbCROVYCWsTb2gEiBbCWOVYCWsTL2gEiBVCYiOEG6+Dp+hEiBVCcgOVYKVsDT1gkqAbCUM0peAaO3z2qNH4oNvH+GFqbfybyz3fjsHCLdPApPvz9InmhLSygshhBDij+h0PgG5Mw5zvBOrLwAAAABJRU5ErkJggg=="
 		width="64" height="64" style="vertical-align:bottom;" data-opensection="content">
@@ -201,14 +219,22 @@
 	<div id="polls">
 		<img class="action" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGFSURBVHhe7Zo5TgNBEEUtIgIfwAcgIPRuH4GQWxIQYOMtJCBwSMgRuIXNm6myGgeNhJCQqfpPKvUs38H7PZOM3BFCCCGEuCSOx2P3cDjc+GkuXP6V+eD41i/noBFG/IG1heM9c+e3Y4Nvu/OmXuDai0figufZzp/g2o6ZeywmeNbkt8zMYzHBU/KmXHD5qcdigmdNfiP5yOBZk18zE4/FBE/Jm3LB5cceiwmeNfmV5CODZ03+mWXksZggKPnW+AuNPDP0WEzwrMkvJR8ZPL+TH3gsJnjW5BcZ5Gufsd5Zeh6LCYK1nX9i6Xvs4rny9ccg2fz22s6SQgk9f9zP8Nei67HYIDtndqZe+G+vwq9AdsZsTb2gEiBbCVOVYCVsTL2gEiBbCROVYCWsTb2gEiBbCWOVYCWsTL2gEiBVCYiOEG6+Dp+hEiBVCcgOVYKVsDT1gkqAbCUM0peAaO3z2qNH4oNvH+GFqbfybyz3fjsHCLdPApPvz9InmhLSygshhBDij+h0PgG5Mw5zvBOrLwAAAABJRU5ErkJggg=="
 		width="64" height="64" style="vertical-align:bottom;" data-opensection="content">
-		<h2>¡Cuéntanos!</h2>
-		<br/>
-		<div id="polls-content">
-			
-		</div>
+		<h2>¡Contáctanos!</h2>
+		<br/><br/>
+		<br/><b>Si tienes cualquier duda o sugerencia rellena el siguiente formulario o manda un correo a <a href="mailto:uamnet@live.com?subject=Email%20Subject&body=Body%20Text">uamnet@live.com</a> 
+		</b><br/><br/>
+		<p></p><div id="polls-content">
+		</div></p>
 	</div>
 	<div id="fadeout"></div>
 	<div id="fadeout_section"></div>
 </body>
+<footer>
+	<div id="footer">
+		Al hacerte socio de esta asociación estás aceptando nuestros <a href="../docs/Estatutos.pdf">estatutos</a>, la <a href="../docs/NormativaAsociacionesEstudiantes.pdf">normativa de asociaciones de estudiantes</a> y la <a href="../docs/Normativa_de_fiestas.pdf"> ley de fiestas</a>.
+	<br/>Todos los derechos reservados. 
+	</div>
+</footer>
+
 
 </html>

@@ -19,12 +19,12 @@
 }
 
 .talkPic{
-	background:url(../img/charla.png) center;
+	background:url(../img/microsoft.jpg) center;
 	background-size:cover;
 }
 
 .green{
-	background-color: #189900;
+	background-color: #107c10;
 }
 
 #dreamsparkTile{
@@ -61,6 +61,11 @@
 	color:#FFF;
 }
 
+.lightgreen{
+	background-color: #311600;
+	color:#FFF;
+}
+
 #twitter{
 	left:0px;
 	top:420px;
@@ -73,13 +78,31 @@
 	background-size:cover;
 }
 
-#mail{
+.twitterblue{
+	background-color: #2daae2
+}
+
+#onedrive{
 	left:110px;
 	top:420px;
 	width:100px;
 	height:100px;
 }
 
+.onedriveblue{
+	background-color:#094ab1;
+}
+
+.onedrivePic{
+	background:url(../img/onedrive.png) #094ab1 center;
+	background-size:cover;
+}
+
+
+#mail{
+	width:100px;
+	height:100px;
+}
 
 .mailblue{
 	background-color:#0078d7;
@@ -89,6 +112,7 @@
 	background:url(../img/mail.png) center;
 	background-size:cover;
 }
+
 
 #github{
 	left:0px;
@@ -105,6 +129,7 @@
 	background:url(../img/github.png) #6f2c85 center;
 	background-size:cover;
 }
+
 
 #youtube{
 	left:110px;
@@ -135,7 +160,7 @@
 }
 
 .telegramblue{
-	background-color:#2aa1da;
+	background-color:#34ace0;
 }
 
 #news{
@@ -153,7 +178,7 @@ height:200px;
 }
 
 .blue {
-	background:blue;
+	background:#0243c8;
 }
 
 .tech {
