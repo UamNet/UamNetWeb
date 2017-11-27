@@ -486,9 +486,6 @@ font-size: 20px;
 }
 
 #footer{
-	position:fixed;
-	bottom:0px;
-	left:0px;
 	width:100%;
 	height:40px;
 	background-color:#aaa;
@@ -496,7 +493,7 @@ font-size: 20px;
 	display:block;
 	padding-top: 10px;
 	padding-left:20px;
-	z-index: 1;
+	z-index: 1000;
 	font-size: 12px;
 	text-align: left;
 }

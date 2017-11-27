@@ -1,4 +1,4 @@
-var sections = ["content", "members", "join", "events", "dreamspark","polls"];
+var sections = ["content", "pinchaAqui", "members", "join", "events", "dreamspark","polls"];
 var liveTiles = {};
 
 
@@ -23,6 +23,9 @@ var refreshSection = {
 	},
 	"join": function () {
 		document.getElementById("join_iframe").src = "https://onedrive.live.com/survey?resid=C54C5685052E8FDD!411&authkey=!AMtEmUhM_qtCxVk";		
+	},
+	"pinchaAqui": function () {
+		document.getElementById("pincha_iframe").src = "https://onedrive.live.com/survey?resid=C54C5685052E8FDD!411&authkey=!AMtEmUhM_qtCxVk";		
 	},
 	"content": function () {
 		var xmlhttp = new XMLHttpRequest();
