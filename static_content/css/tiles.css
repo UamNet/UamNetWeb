@@ -1,10 +1,20 @@
-#aboutus{
-	width:calc( 60% - 10px );height:200px;top:0px;left:0px;
-}
-
 .EPSpic{
 	background:url(../img/eps.png) center;
 	background-size:cover;
+}
+
+#aboutus{
+	width:calc( 60% - 10px );
+	height:200px;
+	left:0px;
+	top:0px;
+}
+
+#news{
+	right:0px;
+	top:0px;
+	width:40%;
+	height:200px;
 }
 
 .skyblue{
@@ -28,10 +38,10 @@
 }
 
 #dreamsparkTile{
+	width:calc(30% - 10px);	
+	height:200px;	
 	right:0px;
 	top:210px;
-	width:calc(30% - 10px);
-	height:200px;
 }
 
 .gray{
@@ -113,7 +123,6 @@
 	background-size:cover;
 }
 
-
 #github{
 	left:0px;
 	top:530px;
@@ -130,23 +139,6 @@
 	background-size:cover;
 }
 
-
-#youtube{
-	left:110px;
-	top:530px;
-	width:100px;
-	height:100px;
-}
-
-.youtubePic{
-	background:url(../img/youtube.png) center;
-	background-size:cover;
-}
-
-.youtubered{
-	background-color:#e62117;
-}
-
 #telegram{
 	left:110px;
 	top:530px;
@@ -161,13 +153,6 @@
 
 .telegramblue{
 	background-color:#34ace0;
-}
-
-#news{
-right:0px;
-top:0px;
-width:40%;
-height:200px;
 }
 
 #interestPollTile{
