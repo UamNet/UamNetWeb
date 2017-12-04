@@ -2,8 +2,8 @@
 	{
 		"firstName": "David",
 		"lastName": "Ramírez Mesón",
-		"picture": "https://instagram.fvit1-1.fna.fbcdn.net/t51.2885-15/s640x640/sh0.08/e35/c0.135.1080.1080/21436081_772719016263931_2217966483688914944_n.jpg",
-		"bio": "Futuro ingeniero de telecomunicación y de informática. Pienso en frecuencias pero hablo en decibelios",
+		"picture": "https://pbs.twimg.com/profile_images/911711599773265920/DpLu1ahh_400x400.jpg",
+		"bio": "Futuro ingeniero de telecomunicaciones. Pienso en frecuencias pero hablo en decibelios",
 		"badges": [
 			"Presidente",
 			"Hackathon",
@@ -15,8 +15,12 @@
 				"url": "https://twitter.com/davidramirezrm"
 			},
 			{
-				"text": "Instagram (@davidramirezrm)",
+				"text": "Instagram (@davidramirezdrm)",
 				"url": "https://instagram.com/davidramirezdrm"
+			},		
+			{
+				"text": "Github (@davidramirezdrm)",
+				"url": "https://github.com/davidramirezdrm"
 			}			
 		]
 	},
@@ -41,6 +45,26 @@
 			}			
 		]
 		
+	},{
+		"firstName": "Pablo",
+		"lastName": "Gómez",
+		"picture": "https://avatars.githubusercontent.com/gomezabajo",
+		"bio": "Computer scientist, in love with Fleetwood Mac music. Researcher at @miso_uam",
+		"badges": [
+			"Secretario",
+			"Speaker"
+			
+		],
+		"links": [
+			{
+				"text": "Mi página web",
+				"url": "http://www.gomezabajo.es/"
+			},
+			{
+				"text": "Twitter (@GomezAbajo)",
+				"url": "https://twitter.com/gomezabajo"
+			}
+		]
 	},
 	{
 		"firstName": "Arcadio",
@@ -66,7 +90,7 @@
 	{
 		"firstName": "Silvia",
 		"lastName": "Barbero Rodríguez",
-		"picture": "https://www.imaginecup.com/image/userprofile/15626",
+		"picture": "/img/Silvia.jpg",
 		"bio": "Artist in her way to make videogames. Shy and unsure but I'll do my best to help! =D",
 		"badges": [
 			"Imagine Cup"
@@ -79,41 +103,6 @@
 			{
 				"text": "Twitter (@SilviShinyStar)",
 				"url": "https://twitter.com/SilviShinyStar"
-			}
-		]
-	},
-	{
-		"firstName": "Pablo",
-		"lastName": "Gómez",
-		"picture": "https://avatars.githubusercontent.com/gomezabajo",
-		"bio": "Computer scientist, in love with Fleetwood Mac music. Researcher at @miso_uam",
-		"badges": [
-			"Speaker"
-		],
-		"links": [
-			{
-				"text": "Mi página web",
-				"url": "http://www.gomezabajo.es/"
-			},
-			{
-				"text": "Twitter (@GomezAbajo)",
-				"url": "https://twitter.com/gomezabajo"
-			}
-		]
-	},
-	{
-		"firstName": "Juan Carlos",
-		"lastName": "Pereira Kohatsu",
-		"picture": "https://avatars1.githubusercontent.com/u/16213780",
-		"bio": "Ingeniero informático y Youtuber. Me encantan las bases de datos y bailar.",
-		"links": [
-			{
-				"text": "Mi canal de Youtube",
-				"url": "https://www.youtube.com/JCPK94"
-			},
-			{
-				"text": "Twitter (@yoshimoncho)",
-				"url": "https://twitter.com/Yoshimoncho"
 			}
 		]
 	},

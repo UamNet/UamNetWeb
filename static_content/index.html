@@ -7,30 +7,33 @@
 	<link rel="stylesheet" href="css/ui-dark.min.css" />
 	<link rel="stylesheet" href="css/style.css" />
 	<link rel="stylesheet" href="css/tiles.css" />
+	<link rel="stylesheet" href="css/discover.css" />
 	<script src="js/index.js"></script>
+	<link rel="shortcut icon" href="/img/LogoN.ico" />
 </head>
 
 <body>
 	<div id="header">
 		<!--Red rectangle to hide text sliding during animation-->
-		<div style="position:absolute;left:0px;top:0px;width:10%;height:100px;display:block;background-color:#C00;z-index:99;"></div>
-		<a href=""><img src="img/logo.png" alt="logo" style="position:absolute;left:10%;top:0px;vertical-align: bottom;height:110px;z-index:100;" /></a>
+		<div style="position:absolute;left:0px;top:0px;width:10%;height:100px;display:block;background-color:#006cd8;z-index:99;"></div>
+		<a href=""><img src="../img/LogoAzulCuadrado.png" alt="logo" style="position:absolute;left:10%;top:0px;vertical-align: bottom;height:110px;z-index:100;" /></a>
 		<h1 style="position:absolute;left:calc(10% + 120px);top:25px;margin-top:0px;">UamDotNet</h1>
 		<div id="botButton">💬</div>
 	</div>
 	<div id="content">
-		<div class="box action" id="aboutus" data-opensection="join">
+		<div class="box action" id="aboutus" data-opensection="pinchaAqui">
 			<div class="card white">
 				<div class="front EPSpic">
-					<div class="bigwhitetext">
-						UAM.Net
+					<div class="whitetext">
+						Descúbrenos 
 					</div>
 				</div>
 				<div class="back skyblue">
 					<div class="cardcontent">
-						<p>El club DotNet de la Universidad Autónoma de Madrid esta formado por estudiantes de la Universidad Autónoma de Madrid
-							que aspiran a aprender y divulgar sobre tecnogías que complementen nuestros estudios. Nos patrocina Microsoft, pero
-							nuestras actividades estan creadas por y para estudiantes, ¿te apuntas?</p>
+						<p> Si quieres saber todo lo que ofrecemos pincha aquí y podrás ver que no solo podemos ofrecerte software gratuíto,
+							también tenemos un repositorio de apuntes y exámenes para los estudiantes de informática y teleco. Si todavía no
+							te parece suficiente tenemos en la asociación una Xbox 360 con la que puedes pasar tus ratos libres.
+						</p>
 					</div>
 				</div>
 			</div>
@@ -38,11 +41,11 @@
 		<div class="box action" id="eventsTile" data-opensection="events">
 			<div class="card white">
 				<div class="front talkPic">
-					<div class="bigwhitetext">
+					<div class="bigtext">
 						Eventos
 					</div>
 				</div>
-				<div class="back green">
+				<div class="back brown">
 					<p>¿Quieres aprender sobre algo nuevo? ¿Tienes ganas de descubir nuevas tecnologías que usar en tus proyectos? ¿O quizás
 						adquirir esa habilidad clave que te abrirá puertas en el futuro? Sea, lo que sea, con nuestros eventos te tenemos cubierto.</p>
 				</div>
@@ -60,22 +63,28 @@
 			<div class="card white">
 				<div class="front codePic">
 					<div class="bigwhitetext">
-						Miembros
+						Únete
 					</div>
 					<img class="facepic" id="facepic" src="img/user0.jpg" />
 				</div>
-				<div class="back brown">
-					<p>Estos son los miembros del club, ¿te gustaria ver tu cara aqui? ¡Apúntate!</p>
+				<div class="back green">
+					<p> 
+						El club DotNet de la Universidad Autónoma de Madrid esta formado por estudiantes de la Universidad Autónoma de Madrid
+						que aspiran a aprender y divulgar sobre tecnogías que complementen nuestros estudios. Nos patrocina Microsoft dándonos,
+						acceso software como Windows 10, Microsoft Azure, entre otros completamente GRATIS ¿te apuntas?
+					</p>
 				</div>
 			</div>
 		</div>
-		<div class="box action" id="twitter" data-openlink="https://twitter.com/intent/follow?original_referer=https%3A%2F%2Fabout.twitter.com%2Fes%2Fresources%2Fbuttons&ref_src=twsrc%5Etfw&region=follow_link&screen_name=uamnet&tw_p=followbutton">
-			<div class="card white">
-				<div class="front twitterPic"></div>
-				<div class="back twitterblue" style="line-height:100px;">@uamnet</div>
+		<a href="https://twitter.com/intent/follow?original_referer=https%3A%2F%2Fabout.twitter.com%2Fes%2Fresources%2Fbuttons&ref_src=twsrc%5Etfw&region=follow_link&screen_name=uamnet&tw_p=followbutton">
+			<div class="box action" id="twitter">
+				<div class="card white">
+					<div class="front twitterPic"></div>
+					<div class="back twitterblue" style="line-height:100px;">@uamnet</div>
+				</div>
 			</div>
-		</div>
-		<div class="box action" id="mail" data-openlink="mailto:uamnet@live.com">
+		</a>
+		<!--<div class="box action" id="mail" data-openlink="mailto:uamnet@live.com">
 			<div class="card mailblue">
 				<div class="front mailPic"></div>
 				<div class="back" style="line-height:33px;">
@@ -84,19 +93,33 @@
 					<br/>live.com
 				</div>
 			</div>
-		</div>
-		<div class="box action" id="github" data-openlink="http://www.github.com/uamnet">
-			<div class="card githubpurple">
-				<div class="front githubPic"></div>
-				<div class="back" style="color:white;line-height:100px;">UamNet</div>
+		</div>-->
+		<a href="https://dauam-my.sharepoint.com/personal/david_ramirezm_estudiante_uam_es/_layouts/15/guestaccess.aspx?guestaccesstoken=wZjZuQ72bd6cywnvBZcJr3%2FPccxn9QM%2FI8Xy0HAkR%2Fo%3D&folderid=2_17d45a5aa458140df951483334e64a139&rev=1&e=b03e4fa857164e809408ca7101ed34f5">
+			<div class="box action" id="onedrive">				
+				<div class="card onedriveblue">
+					<div class="front onedrivePic"></div>
+					<div class="back" style="line-height:33px;">
+						Repositorio de exámenes y apuntes
+					</div>
+				</div>
 			</div>
-		</div>
-		<div class="box action" id="telegram" data-openlink="https://t.me/joinchat/AAAAAD67JwNoT7jDq_xfZg">
-			<div class="card telegramblue">
-				<div class="front telegramPic"></div>
-				<div class="back" style="color:white;line-height:100px;">.NET</div>
+		</a>
+		<a href="http://www.github.com/uamnet">
+			<div class="box action" id="github">
+				<div class="card githubpurple">
+					<div class="front githubPic"></div>
+					<div class="back" style="color:white;line-height:100px;">UamNet</div>
+				</div>
 			</div>
-		</div>
+		</a>
+		<a href="https://t.me/joinchat/AAAAAD67JwNoT7jDq_xfZg">
+			<div class="box action" id="telegram">
+				<div class="card telegramblue">
+					<div class="front telegramPic"></div>
+					<div class="back" style="color:white;line-height:100px;">.NET</div>
+				</div>
+			</div>
+		</a>
 		<div class="box action" id="news" data-openlink="http://www.twitter.com/uamnet">
 			<div class="card white">
 				<div id="newsCard" class="front codePic">
@@ -112,7 +135,7 @@
 			<div class="card white">
 				<div class="front tech">
 					<div class="bigwhitetext">
-					¡Cuéntanos!
+					¡Contáctanos!
 					</div>
 				</div>
 				<div class="back blue">
@@ -123,21 +146,134 @@
 				</div>
 			</div> 
 		</div>
+		
+		<div id="footer">
+			<h4>				
+				<!--<img src="../img/EPS25_15-10_72.jpg" style="position:absolute;right:2%;height:90px;z-index:100;float:left">-->
+				Al hacerte socio de esta asociación estás aceptando nuestros <a href="../docs/Estatutos.pdf">estatutos</a>, la <a href="../docs/NormativaAsociacionesEstudiantes.pdf">normativa de asociaciones de estudiantes</a> y la <a href="../docs/Normativa_de_fiestas.pdf"> normativa de fiestas</a>.
+				<br/>Todos los derechos reservados. 
+			</h4>
+		</div>
 	</div>
 	<div id="botContainer">
 		<iframe src="https://webchat.botframework.com/embed/uamnetbot?s=FRXMblQVN6Y.cwA.oTs.WIbYriq-gB6o9_D1yXu8IcxMRQq8iEh9HMJLLimqG2E" style="width:100%;height:100%;"></iframe>
 	</div>
 	<div id="members">
-		<img class="action" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGFSURBVHhe7Zo5TgNBEEUtIgIfwAcgIPRuH4GQWxIQYOMtJCBwSMgRuIXNm6myGgeNhJCQqfpPKvUs38H7PZOM3BFCCCGEuCSOx2P3cDjc+GkuXP6V+eD41i/noBFG/IG1heM9c+e3Y4Nvu/OmXuDai0figufZzp/g2o6ZeywmeNbkt8zMYzHBU/KmXHD5qcdigmdNfiP5yOBZk18zE4/FBE/Jm3LB5cceiwmeNfmV5CODZ03+mWXksZggKPnW+AuNPDP0WEzwrMkvJR8ZPL+TH3gsJnjW5BcZ5Gufsd5Zeh6LCYK1nX9i6Xvs4rny9ccg2fz22s6SQgk9f9zP8Nei67HYIDtndqZe+G+vwq9AdsZsTb2gEiBbCVOVYCVsTL2gEiBbCROVYCWsTb2gEiBbCWOVYCWsTL2gEiBVCYiOEG6+Dp+hEiBVCcgOVYKVsDT1gkqAbCUM0peAaO3z2qNH4oNvH+GFqbfybyz3fjsHCLdPApPvz9InmhLSygshhBDij+h0PgG5Mw5zvBOrLwAAAABJRU5ErkJggg=="
-		width="64" height="64" style="vertical-align:bottom;" data-opensection="content">
+		<a href=""><img class="action" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGFSURBVHhe7Zo5TgNBEEUtIgIfwAcgIPRuH4GQWxIQYOMtJCBwSMgRuIXNm6myGgeNhJCQqfpPKvUs38H7PZOM3BFCCCGEuCSOx2P3cDjc+GkuXP6V+eD41i/noBFG/IG1heM9c+e3Y4Nvu/OmXuDai0figufZzp/g2o6ZeywmeNbkt8zMYzHBU/KmXHD5qcdigmdNfiP5yOBZk18zE4/FBE/Jm3LB5cceiwmeNfmV5CODZ03+mWXksZggKPnW+AuNPDP0WEzwrMkvJR8ZPL+TH3gsJnjW5BcZ5Gufsd5Zeh6LCYK1nX9i6Xvs4rny9ccg2fz22s6SQgk9f9zP8Nei67HYIDtndqZe+G+vwq9AdsZsTb2gEiBbCVOVYCVsTL2gEiBbCROVYCWsTb2gEiBbCWOVYCWsTL2gEiBVCYiOEG6+Dp+hEiBVCcgOVYKVsDT1gkqAbCUM0peAaO3z2qNH4oNvH+GFqbfybyz3fjsHCLdPApPvz9InmhLSygshhBDij+h0PgG5Mw5zvBOrLwAAAABJRU5ErkJggg=="
+		width="64" height="64" style="vertical-align:bottom;"></a>
 		<h2>Miembros</h2>
 		<div id="membersList">
 
 		</div>
 	</div>
+
+	<div id="pinchaAqui">
+			<img class="action" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGFSURBVHhe7Zo5TgNBEEUtIgIfwAcgIPRuH4GQWxIQYOMtJCBwSMgRuIXNm6myGgeNhJCQqfpPKvUs38H7PZOM3BFCCCGEuCSOx2P3cDjc+GkuXP6V+eD41i/noBFG/IG1heM9c+e3Y4Nvu/OmXuDai0figufZzp/g2o6ZeywmeNbkt8zMYzHBU/KmXHD5qcdigmdNfiP5yOBZk18zE4/FBE/Jm3LB5cceiwmeNfmV5CODZ03+mWXksZggKPnW+AuNPDP0WEzwrMkvJR8ZPL+TH3gsJnjW5BcZ5Gufsd5Zeh6LCYK1nX9i6Xvs4rny9ccg2fz22s6SQgk9f9zP8Nei67HYIDtndqZe+G+vwq9AdsZsTb2gEiBbCVOVYCVsTL2gEiBbCROVYCWsTb2gEiBbCWOVYCWsTL2gEiBVCYiOEG6+Dp+hEiBVCcgOVYKVsDT1gkqAbCUM0peAaO3z2qNH4oNvH+GFqbfybyz3fjsHCLdPApPvz9InmhLSygshhBDij+h0PgG5Mw5zvBOrLwAAAABJRU5ErkJggg=="
+			width="64" height="64" style="vertical-align:bottom;" data-opensection="content">
+			<h2>Qué ofrecemos</h2>
+			<br/>
+	
+			<div id="offer">
+				<h3>Software gratis</h3>
+				<h5>Tenemos a tu disposición todas licencias para 53 programas entre los que se encuentran:</h5>
+				<div>
+					<div class="col-lg-2">
+						<div class="product-wrapper">
+							<a href="https://e5.onthehub.com/WebStore/OfferingDetails.aspx?o=98a24997-f5b7-e611-9423-b8ca3a5db7a1&ws=7876c0da-6f9b-e011-969d-0030487d8897&vsro=8">
+								<div class="product-box">
+									<div class="product-image">
+										<img class="img-responsive" src="../img/Azure.png" alt="Microsoft Azure for Students - Imagen de producto pequeño" style="border-width:0px;">
+									</div>
+									<div class="product-name">
+										<bdi><span>Microsoft Azure for Students</span></bdi>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-lg-2">
+						<div class="product-wrapper">
+							<a class="StandardColor NoDecoration" href="https://e5.onthehub.com/WebStore/OfferingsOfMajorVersionList.aspx?pmv=769faff4-d124-e511-940e-b8ca3a5db7a1&cmi_mnuMain=bdba23cf-e05e-e011-971f-0030487d8897&ws=7876c0da-6f9b-e011-969d-0030487d8897&vsro=8">
+								<div class="product-box">
+									<div class="product-image">
+										<img class="img-responsive" src="../img/Windows10.png" alt="Windows 10 - Imagen de producto pequeño" style="border-width:0px;">
+									</div>
+									<div class="product-name">
+										<bdi><span>Windows 10</span></bdi>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-lg-2  ">
+						<div class="product-wrapper">
+							<a class="StandardColor NoDecoration" href="https://e5.onthehub.com/WebStore/OfferingDetails.aspx?o=18e65c13-7a03-e711-9427-b8ca3a5db7a1&ws=7876c0da-6f9b-e011-969d-0030487d8897&vsro=8">
+								<div class="product-box">
+									<div class="product-image">
+										<img class="img-responsive" src="../img/VisualStudio.png" alt="Visual Studio Community 2017 - Imagen de producto pequeño" style="border-width:0px;">
+									</div>
+									<div class="product-name">
+										<bdi><span>Visual Studio Community 2017</span></bdi>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-lg-2  ">
+						<div class="product-wrapper">
+							<a class="StandardColor NoDecoration" href="https://e5.onthehub.com/WebStore/OfferingsOfMajorVersionList.aspx?pmv=0119836f-d0ad-e711-80f7-000d3af41938&cmi_mnuMain=bdba23cf-e05e-e011-971f-0030487d8897&ws=7876c0da-6f9b-e011-969d-0030487d8897&vsro=8">
+								<div class="product-box">
+									<div class="product-image">
+										<img class="img-responsive" src="../img/SQLServer.jpg" alt="SQL Server 2017 Developer - Imagen de producto pequeño" style="border-width:0px;">
+									</div>
+									<div class="product-name">
+										<bdi><span>SQL Server 2017 Developer</span></bdi>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-lg-2  ">
+						<div class="product-wrapper">
+							<a class="StandardColor NoDecoration" href="https://e5.onthehub.com/WebStore/OfferingsOfMajorVersionList.aspx?pmv=63ccd278-6f24-e311-93f4-b8ca3a5db7a1&cmi_mnuMain=bdba23cf-e05e-e011-971f-0030487d8897&ws=7876c0da-6f9b-e011-969d-0030487d8897&vsro=8">
+								<div class="product-box">
+									<div class="product-image">
+										<img class="img-responsive" src="../img/Windows8.png" alt="Windows 8.1 - Imagen de producto pequeño" style="border-width:0px;">
+									</div>
+									<div class="product-name">
+										<bdi><span>Windows 8.1</span></bdi>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div style="margin-top:20px;">
+				<h3>Exámenes y apuntes</h3>
+				<h5>Tenemos un repositorio de apuntes y exámenes desde 2012</h5>
+				<p>Aunque aún puede mejorar tú puedes ayudarnos también para que otros alumnos tengan en un futuro los exámenes y apuntes de otros años</p>
+				</div>
+				<h3>Diviértete en tu tiempo libre</h3>
+				<h5>Pásate en tu tiempo libre por la asociación y juega a la Xbox 360</h5>
+				<p>Tenemos una gran variedad de juegos, entre los que se encuentran el Halo 3 y 4, Gears of War, Watchdogs, Trivial Pursuit, Burnout Paradise...</p>
+				
+				<h3>¿Te hemos convencido?</h3>
+				<p>
+					Si te hemos convencido... <a href="https://onedrive.live.com/survey?resid=C54C5685052E8FDD!411&authkey=!AMtEmUhM_qtCxVk"><b>¡Únete al club!</b></a>
+				</p>
+			<!--
+			<p>
+					¿No se carga el formulario? Aqui tienes un vinculo directo.</a> UamDotNet recomienda Microsoft Edge.
+				</p>-->
+			</div>
+			<iframe style="width:80%;" id="pincha_iframe">
+				  <p style="color:white;">Tu navegador no soporta iframe. UamDotNet recomienda Microsoft Edge.</p>-->
+			</iframe>
+	</div>
+
 	<div id="join">
-		<img class="action" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGFSURBVHhe7Zo5TgNBEEUtIgIfwAcgIPRuH4GQWxIQYOMtJCBwSMgRuIXNm6myGgeNhJCQqfpPKvUs38H7PZOM3BFCCCGEuCSOx2P3cDjc+GkuXP6V+eD41i/noBFG/IG1heM9c+e3Y4Nvu/OmXuDai0figufZzp/g2o6ZeywmeNbkt8zMYzHBU/KmXHD5qcdigmdNfiP5yOBZk18zE4/FBE/Jm3LB5cceiwmeNfmV5CODZ03+mWXksZggKPnW+AuNPDP0WEzwrMkvJR8ZPL+TH3gsJnjW5BcZ5Gufsd5Zeh6LCYK1nX9i6Xvs4rny9ccg2fz22s6SQgk9f9zP8Nei67HYIDtndqZe+G+vwq9AdsZsTb2gEiBbCVOVYCVsTL2gEiBbCROVYCWsTb2gEiBbCWOVYCWsTL2gEiBVCYiOEG6+Dp+hEiBVCcgOVYKVsDT1gkqAbCUM0peAaO3z2qNH4oNvH+GFqbfybyz3fjsHCLdPApPvz9InmhLSygshhBDij+h0PgG5Mw5zvBOrLwAAAABJRU5ErkJggg=="
-		width="64" height="64" style="vertical-align:bottom;" data-opensection="content">
+		<a href=""><img class="action" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGFSURBVHhe7Zo5TgNBEEUtIgIfwAcgIPRuH4GQWxIQYOMtJCBwSMgRuIXNm6myGgeNhJCQqfpPKvUs38H7PZOM3BFCCCGEuCSOx2P3cDjc+GkuXP6V+eD41i/noBFG/IG1heM9c+e3Y4Nvu/OmXuDai0figufZzp/g2o6ZeywmeNbkt8zMYzHBU/KmXHD5qcdigmdNfiP5yOBZk18zE4/FBE/Jm3LB5cceiwmeNfmV5CODZ03+mWXksZggKPnW+AuNPDP0WEzwrMkvJR8ZPL+TH3gsJnjW5BcZ5Gufsd5Zeh6LCYK1nX9i6Xvs4rny9ccg2fz22s6SQgk9f9zP8Nei67HYIDtndqZe+G+vwq9AdsZsTb2gEiBbCVOVYCVsTL2gEiBbCROVYCWsTb2gEiBbCWOVYCWsTL2gEiBVCYiOEG6+Dp+hEiBVCcgOVYKVsDT1gkqAbCUM0peAaO3z2qNH4oNvH+GFqbfybyz3fjsHCLdPApPvz9InmhLSygshhBDij+h0PgG5Mw5zvBOrLwAAAABJRU5ErkJggg=="
+		width="64" height="64" style="vertical-align:bottom;"></a>
 		<h2>Únete</h2>
 		<br/>
 		<br/>
@@ -163,8 +299,8 @@
 		<div id="status_join"></div>-->
 	</div>
 	<div id="events">
-		<img class="action" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGFSURBVHhe7Zo5TgNBEEUtIgIfwAcgIPRuH4GQWxIQYOMtJCBwSMgRuIXNm6myGgeNhJCQqfpPKvUs38H7PZOM3BFCCCGEuCSOx2P3cDjc+GkuXP6V+eD41i/noBFG/IG1heM9c+e3Y4Nvu/OmXuDai0figufZzp/g2o6ZeywmeNbkt8zMYzHBU/KmXHD5qcdigmdNfiP5yOBZk18zE4/FBE/Jm3LB5cceiwmeNfmV5CODZ03+mWXksZggKPnW+AuNPDP0WEzwrMkvJR8ZPL+TH3gsJnjW5BcZ5Gufsd5Zeh6LCYK1nX9i6Xvs4rny9ccg2fz22s6SQgk9f9zP8Nei67HYIDtndqZe+G+vwq9AdsZsTb2gEiBbCVOVYCVsTL2gEiBbCROVYCWsTb2gEiBbCWOVYCWsTL2gEiBVCYiOEG6+Dp+hEiBVCcgOVYKVsDT1gkqAbCUM0peAaO3z2qNH4oNvH+GFqbfybyz3fjsHCLdPApPvz9InmhLSygshhBDij+h0PgG5Mw5zvBOrLwAAAABJRU5ErkJggg=="
-		width="64" height="64" style="vertical-align:bottom;" data-opensection="content">
+		<a href=""><img class="action" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGFSURBVHhe7Zo5TgNBEEUtIgIfwAcgIPRuH4GQWxIQYOMtJCBwSMgRuIXNm6myGgeNhJCQqfpPKvUs38H7PZOM3BFCCCGEuCSOx2P3cDjc+GkuXP6V+eD41i/noBFG/IG1heM9c+e3Y4Nvu/OmXuDai0figufZzp/g2o6ZeywmeNbkt8zMYzHBU/KmXHD5qcdigmdNfiP5yOBZk18zE4/FBE/Jm3LB5cceiwmeNfmV5CODZ03+mWXksZggKPnW+AuNPDP0WEzwrMkvJR8ZPL+TH3gsJnjW5BcZ5Gufsd5Zeh6LCYK1nX9i6Xvs4rny9ccg2fz22s6SQgk9f9zP8Nei67HYIDtndqZe+G+vwq9AdsZsTb2gEiBbCVOVYCVsTL2gEiBbCROVYCWsTb2gEiBbCWOVYCWsTL2gEiBVCYiOEG6+Dp+hEiBVCcgOVYKVsDT1gkqAbCUM0peAaO3z2qNH4oNvH+GFqbfybyz3fjsHCLdPApPvz9InmhLSygshhBDij+h0PgG5Mw5zvBOrLwAAAABJRU5ErkJggg=="
+		width="64" height="64" style="vertical-align:bottom;"></a>
 		<h2>Eventos</h2>
 		<br/>
 		<div id="events-content"></div>
@@ -201,14 +337,17 @@
 	<div id="polls">
 		<img class="action" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGFSURBVHhe7Zo5TgNBEEUtIgIfwAcgIPRuH4GQWxIQYOMtJCBwSMgRuIXNm6myGgeNhJCQqfpPKvUs38H7PZOM3BFCCCGEuCSOx2P3cDjc+GkuXP6V+eD41i/noBFG/IG1heM9c+e3Y4Nvu/OmXuDai0figufZzp/g2o6ZeywmeNbkt8zMYzHBU/KmXHD5qcdigmdNfiP5yOBZk18zE4/FBE/Jm3LB5cceiwmeNfmV5CODZ03+mWXksZggKPnW+AuNPDP0WEzwrMkvJR8ZPL+TH3gsJnjW5BcZ5Gufsd5Zeh6LCYK1nX9i6Xvs4rny9ccg2fz22s6SQgk9f9zP8Nei67HYIDtndqZe+G+vwq9AdsZsTb2gEiBbCVOVYCVsTL2gEiBbCROVYCWsTb2gEiBbCWOVYCWsTL2gEiBVCYiOEG6+Dp+hEiBVCcgOVYKVsDT1gkqAbCUM0peAaO3z2qNH4oNvH+GFqbfybyz3fjsHCLdPApPvz9InmhLSygshhBDij+h0PgG5Mw5zvBOrLwAAAABJRU5ErkJggg=="
 		width="64" height="64" style="vertical-align:bottom;" data-opensection="content">
-		<h2>¡Cuéntanos!</h2>
-		<br/>
-		<div id="polls-content">
-			
-		</div>
+		<h2>¡Contáctanos!</h2>
+		<h3>Si tienes cualquier duda o sugerencia rellena el siguiente formulario o manda un correo a<a href="mailto:uamnet@live.com?subject=Email%20Subject&body=Body%20Text">uamnet@live.com</a> 
+		</h3>
+		<p></p><div id="polls-content">
+		</div></p>
 	</div>
+
 	<div id="fadeout"></div>
 	<div id="fadeout_section"></div>
+
+
 </body>
 
 </html>

@@ -1,4 +1,4 @@
-var sections = ["content", "members", "join", "events", "dreamspark","polls"];
+var sections = ["content", "pinchaAqui", "members", "join", "events", "dreamspark","polls"];
 var liveTiles = {};
 
 
@@ -23,6 +23,9 @@ var refreshSection = {
 	},
 	"join": function () {
 		document.getElementById("join_iframe").src = "https://onedrive.live.com/survey?resid=C54C5685052E8FDD!411&authkey=!AMtEmUhM_qtCxVk";		
+	},
+	"pinchaAqui": function () {
+
 	},
 	"content": function () {
 		var xmlhttp = new XMLHttpRequest();
@@ -86,7 +89,7 @@ var refreshSection = {
 				document.getElementById("membersList").innerHTML = '<div class="member action" onclick="switchSections(\'join\')"><img src="img/plus.gif" /><h3>TU</h3><h4>Únete al club</h4></div>';
 				members.forEach(function (x) {
 					var badges = "";
-					var colores = { "Presidente": "#0082A7","Vicepresidente": "#0082A7","Expresidente": "#0082A7", "Imagine Cup": "#552d7d","Hackathon": "#00A65C", "Speaker": "#00bdf2" };
+					var colores = { "Presidente": "#0082A7","Vicepresidente": "#0082A7","Secretario": "#0082A7","Expresidente": "#0082A7", "Imagine Cup": "#552d7d","Hackathon": "#00A65C", "Speaker": "#00bdf2" };
 					if (x.badges) {
 						x.badges.forEach(function (x) { if (colores[x]) { badges += '<div class="badge" style="background:' + colores[x] + ';">' + x + '</div>' } else { badges += '<div class="badge">' + x + '</div>' } });
 					}

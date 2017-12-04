@@ -1,10 +1,20 @@
-#aboutus{
-	width:calc( 60% - 10px );height:200px;top:0px;left:0px;
-}
-
 .EPSpic{
 	background:url(../img/eps.png) center;
 	background-size:cover;
+}
+
+#aboutus{
+	width:calc( 60% - 10px );
+	height:200px;
+	left:0px;
+	top:0px;
+}
+
+#news{
+	right:0px;
+	top:0px;
+	width:40%;
+	height:200px;
 }
 
 .skyblue{
@@ -19,19 +29,19 @@
 }
 
 .talkPic{
-	background:url(../img/charla.png) center;
+	background:url(../img/microsoft.jpg) center;
 	background-size:cover;
 }
 
 .green{
-	background-color: #189900;
+	background-color: #107c10;
 }
 
 #dreamsparkTile{
+	width:calc(30% - 10px);	
+	height:200px;	
 	right:0px;
 	top:210px;
-	width:calc(30% - 10px);
-	height:200px;
 }
 
 .gray{
@@ -61,6 +71,11 @@
 	color:#FFF;
 }
 
+.lightgreen{
+	background-color: #311600;
+	color:#FFF;
+}
+
 #twitter{
 	left:0px;
 	top:420px;
@@ -73,13 +88,31 @@
 	background-size:cover;
 }
 
-#mail{
+.twitterblue{
+	background-color: #2daae2
+}
+
+#onedrive{
 	left:110px;
 	top:420px;
 	width:100px;
 	height:100px;
 }
 
+.onedriveblue{
+	background-color:#094ab1;
+}
+
+.onedrivePic{
+	background:url(../img/onedrive.png) #094ab1 center;
+	background-size:cover;
+}
+
+
+#mail{
+	width:100px;
+	height:100px;
+}
 
 .mailblue{
 	background-color:#0078d7;
@@ -106,22 +139,6 @@
 	background-size:cover;
 }
 
-#youtube{
-	left:110px;
-	top:530px;
-	width:100px;
-	height:100px;
-}
-
-.youtubePic{
-	background:url(../img/youtube.png) center;
-	background-size:cover;
-}
-
-.youtubered{
-	background-color:#e62117;
-}
-
 #telegram{
 	left:110px;
 	top:530px;
@@ -135,14 +152,7 @@
 }
 
 .telegramblue{
-	background-color:#2aa1da;
-}
-
-#news{
-right:0px;
-top:0px;
-width:40%;
-height:200px;
+	background-color:#34ace0;
 }
 
 #interestPollTile{
@@ -153,7 +163,7 @@ height:200px;
 }
 
 .blue {
-	background:blue;
+	background:#0243c8;
 }
 
 .tech {

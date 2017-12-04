@@ -1,0 +1,97 @@
+.product-wrapper {
+    height: 200px;
+    text-align: center;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+
+}
+
+.product-wrapper a {
+    height: 197px;
+    display: block;
+    width: 100%;
+    color: #464646;
+}
+
+.product-wrapper a .product-box {
+    border: none;
+    background: transparent;
+    height: 200px;
+}
+
+.product-wrapper .product-box .product-image {
+    height: 120px;
+    padding: 15px 0;
+}
+
+.product-wrapper a .product-box .product-image img {
+    background-color: #fff;
+    max-height: 100%;
+}
+
+.center-block, .product-wrapper .product-box .product-image img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-responsive, #e5-2nd-nav .tab-wrapper .tab-body img, .product-wrapper .product-box .product-image img, .webstore-logo img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+img {
+    vertical-align: middle;
+    border: 0;
+}
+
+.product-wrapper a .product-box .product-name {
+    background-color: transparent;
+}
+
+.product-wrapper .product-box .product-name {
+    height: 80px;
+    padding: 5px;
+    font-size: 13px;
+    background-color: #f8f8f8;
+    overflow: hidden;
+    position: relative;
+    word-wrap: break-word;
+}
+
+.product-wrapper a .product-box .product-name bdi {
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+}
+
+.product-wrapper a .product-box .product-name .as-low-as {
+    background-color: transparent;
+}
+.product-wrapper .product-box .product-name .as-low-as {
+    font-size: 12px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #f8f8f8;
+    line-height: 12px;
+    padding-bottom: 5px;
+}
+a {
+    color: purple;
+    text-decoration: none;
+}
+.col-lg-2 {
+    width: 16.66667%;
+    position: relative;
+    min-height: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+    float: left;
+}

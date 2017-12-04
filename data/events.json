@@ -1,12 +1,58 @@
 [
     {
+        "title": "Próximamente en 2018...",
+        "by": "",
+        "place": "",
+        "day": "",
+        "month": "",
+        "time": "",
+        "color": "#999"
+    },      
+    {
+        "title": "Taller Excel",
+        "by": "Pablo Gomez Abajo",
+        "place": "",
+        "day": "",
+        "month": "",
+        "time": "",
+        "color": "#03a5ef"
+    },
+    {
+        "title": "Taller Git",
+        "by": "Club .NET + CRM",
+        "place": "",
+        "day": "",
+        "month": "",
+        "time": "",
+        "color": "#7fbb03"
+    },
+    {
+        "title": "Y mucho más",
+        "by": "",
+        "place": "",
+        "day": "",
+        "month": "",
+        "time": "",
+        "color": "#feb803"
+    },
+    {
         "title": "2017",
         "by": "",
         "place": "",
         "day": "",
         "month": "",
         "time": "",
-        "color": "#666666"
+        "color": "#999"
+    },      
+    {
+        "title": "Taller ciberseguridad",
+        "by": "Everis + Club .NET + AET + DEISI",
+        "place": "Aula 9",
+        "day": "17",
+        "month": "Noviembre",
+        "year":2017,
+        "time": "14:00",
+        "color": "#7fbb03"
     },      
     {
         "title": "HoloLens: Realidad mezclada, no agitada",
@@ -16,7 +62,17 @@
         "month": "Septiembre",
         "year":2017,
         "time": "13:00",
-        "color": "#006ac0"
+        "color": "#feb803"
+    },
+    {
+        "title": "Hackathon Videojuegos",
+        "by": "Club .NET",
+        "place": "Aula 7",
+        "day": "3 y 4",
+        "month": "Julio",
+        "year":2017,
+        "time": "16:30",
+        "color": "#f25021"
     },
     {
         "title": "Hosted Web Apps",
@@ -26,9 +82,9 @@
         "month": "Abril",
         "year":2017,
         "time": "13:00",
-        "color": "#006ac0"
+        "color": "#03a5ef"
     },
-                     {
+    {
         "title": "Becas de Microsoft en EEUU",
         "by": "Arcadio García Salvadores",
         "place": "Sala de Grados",
@@ -36,9 +92,9 @@
         "month": "Abril",
         "year":2017,
         "time": "13:00",
-        "color": "#8907aa"
+        "color": "#feb803"
     },
-                {
+    {
         "title": "Taller Git",
         "by": "Club .NET + CRM",
         "place": "TBD",
@@ -46,7 +102,7 @@
         "month": "Marzo",
         "year":2017,
         "time": "13:00",
-        "color": "#8907aa"
+        "color": "#7fbb03"
     },
     {
         "title": "Desarrollo Full Stack",
@@ -56,9 +112,9 @@
         "month": "Marzo",
         "year":2017,
         "time": "13:00",
-        "color": "#b11d01"
+        "color": "#03a5ef"
     },
-                    {
+    {
         "title": "Taller Bots",
         "by": "Club .NET",
         "place": "Laboratorio 6a",
@@ -66,7 +122,7 @@
         "month": "Febrero",
         "year":2017,
         "time": "16:00",
-        "color": "#b11d01"
+        "color": "#7fbb03"
     },
     {
         "title": "HoloLens: Desarrollando para Mixed Reality",
@@ -76,9 +132,9 @@
         "month": "Febrero",
          "year":2017,
         "time": "13:00",
-        "color": "#006ac0"
+        "color": "#03a5ef"
     },
-        {
+    {
         "title": "Hackathon Xamarin",
         "by": "Club .NET",
         "place": "Laboratorio 13",
@@ -86,7 +142,7 @@
         "month": "Enero",
         "year":2017,
         "time": "17:30",
-        "color": "#00c140"
+        "color": "#f25021"
     },
     {
         "title": "2016",
@@ -95,7 +151,7 @@
         "day": "",
         "month": "",
         "time": "",
-        "color": "#666666"
+        "color": "#999"
     },
     {
         "title": "Apúntate a la Imagine Cup",
@@ -105,7 +161,7 @@
         "month": "Noviembre",
         "year":2016,
         "time": "14:00",
-        "color": "#8907aa"
+        "color": "#feb803"
     },
     {
         "title": "No es una navaja suiza, es C#",
@@ -115,7 +171,7 @@
         "month": "Octubre",
         "year":2016,
         "time": "13:00",
-        "color": "#006ac0"
+        "color": "#03a5ef"
     },
     {
         "title": "Taller Macros Excel en VBA",
@@ -125,7 +181,7 @@
         "month": "Octubre",
         "year":2016,
         "time": "13:00",
-        "color": "#00c140"
+        "color": "#7fbb03"
     },
     {
         "title": "Hackathon Windows 10",
@@ -135,7 +191,7 @@
         "month": "Mayo",
         "year":2016,
         "time": "13:00",
-        "color": "#006ac0"
+        "color": "#f25021"
     },
     {
         "title": "Turing",
@@ -145,7 +201,7 @@
         "month": "Enero",
         "year":2016,
         "time": "13:00",
-        "color": "#b11d01"
+        "color": "#feb803"
     },
     {
         "title": "2015",
@@ -154,7 +210,7 @@
         "day": "",
         "month": "",
         "time": "",
-        "color": "#666666"
+        "color": "#999"
     },
     {
         "title": "Apps JavaScript para Windows 10",
@@ -164,7 +220,7 @@
         "month": "Octubre",
         "year":2015,
         "time": "13:00",
-        "color": "#006ac0"
+        "color": "#feb803"
     },
     {
         "title": "Azure: Pásate al Cloud Computing",
@@ -174,7 +230,7 @@
         "month": "Octubre",
         "year":2015,
         "time": "13:00",
-        "color": "#b11d01"
+        "color": "#03a5ef"
     },
     {
         "title": "Videojuegos con Clockwork.js",
@@ -184,7 +240,7 @@
         "month": "Octubre",
         "year":2015,
         "time": "13:00",
-        "color": "#00c140"
+        "color": "#7fbb03"
     },
     {
         "title": "JavaScript funcional & ES6",
@@ -194,7 +250,7 @@
         "month": "Octubre",
         "year":2015,
         "time": "13:00",
-        "color": "#8907aa"
+        "color": "#03a5ef"
     },
     {
         "title": "JavaScript 101",
@@ -204,7 +260,7 @@
         "month": "Septiembre",
         "year":2015,
         "time": "13:00",
-        "color": "#8907aa"
+        "color": "#7fbb03"
     },
     {
         "title": "Introducción a Active Directory",
@@ -214,7 +270,7 @@
         "month": "Septiembre",
         "year":2015,
         "time": "13:00",
-        "color": "#006ac0"
+        "color": "#feb803"
     },
     {
         "title": "Dual Boot y VMs",
@@ -224,6 +280,6 @@
         "month": "Septiembre",
         "year":2015,
         "time": "13:00",
-        "color": "#006ac0"
+        "color": "#7fbb03"
     }
 ]
