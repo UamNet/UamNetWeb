@@ -53,9 +53,23 @@ h2{
 	display:inline;
 }
 
+offer h3{ 
+	margin:10px;	
+	color:black;	
+	font-weight: 500;
+	font-size:35px;
+}
+
 h4{
 	margin-top: 0;
 	padding-left:20px;	
+}
+
+offer h5{ 	
+	margin:10px;	
+	color:black;	
+	font-weight: 500;
+	font-size:20px;
 }
 
 @keyframes slideleft {
@@ -339,6 +353,33 @@ h4{
 	transition: all 1s;
 }
 
+#join h3 a{
+	color:purple;	
+	font-weight: 500;
+	font-size:25px;
+	margin:10px;
+}
+ 
+#join a:link{
+	text-decoration: none;
+	color: purple;
+}
+ 
+#join a:visited{
+	text-decoration: none;
+	color: purple;
+}
+ 
+#join a:hover{
+	text-decoration: underline;
+	color: purple;
+}
+ 
+#join a:active{
+	text-decoration: none;
+	color: purple;
+}
+
 #pinchaAqui{
 	position: absolute;
 	top:110px;
@@ -352,7 +393,17 @@ h4{
 }
 #offer{
 	background-color: white;
+	margin-top: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 50px;
+	padding-right: 50px;
 }
+
+#offer p a{
+	color:purple;
+	
+	}
 
  #events{
 	position: absolute;
@@ -378,8 +429,59 @@ h4{
 	transition: all 1s;
 }
 
+#dreamspark h3 a{
+	color:purple;	
+	font-weight: 500;
+	font-size:25px;
+	margin:10px;
+}
 
- #polls{
+
+#dreamspark a:link{
+	text-decoration: none;
+	color: purple;
+}
+
+#dreamspark a:visited{
+	text-decoration: none;
+	color: purple;
+}
+
+#dreamspark a:hover{
+	text-decoration: underline;
+	color: purple;
+}
+
+#dreamspark a:active{
+	text-decoration: none;
+	color: purple;
+}
+
+a{
+	color:#fff;
+}
+
+a:link{
+	text-decoration: none;
+	color: #fff;
+}
+
+a:visited{
+	text-decoration: none;
+	color: #fff;
+}
+
+a:hover{
+	text-decoration: underline;
+	color: #fff;
+}
+
+a:active{
+	text-decoration: none;
+	color: #fff;
+}
+
+#polls{
 	position: absolute;
 	top:110px;
 	left:10%;
@@ -391,24 +493,39 @@ h4{
 	transition: all 1s;
 }
 
+#polls h3{
+	color:black;	
+	font-weight: 500;
+	font-size:25px;
+	margin:10px;
+}
+
+#polls h3 a{
+	color:purple;	
+	font-weight: 500;
+	font-size:25px;
+	margin:10px;
+}
+
+
 #polls a:link{
 	text-decoration: none;
-	color: #181818;
+	color: purple;
 }
 
 #polls a:visited{
 	text-decoration: none;
-	color: #181818;
+	color: purple;
 }
 
 #polls a:hover{
 	text-decoration: underline;
-	color: #000;
+	color: purple;
 }
 
 #polls a:active{
 	text-decoration: none;
-	color: #181818;
+	color: purple;
 }
 
 .event{
