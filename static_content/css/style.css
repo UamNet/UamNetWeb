@@ -53,19 +53,23 @@ h2{
 	display:inline;
 }
 
-offer h3{ 
+#offer h3{ 
 	margin:10px;	
 	color:black;	
 	font-weight: 500;
 	font-size:35px;
 }
 
-h4{
+#offer h4{
 	margin-top: 0;
 	padding-left:20px;	
 }
 
-offer h5{ 	
+h4{
+	margin-top: 0;
+}
+
+#offer h5{ 	
 	margin:10px;	
 	color:black;	
 	font-weight: 500;
@@ -297,6 +301,7 @@ offer h5{
  }
  
 .member h4{
+	text-align: center;
 	 font-weight: 100;
 	 margin:0px;
  }
