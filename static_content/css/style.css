@@ -53,27 +53,8 @@ h2{
 	display:inline;
 }
 
-#offer h3{ 
-	margin:10px;	
-	color:black;	
-	font-weight: 500;
-	font-size:35px;
-}
-
-#offer h4{
-	margin-top: 0;
-	padding-left:20px;	
-}
-
 h4{
 	margin-top: 0;
-}
-
-#offer h5{ 	
-	margin:10px;	
-	color:black;	
-	font-weight: 500;
-	font-size:20px;
 }
 
 @keyframes slideleft {
@@ -405,6 +386,25 @@ h4{
 	padding-right: 50px;
 }
 
+#offer h3{ 
+	margin:10px;	
+	color:black;	
+	font-weight: 500;
+	font-size:35px;
+}
+
+#offer h4{
+	margin-top: 0;
+	padding-left:20px;	
+}
+
+#offer h5{ 	
+	margin:10px;	
+	color:black;	
+	font-weight: 500;
+	font-size:20px;
+}
+
 #offer p a{
 	color:purple;
 	
@@ -628,6 +628,11 @@ font-size: 20px;
 	z-index: 1;
 	font-size: 12px;
 	text-align: left;
+}
+
+#footer h4{
+	margin-top: 0;
+	padding-left:20px;	
 }
 
 #footer a:link{
