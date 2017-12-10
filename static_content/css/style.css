@@ -616,11 +616,11 @@ font-size: 20px;
 }
 
 #footer{
-	top:860px;
+	top:1020px;
 	position: absolute;
 	bottom:0%;
 	width:100%;
-	height:auto;
+	height:80px;
 	background-color:#aaa;
 	color:#181818;
 	display:block;
