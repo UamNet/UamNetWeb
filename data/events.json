@@ -1,6 +1,6 @@
 [
     {
-        "title": "Próximamente en 2018...",
+        "title": "2018",
         "by": "",
         "place": "",
         "day": "",
@@ -11,29 +11,20 @@
     {
         "title": "Taller Excel",
         "by": "Pablo Gomez Abajo",
-        "place": "",
-        "day": "",
-        "month": "",
-        "time": "",
+        "place": "Laboratorio 2",
+        "day": "19",
+        "month": "Abril",
+        "time": "13:00",
         "color": "#03a5ef"
     },
     {
         "title": "Taller Git",
         "by": "Club .NET + CRM",
-        "place": "",
-        "day": "",
-        "month": "",
-        "time": "",
+        "place": "Laboratorio 14",
+        "day": "16",
+        "month": "Febrero",
+        "time": "15:00",
         "color": "#7fbb03"
-    },
-    {
-        "title": "Y mucho más",
-        "by": "",
-        "place": "",
-        "day": "",
-        "month": "",
-        "time": "",
-        "color": "#feb803"
     },
     {
         "title": "2017",
