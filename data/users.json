@@ -2,8 +2,8 @@
 	{
 		"firstName": "David",
 		"lastName": "Ramírez Mesón",
-		"picture": "https://pbs.twimg.com/profile_images/911711599773265920/DpLu1ahh_400x400.jpg",
-		"bio": "Futuro ingeniero de telecomunicaciones. Pienso en frecuencias pero hablo en decibelios",
+		"picture": "https://avatars1.githubusercontent.com/u/29896778?s=400&amp;u=7acd1e9cfe84583984e5f2a2be499701ec5bcd4e&amp;v=4",
+		"bio": "Student of Electrical, Electronics and ICT Engineering",
 		"badges": [
 			"Presidente",
 			"Hackathon",
@@ -11,16 +11,16 @@
 		],
 		"links": [
 			{
-				"text": "Twitter (@davidramirezrm)",
-				"url": "https://twitter.com/davidramirezrm"
+				"text": "Twitter (@davidramirezm30)",
+				"url": "https://twitter.com/davidramirezm30"
 			},
 			{
-				"text": "Instagram (@davidramirezdrm)",
-				"url": "https://instagram.com/davidramirezdrm"
+				"text": "Instagram (@davidramirezm30)",
+				"url": "https://instagram.com/davidramirezm30"
 			},		
 			{
-				"text": "Github (@davidramirezdrm)",
-				"url": "https://github.com/davidramirezdrm"
+				"text": "Github (@davidramirezm30)",
+				"url": "https://github.com/davidramirezm30"
 			}			
 		]
 	},
