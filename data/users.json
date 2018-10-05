@@ -11,13 +11,13 @@
 		],
 		"links": [
 			{
+				"text": "Mi web",
+				"url": "https://davidramirez.azurewebsites.net"
+			},	
+			{
 				"text": "Twitter (@davidramirezm30)",
 				"url": "https://twitter.com/davidramirezm30"
-			},
-			{
-				"text": "Instagram (@davidramirezm30)",
-				"url": "https://instagram.com/davidramirezm30"
-			},		
+			},	
 			{
 				"text": "Github (@davidramirezm30)",
 				"url": "https://github.com/davidramirezm30"
