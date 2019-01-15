@@ -1,6 +1,6 @@
 {
   "name": "UamNetWeb",
-  "version": "0.0.0",
+  "version": "8.9.4",
   "description": "Para probar la web en local, ejecutar 'node server.js'",
   "main": "server.js",
   "scripts": {
