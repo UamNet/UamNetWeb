@@ -1,4 +1,4 @@
-var sections = ["content", "pinchaAqui", "members", "join", "events", "dreamspark","polls"];
+var sections = ["content", "pinchaAqui", "members", "join", "events", "azure","polls"];
 var liveTiles = {};
 
 
@@ -18,8 +18,8 @@ function switchSections(target) {
 }
 
 var refreshSection = {
-	"dreamspark": function () {
-		document.getElementById("dreamspark_iframe").src = "https://onedrive.live.com/redir?page=survey&resid=C54C5685052E8FDD!236&authkey=!ABZw3EPirQI2iaw&ithint=file%2cxlsx";
+	"azure": function () {
+		document.getElementById("azure_iframe").src = "https://onedrive.live.com/redir?page=survey&resid=C54C5685052E8FDD!236&authkey=!ABZw3EPirQI2iaw&ithint=file%2cxlsx";
 	},
 	"join": function () {
 		document.getElementById("join_iframe").src = "https://onedrive.live.com/survey?resid=C54C5685052E8FDD!411&authkey=!AMtEmUhM_qtCxVk";		
@@ -89,7 +89,7 @@ var refreshSection = {
 				document.getElementById("membersList").innerHTML = '<div class="member action" onclick="switchSections(\'join\')"><img src="img/plus.gif" /><h3>TU</h3><h4>Únete al club</h4></div>';
 				members.forEach(function (x) {
 					var badges = "";
-					var colores = { "Presidente": "#0082A7","Vicepresidente": "#0082A7","Secretario": "#0082A7","Expresidente": "#0082A7", "Imagine Cup": "#552d7d","Hackathon": "#00A65C", "Speaker": "#00bdf2" , "Youtuber": "#cc181e" };
+					var colores = { "Presidente": "#0082A7","Vicepresidente": "#0082A7","Secretario": "#0082A7","Tesorero": "#0082A7","Vocal": "#0082A7", "Imagine Cup": "#552d7d","Hackathon": "#00A65C", "Speaker": "#00bdf2" , "Youtuber": "#cc181e" };
 					if (x.badges) {
 						x.badges.forEach(function (x) { if (colores[x]) { badges += '<div class="badge" style="background:' + colores[x] + ';">' + x + '</div>' } else { badges += '<div class="badge">' + x + '</div>' } });
 					}
@@ -134,20 +134,8 @@ var refreshSection = {
 		xmlhttp.send();
 	},
 	"polls": function () {
-		var xmlhttp = new XMLHttpRequest();
-		var url = "API/polls";
+		document.getElementById("azure_iframe").src = "https://t.co/sNkd6FikuS";
 
-		xmlhttp.onreadystatechange = function () {
-			if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-				var polls = JSON.parse(xmlhttp.responseText);
-				document.getElementById("polls-content").innerHTML = '';
-				polls.forEach(function (x) {
-					document.getElementById("polls-content").innerHTML += x.content;
-				});
-			}
-		}
-		xmlhttp.open("GET", url, true);
-		xmlhttp.send();
 	}
 };
 
@@ -273,27 +261,27 @@ function sendJoin() {
 }
 
 
-function sendDreamspark() {
+function sendazure() {
 	var xmlhttp = new XMLHttpRequest();
-	var url = "/API/request/dreamspark";
+	var url = "/API/request/azure";
 
 	xmlhttp.onreadystatechange = function () {
 		if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
 			switch (JSON.parse(xmlhttp.responseText).status) {
 				case 0:
-					document.getElementById("status_dreamspark").innerHTML = "Enviado con éxito";
+					document.getElementById("status_azure").innerHTML = "Enviado con éxito";
 					break;
 				case 1:
-					document.getElementById("status_dreamspark").innerHTML = "Se ha producido un error. Intentalo de nuevo en unos momentos, por favor.";
+					document.getElementById("status_azure").innerHTML = "Se ha producido un error. Intentalo de nuevo en unos momentos, por favor.";
 					break;
 				case 2:
-					document.getElementById("status_dreamspark").innerHTML = "Necesitamos que uses tu correo @estudiante.uam.es para saber que eres un estudiante.";
+					document.getElementById("status_azure").innerHTML = "Necesitamos que uses tu correo @estudiante.uam.es para saber que eres un estudiante.";
 					break;
 			}
 		}
 	}
 	xmlhttp.open("POST", url, true);
 	xmlhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
-	xmlhttp.send(JSON.stringify({ email: document.getElementById("name_dreamspark").value, name: document.getElementById("email_dreamspark").value }));
+	xmlhttp.send(JSON.stringify({ email: document.getElementById("name_azure").value, name: document.getElementById("email_azure").value }));
 }
 

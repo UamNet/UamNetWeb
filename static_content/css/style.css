@@ -422,7 +422,7 @@ h4{
 	transition: all 1s;
 }
 
- #dreamspark{
+ #azure{
 	position: absolute;
 	top:110px;
 	left:10%;
@@ -434,7 +434,7 @@ h4{
 	transition: all 1s;
 }
 
-#dreamspark h3 a{
+#azure h3 a{
 	color:purple;	
 	font-weight: 500;
 	font-size:25px;
@@ -442,22 +442,22 @@ h4{
 }
 
 
-#dreamspark a:link{
+#azure a:link{
 	text-decoration: none;
 	color: purple;
 }
 
-#dreamspark a:visited{
+#azure a:visited{
 	text-decoration: none;
 	color: purple;
 }
 
-#dreamspark a:hover{
+#azure a:hover{
 	text-decoration: underline;
 	color: purple;
 }
 
-#dreamspark a:active{
+#azure a:active{
 	text-decoration: none;
 	color: purple;
 }
