@@ -11,6 +11,10 @@
 		],
 		"links": [
 			{
+				"text": "Mi web",
+				"url": "https://davidramirez.azurewebsites.net"
+			},	
+			{
 				"text": "Twitter (@davidramirezm30)",
 				"url": "https://twitter.com/davidramirezm30"
 			},
