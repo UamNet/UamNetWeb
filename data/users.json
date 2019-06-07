@@ -3,7 +3,7 @@
 		"firstName": "David",
 		"lastName": "Ramírez Mesón",
 		"picture": "https://avatars1.githubusercontent.com/u/29896778?s=400&amp;u=7acd1e9cfe84583984e5f2a2be499701ec5bcd4e&amp;v=4",
-		"bio": "Student of Electrical, Electronics and ICT Engineering",
+		"bio": "Telecommunications Engineering student, I have passion for DIY with SBCs",
 		"badges": [
 			"Presidente",
 			"Hackathon",
@@ -17,7 +17,11 @@
 			{
 				"text": "Twitter (@davidramirezm30)",
 				"url": "https://twitter.com/davidramirezm30"
-			},	
+			},
+			{
+				"text": "Mi web",
+				"url": "https://davidramirez.azurewebsites.net"
+			},
 			{
 				"text": "Github (@davidramirezm30)",
 				"url": "https://github.com/davidramirezm30"
@@ -67,89 +71,42 @@
 		]
 	},
 	{
-		"firstName": "Arcadio",
-		"lastName": "García Salvadores",
-		"picture": "https://avatars0.githubusercontent.com/u/9416356?v=3&s=460",
-		"bio": "Empowering people to achieve more through technology. Love everything related to Windows, JS and chocolate.",
+		"firstName": "Fernando",
+		"lastName": "Ruíz Matallanos",
+		"picture": "https://pbs.twimg.com/profile_images/1031304540325400577/aNZlKuik_400x400.jpg",
+		"bio": "Futuro ingeniero de telecomunicaciones",
 		"badges": [
-			"Expresidente",
-			"Imagine Cup",
-			"Speaker"
+			"Tesorero"
 		],
 		"links": [
 			{
-				"text": "Twitter (@arcadio_g_s)",
-				"url": "https://twitter.com/arcadio_g_s"
-			}
-		]
-	},
-	{
-		"firstName": "Silvia",
-		"lastName": "Barbero Rodríguez",
-		"picture": "/img/Silvia.jpg",
-		"bio": "Artist in her way to make videogames. Shy and unsure but I'll do my best to help! =D",
-		"badges": [
-			"Imagine Cup"
-		],
-		"links": [
-			{
-				"text": "Deviantart",
-				"url": "http://silvishinystar.deviantart.com/"
+				"text": "Twitter (@fruizmata7)",
+				"url": "https://twitter.com/fruizmata7"
 			},
 			{
-				"text": "Twitter (@SilviShinyStar)",
-				"url": "https://twitter.com/SilviShinyStar"
+				"text": "Instagram (@fruizmata7)",
+				"url": "https://instagram.com/fruizmata7"
 			}
 		]
 	},
 	{
-		"firstName": "David",
-		"lastName": "Muñoz Miranda",
-		"picture": "https://avatars2.githubusercontent.com/u/15156723",
-		"bio": "Técnico de sistemas e ingeniero informático. ",
+		"firstName": "Alberto",
+		"lastName": "Moreno",
+		"picture": "https://pbs.twimg.com/profile_images/988336518468177920/Vb9XzI5a_400x400.jpg",
+		"bio": "Computer Science student, in love with Mozilla. Supporting open source.",
 		"badges": [
-			"Speaker"
+			"Vocal",
+			"Hackathon"
 		],
 		"links": [
 			{
-				"text": "Twitter (@DMunnozM)",
-				"url": "https://twitter.com/DMunnozM"
-			}
-		]
-	},
-
-	{
-
-		"firstName": "Juan Carlos",
-
-		"lastName": "Pereira Kohatsu",
-
-		"picture": "https://avatars1.githubusercontent.com/u/16213780",
-
-		"bio": "Futuro ingeniero informático y Youtuber. Me encantan las bases de datos y bailar.",
-		"badges": [
-			"Speaker",
-			"Youtuber"
-		],
-		"links": [
-
-			{
-
-				"text": "Mi canal de Youtube",
-
-				"url": "https://www.youtube.com/JCPK94"
-
+				"text": "Twitter (@AlbertoMorenoBr)",
+				"url": "https://twitter.com/AlbertoMorenoBr"
 			},
-
 			{
-
-				"text": "Twitter (@yoshimoncho)",
-
-				"url": "https://twitter.com/Yoshimoncho"
-
+				"text": "Instagram (@alberto_1098)",
+				"url": "https://instagram.com/alberto_1098"
 			}
-
 		]
-
 	}
 ]

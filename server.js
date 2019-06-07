@@ -59,6 +59,8 @@ var OAuth = require('oauth').OAuth;
 var oa = new OAuth(
 	"https://api.twitter.com/oauth/request_token",
 	"https://api.twitter.com/oauth/access_token",
+	"qAFlccpzv78rj9Ad6SdorazOK",
+	"PNltqdSfVKv6kUdvjy2DRu4Ez9NO4rZ5nskrSj90fV1HuO8H9N",
 	"CPjErAj9jkJM5LGOF80OxfnBp",
 	process.env.twittersecret1,
 	"1.0",
@@ -69,6 +71,8 @@ var oa = new OAuth(
 app.get('/API/news', function (req, res, next) {
 	oa.get(
 		'https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=uamnet&count=5&exclude_replies=true',
+		'134400799-xyLCjtxby3LYM3BJXKQ7OJkV3rOSql5BrABw2Qzw', //test user token
+		process.env.AccessTokenSecret, //test user secret            
 		'134400799-AJztRwtYreSyibOtydlSIoVjCianrlAFOpmAA5le', //test user token
 		process.env.twittersecret2, //test user secret            
 		function (e, data, response) {	

@@ -1,5 +1,32 @@
 [
     {
+        "title": "2019",
+        "by": "",
+        "place": "",
+        "day": "",
+        "month": "",
+        "time": "",
+        "color": "#999"
+    },
+    {
+        "title": "Sistemas SBC (Orange Pi vs Raspberry Pi)",
+        "by": "David Ramírez Mesón",
+        "place": "",
+        "day": "10",
+        "month": "Mayo",
+        "time": "14:00-15:00",
+        "color": "#03a5ef"
+    },    
+    {
+        "title": "Hackathon Inteligencia Artificial",
+        "by": "Redradix",
+        "place": "Laboratorio 8",
+        "day": "15",
+        "month": "Febrero",
+        "time": "15:00-21:00",
+        "color": "#f25021"
+    },
+    {
         "title": "2018",
         "by": "",
         "place": "",
@@ -7,6 +34,16 @@
         "month": "",
         "time": "",
         "color": "#999"
+    },
+    {
+        "title": "Conferencia de Tecnologías de Microsoft",
+        "by": "Arcadio García Salvadores",
+        "place": "Sala de Grados",
+        "day": "19",
+        "month": "Diciembre",
+        "year":2018,
+        "time": "13:00-15:00",
+        "color": "#feb803"
     },      
     {
         "title": "Taller Excel",
@@ -15,7 +52,7 @@
         "day": "19",
         "month": "Abril",
         "time": "13:00",
-        "color": "#03a5ef"
+        "color": "#7fbb03"
     },
     {
         "title": "Taller Git",
@@ -24,7 +61,7 @@
         "day": "16",
         "month": "Febrero",
         "time": "15:00",
-        "color": "#7fbb03"
+        "color": "#03a5ef"
     },
     {
         "title": "2017",

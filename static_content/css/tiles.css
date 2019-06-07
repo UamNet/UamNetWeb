@@ -37,7 +37,7 @@
 	background-color: #107c10;
 }
 
-#dreamsparkTile{
+#azureTile{
 	width:calc(30% - 10px);	
 	height:200px;	
 	right:0px;
@@ -48,8 +48,8 @@
 	background:#515151;
 }
 
-.dreamsparkPic{
-	background:url(../img/dreamspark.png) center;
+.azurePic{
+	background:url(../img/Microsoft-Azure.png) center;
 	background-size:contain;
 	background-repeat:no-repeat;
 }
